@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nucleoroto</title>
+  <title>Nucleoroto v2.0</title>
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -46,9 +46,10 @@
       <!--  -->
 
     </header>
-    <div id="menu-movil" class="columns h-100-v fixed p-top p-bottom color-primary-0-bg z1k hide-for-large">
+    <div id="menu-movil" class="columns h-100-v fixed p-top p-bottom color-primary-0-bg z1k text-center color-white v-center hide-for-large">
 
-      <?php echo "este es el menu movil"; ?>
+
+      <?php echo "este será el menu movil"; ?>
 
     </div>
 
