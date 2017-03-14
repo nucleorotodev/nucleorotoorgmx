@@ -38,7 +38,7 @@
 
     <div class="columns p-0 h-a">
 
-      <i class="fa fa-copyright font-xs font-md-s text-shadow"> Copyright || <?php echo date("Y"); ?></i>
+      <i class="fa fa-copyright font-xs font-md-s text-shadow"> Nucleoroto <?php echo date("Y"); ?></i>
 
     </div>
 
@@ -51,7 +51,7 @@
 <script src="bower_components/what-input/dist/what-input.js"></script>
 <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
 <script src="bower_components/imgLiquid/js/imgLiquid.js"></script>
-<script src="dependencias/js_utils/dist/js/js_utils.js"></script>
+<script src="submodulos/js_utils/dist/js/js_utils.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
