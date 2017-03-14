@@ -1,0 +1,137 @@
+// Paleta de color con SASS
+
+// $blanco: #FFF;
+$blanco: whitesmoke;
+$negro: #000;
+
+$color-primary-0: #393F4B;
+$color-primary-1: #717785;
+$color-primary-2: #535A68;
+$color-primary-3: #1F2530;
+$color-primary-4: #151D2E;
+
+$color-secondary-0: #95AB00;
+$color-secondary-1: #DFF069;
+$color-secondary-2: #CAE800;
+$color-secondary-3: #708100;
+$color-secondary-4: #5C661B;
+
+$color-secondary-0: #A2A09F;
+$color-secondary-1: #FFFEFD;
+$color-secondary-2: #CDCCCB;
+$color-secondary-3: #787574;
+$color-secondary-4: #484543;
+
+$color-tertiary-0: #870058;
+$color-tertiary-1: #BF5399;
+$color-tertiary-2: #B80078;
+$color-tertiary-3: #660042;
+$color-tertiary-4: #51153C;
+
+$color-complement-0: #FFCA00;
+$color-complement-1: #FFEEAC;
+$color-complement-2: #FFD430;
+$color-complement-3: #CEA300;
+$color-complement-4: #5F4B00;
+
+$color-accent-0: #870058;
+$color-accent-1: #BF5399;
+$color-accent-2: #B80078;
+$color-accent-3: #660042;
+$color-accent-4: #51153C;
+
+$color-neutral-0: #393F4B;
+$color-neutral-1: #6D7481;
+$color-neutral-2: #515866;
+$color-neutral-3: #202530;
+$color-neutral-4: #161E2E;
+
+// array de colores
+$lista-colores: (
+
+blanco   $blanco,
+negro   $negro,
+
+primary-0 $color-primary-0,
+primary-1 $color-primary-1,
+primary-2 $color-primary-2,
+primary-3 $color-primary-3,
+primary-4 $color-primary-4,
+
+secondary-0 $color-secondary-0,
+secondary-1 $color-secondary-1,
+secondary-2 $color-secondary-2,
+secondary-3 $color-secondary-3,
+secondary-4 $color-secondary-4,
+
+tertiary-0 $color-tertiary-0,
+tertiary-1 $color-tertiary-1,
+tertiary-2 $color-tertiary-2,
+tertiary-3 $color-tertiary-3,
+tertiary-4 $color-tertiary-4,
+
+complement-0 $color-complement-0,
+complement-1 $color-complement-1,
+complement-2 $color-complement-2,
+complement-3 $color-complement-3,
+complement-4 $color-complement-4,
+
+neutral-0 $color-neutral-0,
+neutral-1 $color-neutral-1,
+neutral-2 $color-neutral-2,
+neutral-3 $color-neutral-3,
+neutral-4 $color-neutral-4,
+
+accent-0 $color-accent-0
+accent-1 $color-accent-1
+accent-2 $color-accent-2
+accent-3 $color-accent-3
+accent-4 $color-accent-4
+
+);
+// Crea las clases
+@each $value in $lista-colores {
+
+  .color-#{nth($value, 1)} {
+    & {
+      color: nth($value, 2) !important;
+    }
+  }
+  .color-#{nth($value, 1)}-bg {
+    & {
+      background-color: nth($value, 2) !important;
+    }
+  }
+  .color-#{nth($value, 1)}-bd {
+    & {
+      border: 1px solid white;
+      border-color: nth($value, 2) !important;
+    }
+  }
+
+  .color-#{nth($value, 1)}-hover:hover {
+    & {
+      color: nth($value, 2) !important;
+    }
+  }
+  .color-#{nth($value, 1)}-hover-bg:hover {
+    & {
+      background-color: nth($value, 2) !important;
+    }
+  }
+  .color-#{nth($value, 1)}-hover-bd:hover {
+    & {
+      border: 1px solid white;
+      border-color: nth($value, 2) !important;
+    }
+  }
+  .cortina-#{nth($value, 1)} {
+    & {
+      background-color: nth($value, 2) !important;
+      opacity: 0.5;
+
+    }
+  }
+
+
+}
