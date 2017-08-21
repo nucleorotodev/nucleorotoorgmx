@@ -2,6 +2,7 @@
 /*
 Template Name: Inicio NR
 */
+
 get_header();
 // include_once 'header.php';
 
