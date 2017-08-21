@@ -23,7 +23,7 @@
       </nav>
       <!--  -->
 
-      <!--parte movil -->
+      <!-- parte movil -->
       <div id="header-movil" class="columns small-9 hide-for-large">
 
         <div class="columns small-9"></div>
