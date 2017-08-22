@@ -4,7 +4,7 @@
 <div class="heroscreen row align-middle">
 
 
-  <div class="columns p-0 h-a">
+  <div class="columns h-a">
 
     <?php
 
@@ -29,7 +29,6 @@
         endif; ?>
 
       </div>
-
 
 
     <?php endfor; ?>

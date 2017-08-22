@@ -31,9 +31,9 @@ function img_liquid() {
 
 }
 
-var menumovil = jQuery("#menu-movil");
 
 function menu_movil() {
+  var menumovil = jQuery("#menu-movil");
   // registra su posicion actual, fuera de la pantalla
   var anchomenumovil = menumovil.width() + 40
   var posicioninicial = menumovil.css({

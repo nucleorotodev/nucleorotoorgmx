@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <header id="header" class="columns h-10 fixed top left color-blanco-bg shadow z1k1">
+  <header id="header" class="columns h-10 fixed top left color-negro-bg shadow z1k1">
 
     <div id="header-logo" class="columns small-3 imgLiquid imgLiquidNoFillLeft" >
       <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-medium.jpg" alt="" />
@@ -17,8 +17,7 @@
     <!-- escritorio -->
     <nav id="menu-escritorio" class="columns small-9 show-for-large">
 
-      <?php //include_once "secciones/menu.php" ?>
-      <?php get_template_part('secciones/menu.php'); ?>
+      <?php get_template_part('secciones/general/menu'); ?>
 
     </nav>
     <!--  -->
@@ -28,11 +27,11 @@
 
       <div class="columns small-9"></div>
 
-      <div class="columns small-3 p-0 v-center">
+      <div class="columns small-3 p-0">
 
-        <div class="columns p-0 h-a text-right">
+        <div class="row p-0 text-right align-middle">
 
-          <a id="boton-menu-movil" class="columns p-0 " href="#">
+          <a id="boton-menu-movil" class="columns p-0 h-a" href="#">
 
             <i class="fa fa-bars font-l"></i>
 
