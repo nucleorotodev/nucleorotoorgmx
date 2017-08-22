@@ -1,49 +1,37 @@
-$(document).foundation()
-var u = new Utils()
-$(document).ready(function() {
+jQuery(document).foundation()
+//
+jQuery(document).ready(function() {
 
-setup_resize()
-
-menu_movil()
-
-img_liquid()
+setup()
 
 })
 //fin ready
 // funciones
-function setup_resize() {
+function setup() {
 
-  u.addWindowResizeFunction( u.verticalCenter )
-  u.addWindowResizeFunction( u.shareW )
-  u.addWindowResizeFunction( menu_movil )
-  // u.addWindowResizeFunction( u.shareH )
-
-  setTimeout(function(){
-
-    $(window).trigger('resize')
-
-  },100)
+  menu_movil()
+  img_liquid()
 
 }
 
 function img_liquid() {
 
-  $(".imgLiquid.imgLiquidFill").imgLiquid()
+  jQuery(".imgLiquid.imgLiquidFill").imgLiquid()
 
-  $(".imgLiquid.imgLiquidNoFill").imgLiquid({fill:false})
+  jQuery(".imgLiquid.imgLiquidNoFill").imgLiquid({fill:false})
 
-  $(".imgLiquid.imgLiquidNoFillLeft").imgLiquid({
+  jQuery(".imgLiquid.imgLiquidNoFillLeft").imgLiquid({
     fill:false,
     horizontalAlign:"left"
   })
-  $(".imgLiquid.imgLiquidNoFillRight").imgLiquid({
+  jQuery(".imgLiquid.imgLiquidNoFillRight").imgLiquid({
     fill:false,
     horizontalAlign:"right"
   })
 
 }
 
-var menumovil = $("#menu-movil");
+var menumovil = jQuery("#menu-movil");
 
 function menu_movil() {
   // registra su posicion actual, fuera de la pantalla
@@ -56,7 +44,7 @@ function menu_movil() {
     '-o-transform': 'translateX(' + anchomenumovil +'px)',
     'transform': 'translateX(' + anchomenumovil +'px)'
   })
-  var menuicono = $('#boton-menu-movil i');
+  var menuicono = jQuery('#boton-menu-movil i');
 
   // reset del icono en caso de resize
   if (menuicono.hasClass('fa-close')) {
@@ -74,11 +62,11 @@ function menu_movil() {
     'transform': 'translateX(' + anchomenumovil +'px)'
   }
 
-  $('#boton-menu-movil').on('click', function() {
+  jQuery('#boton-menu-movil').on('click', function() {
 
     var posicion = menumovil.position();
 
-    if(posicion.left >= $(document).width()) {
+    if(posicion.left >= jQuery(document).width()) {
       // entra
       menumovil.css({
         'transition': '0.5s',

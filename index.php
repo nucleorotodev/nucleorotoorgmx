@@ -4,8 +4,8 @@ get_header();
 // include_once 'header.php';
 
 
-  
-get_template_part('secciones/home/inicio');
+
+get_template_part('secciones/home/heroscreen');
 // include_once "secciones/home/inicio.php";
 
 

@@ -1,7 +1,7 @@
 
 </main>
 
-<footer id="footer" class="columns h-10-v fixed bottom left color-blanco-bg shadow-up z1k1">
+<footer id="footer" class="columns h-a color-blanco-bg shadow-up z1k1">
 
   <div id="social" class="columns small-6 p-0">
 
@@ -15,7 +15,7 @@
 
       ?>
 
-      <div class="columns v-center shareW ">
+      <div class="w-a v-center">
 
         <div class="columns p-0 h-a text-center">
 

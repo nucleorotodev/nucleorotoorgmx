@@ -4,7 +4,7 @@
 <div class="heroscreen row align-middle">
 
 
-  <div class="columns p-0 v-center">
+  <div class="columns p-0 h-a">
 
     <?php
 

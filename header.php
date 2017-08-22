@@ -5,59 +5,58 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php bloginfo( 'name' ); wp_title('|', 'echo', 'right') ?></title>
-  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
-    <header id="header" class="columns h-10 fixed top left color-blanco-bg shadow z1k1">
+  <header id="header" class="columns h-10 fixed top left color-blanco-bg shadow z1k1">
 
-      <div id="header-logo" class="columns small-3 imgLiquid imgLiquidNoFillLeft" >
-        <img src="img/placeholder.png" alt="" />
-      </div>
+    <div id="header-logo" class="columns small-3 imgLiquid imgLiquidNoFillLeft" >
+      <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-medium.jpg" alt="" />
+    </div>
 
-      <!-- escritorio -->
-      <nav id="menu-escritorio" class="columns small-9 show-for-large">
+    <!-- escritorio -->
+    <nav id="menu-escritorio" class="columns small-9 show-for-large">
 
-        <?php //include_once "secciones/menu.php" ?>
-        <?php get_template_part('secciones/menu.php'); ?>
+      <?php //include_once "secciones/menu.php" ?>
+      <?php get_template_part('secciones/menu.php'); ?>
 
-      </nav>
-      <!--  -->
+    </nav>
+    <!--  -->
 
-      <!-- parte movil -->
-      <div id="header-movil" class="columns small-9 hide-for-large">
+    <!-- parte movil -->
+    <div id="header-movil" class="columns small-9 hide-for-large">
 
-        <div class="columns small-9"></div>
+      <div class="columns small-9"></div>
 
-        <div class="columns small-3 p-0 v-center">
+      <div class="columns small-3 p-0 v-center">
 
-          <div class="columns p-0 h-a text-right">
+        <div class="columns p-0 h-a text-right">
 
-            <a id="boton-menu-movil" class="columns p-0 " href="#">
+          <a id="boton-menu-movil" class="columns p-0 " href="#">
 
-              <i class="fa fa-bars font-l"></i>
+            <i class="fa fa-bars font-l"></i>
 
-            </a>
-
-          </div>
+          </a>
 
         </div>
 
       </div>
-      <!--  -->
-
-<?php wp_head(); ?>
-
-    </header>
-    <div id="menu-movil" class="columns h-100-v fixed p-top p-bottom color-primary-0-bg z1k text-center color-white v-center hide-for-large">
-
-
-      <?php echo "este será el menu movil"; ?>
 
     </div>
+    <!--  -->
+
+    <?php wp_head(); ?>
+
+  </header>
+  <div id="menu-movil" class="columns h-100-v fixed p-top p-bottom color-primary-0-bg z1k text-center color-white v-center hide-for-large">
+
+
+    <?php echo "este será el menu movil"; ?>
+
+  </div>
 
 
 
 
 
-    <main id="main" class="columns">
+  <main id="main" class="columns h-a">
