@@ -1,10 +1,13 @@
 <?php
+/*
+Template Name: Inicio NR
+*/
 
 get_header();
 // include_once 'header.php';
 
 
-  
+
 get_template_part('secciones/home/inicio');
 // include_once "secciones/home/inicio.php";
 
