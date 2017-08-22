@@ -1,41 +1,79 @@
-<!-- Este archivo es la base para las secciones de el sitio -->
-<section class="columns p-0 h-100-v p-top p-bottom">
+<section id="heroscreen" class="columns p-0 h-100-v p-top p-bottom">
 
-<div class="heroscreen row align-middle">
+<?php get_template_part('secciones/general/iteracion-texto'); ?>
+<!-- row -->
 
 
-  <div class="columns h-a">
+<div id="hero-slider" class="slider-portada columns p-0">
 
-    <?php
+  <?php
 
-    $content = 'NUCLEOROTO Acid Trip Dev Team';
-    $fuente = array('xs','s','m','l','xl','xxl');
+  $args = array(
+    'cat' => 7,
+    // 'category' => 'slider-destacadas'
+  );
+  $query = new WP_Query($args);
 
-    for ($i=0; $i <= 5 ; $i++):
+  if($query->have_posts()):
+    while ($query->have_posts()): $query -> the_post();
+    ?>
+    <div class="columns p-0 rel text-shadow">
 
-      $content_mix = str_shuffle($content);
-      ?>
+      <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 
-      <div class="columns p-0 h-a text-center font-<?php echo $fuente[$i]; ?> text-shadow">
+        <?php
+        echo get_the_post_thumbnail();
+        ?>
 
-        <?php if ($i > 4):
+      </div>
+      <div class="textos-slider columns z1 absUpL p-0 color-white v-center">
 
-          echo $content;
+        <h1 class="columns p-1 h-a text-center text-shadow color-blanco">
 
-        else:
+          <?php
 
-          echo $content_mix;
+          echo get_the_title();
 
-        endif; ?>
+          ?>
+
+        </h1>
+        <div class="columns small-10 medium-8 large-6 p-1 m-b-0-3 rel bold h-a text-shadow text-justify small-centered font-s font-sm-m font-lg-l color-blanco">
+          <!-- <div class="columns p-0-3 cortina-negro absUpL z-1">
+
+          </div> -->
+          <?php
+
+          // echo excerpt(19);
+
+          ?>
+
+        </div>
+        <div class="columns small-8 medium-4 large-2 small-centered h-a">
+
+          <a href="<?php echo get_permalink();?>" class="color-azul-bg color-link-hover-bg color-claro-hover color-claro columns p-1-1 font-s font-sm-m font-lg-l text-center shadow">
+
+            <?php
+
+            echo 'Conoce más';
+
+            ?>
+
+          </a>
+
+        </div>
 
       </div>
 
 
-    <?php endfor; ?>
+    </div>
 
-  </div>
+    <?php
+
+  endwhile;
+endif;
+
+?>
 
 </div>
-<!-- row -->
 
 </section>

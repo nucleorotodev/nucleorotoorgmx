@@ -6,30 +6,8 @@
   <div id="social" class="columns small-6 p-0">
 
     <?php
-
-    $iconos = array('github', 'twitter', 'facebook', 'instagram');
-    $iconos_size = count($iconos);
-
-
-    for ($i=0; $i < $iconos_size; $i++):
-
-      ?>
-
-      <div class="w-a v-center">
-
-        <div class="columns p-0 h-a text-center">
-
-          <a class="columns p-0" href="#">
-
-            <i class="fa fa-<?php echo $iconos[$i];?> text-shadow"></i>
-
-          </a>
-
-        </div>
-
-      </div>
-
-    <?php endfor; ?>
+    get_template_part('secciones/modulos/redes');
+    ?>
 
   </div>
 

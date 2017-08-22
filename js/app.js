@@ -9,8 +9,9 @@ setup()
 // funciones
 function setup() {
 
-  menu_movil()
   img_liquid()
+  menu_movil()
+  slider_heroscreen()
 
 }
 
@@ -119,4 +120,18 @@ function menu_movil() {
 
   });
 
+}
+
+// sliders
+function slider_heroscreen() {
+
+  $('.slider-portada').slick({
+    autoplay: true,
+    autoPlaySpeed: 5000,
+    arrows: false,
+    fade, true,
+    dots: true,
+    // vertical: true,
+    // verticalSwiping: true,
+  })
 }

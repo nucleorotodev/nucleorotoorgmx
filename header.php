@@ -10,8 +10,11 @@
 
   <header id="header" class="columns h-10 fixed top left color-negro-bg shadow z1k1">
 
-    <div id="header-logo" class="columns small-3 imgLiquid imgLiquidNoFillLeft" >
-      <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-medium.jpg" alt="" />
+
+    <div id="header-logo" class="columns small-3 p-0-2">
+      <div id="header-logo" class="columns imgLiquid imgLiquidNoFillLeft" >
+        <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-medium.jpg" alt="" />
+      </div>
     </div>
 
     <!-- escritorio -->
