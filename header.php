@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nucleoroto v2.0</title>
+  <title><?php bloginfo( 'name' ); wp_title('|', 'echo', 'right') ?></title>
   <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
@@ -18,7 +18,8 @@
       <!-- escritorio -->
       <nav id="menu-escritorio" class="columns small-9 show-for-large">
 
-        <?php include_once "secciones/menu.php" ?>
+        <?php //include_once "secciones/menu.php" ?>
+        <?php get_template_part('secciones/menu.php'); ?>
 
       </nav>
       <!--  -->
@@ -44,6 +45,8 @@
 
       </div>
       <!--  -->
+
+<?php wp_head(); ?>
 
     </header>
     <div id="menu-movil" class="columns h-100-v fixed p-top p-bottom color-primary-0-bg z1k text-center color-white v-center hide-for-large">
