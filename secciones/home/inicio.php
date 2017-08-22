@@ -1,6 +1,8 @@
 <!-- Este archivo es la base para las secciones de el sitio -->
 <section class="columns p-0 h-100-v p-top p-bottom">
 
+<div class="heroscreen row align-middle">
+
 
   <div class="columns p-0 v-center">
 
@@ -34,5 +36,7 @@
 
   </div>
 
+</div>
+<!-- row -->
 
 </section>
