@@ -1,4 +1,4 @@
-<div class="heroscreen row align-middle">
+<div class="row align-middle">
 
 
   <div class="columns h-a">
@@ -13,7 +13,7 @@
       $content_mix = str_shuffle($content);
       ?>
 
-      <div class="columns p-0 h-a text-center font-<?php echo $fuente[$i]; ?> text-shadow">
+      <h1 class="columns p-0 h-a text-center font-<?php echo $fuente[$i]; ?> text-shadow">
 
         <?php if ($i > 4):
 
@@ -25,7 +25,7 @@
 
         endif; ?>
 
-      </div>
+      </h1>
 
 
     <?php endfor; ?>
