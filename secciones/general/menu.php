@@ -6,10 +6,11 @@ $items = array(
   'Releases',
   'Mixtapes',
   'Artístas',
+  'Booking',
   'Rotoblog',
   'Radio ',
   'Mercado ',
-  'Contacto'
+  'Contacto',
 );
 for ($i=0; $i < count($items); $i++):
   ?>

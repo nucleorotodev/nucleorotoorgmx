@@ -11,20 +11,20 @@
   <header id="header" class="columns h-10 fixed top left color-negro-bg shadow z1k1">
 
 
-    <div id="header-logo" class="columns small-3 p-0-2">
-      <div id="header-logo" class="columns imgLiquid imgLiquidNoFillLeft">
+    <div id="header-logo" class="columns p-0 small-3 medium-2 large-4 p-0-2">
+      <div id="header-logo" class="grid-x cell imgLiquid imgLiquidNoFillLeft">
         <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-medium.jpg" alt="" />
       </div>
     </div>
 
     <!-- menu escritorio -->
-    <nav id="menu-escritorio" class="columns p-0 small-9 show-for-large align-right">
+    <nav id="menu-escritorio" class="columns p-0 small-9 medium-10 large-8 show-for-large align-right">
       <?php get_template_part('secciones/general/menu'); ?>
     </nav>
     <!--  -->
 
     <!-- boton menu movil -->
-    <div id="header-movil" class="columns small-9 hide-for-large">
+    <div id="header-movil" class="columns p-0 small-9 hide-for-large">
 
       <div class="columns small-9"></div>
 
@@ -54,4 +54,4 @@
     <?php echo "este será el menu movil"; ?>
   </div>
 
-  <main id="main" class="grid-x cell h-a">
+  <main id="main" class="grid-container fluid h-a">
