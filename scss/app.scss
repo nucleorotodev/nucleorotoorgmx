@@ -65,13 +65,13 @@ div, section, nav, li {
   @extend .h-100;
 }
 hr {
-    border-color: -moz-use-text-color -moz-use-text-color #cacaca;
-    border-style: none none solid;
-    border-width: 0 0 1px;
-    clear: both;
-    height: 0;
-    margin: 0.5rem auto;
-    max-width: 75rem;
+  border-color: -moz-use-text-color -moz-use-text-color #cacaca;
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  clear: both;
+  height: 0;
+  margin: 0.5rem auto;
+  max-width: 75rem;
 }
 //
 // generales
@@ -98,23 +98,38 @@ hr {
   height: 10vh;
 }
 .slick-dots li button::before {
-    color: black;
-    content: "•";
-    font-family: "slick";
-    @extend .font-m;
-    @extend .font-xl;
-    @extend .color-primario-0;
-    @extend .color-primario-1-hover;
-    height: auto;
-    left: 0;
-    line-height: 20px;
-    opacity: 0.75;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: auto;
+  color: black;
+  content: "•";
+  font-family: "slick";
+  @extend .font-m;
+  @extend .font-xl;
+  @extend .color-primario-0;
+  @extend .color-primario-1-hover;
+  height: auto;
+  left: 0;
+  line-height: 20px;
+  opacity: 0.75;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: auto;
 }
-// fin slider
+.slick-list .draggable {
+  height: 100% !important;
+  &.slick-track {
+    height: 100% !important;
+  }
+}
+.inicio-blog-slider {
+  &.slick-dots {
+    height: auto;
+  }
+}
+// fin sliders
+
+.icono-radio {
+  font-size: 5em;
+}
 
 
 //posicion menu movil

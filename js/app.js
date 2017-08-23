@@ -13,6 +13,7 @@ function setup() {
   img_liquid()
   menu_movil()
   slider_heroscreen()
+  slider_blog()
   titulo_roto()
   //
   //
@@ -152,12 +153,28 @@ function slider_heroscreen() {
     autoplay: true,
     autoPlaySpeed: 1000,
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     fade: true,
     cssEase: 'linear'
-    // vertical: true,
-    // verticalSwiping: true,
+  })
+}
+function slider_blog() {
+
+  jQuery('.slider-blog').slick({
+    autoplay: true,
+    autoPlaySpeed: 1000,
+    dots: true,
+    arrows: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: false,
+    vertical: true,
+    verticalSwiping: true,
+    speed: 500,
+    // fade: true,
+    cssEase: 'linear'
   })
 }
 
@@ -174,7 +191,7 @@ function titulo_roto() {
       jQuery(this).toggleClass(desorden[i])
 
     })
-    jQuery(".titulo-inicio-label").each(function(i) {
+    jQuery(".titulo-inicio-label, .titulo-inicio-radio, .titulo-inicio-blog").each(function(i) {
 
       jQuery(this).toggleClass(desorden[i])
 
