@@ -1,24 +1,21 @@
-<div class="row align-middle">
-
-
-  <div class="columns h-a">
+<div class="grid-x cell">
 
     <?php
 
-    $content = 'Titulo glitch iterado doom';
-    $fuente = array('xs','s','m','l','xl','xxl');
-
-    for ($i=0; $i <= 5 ; $i++):
+    $content = get_the_title();
+    $fuente = array('xxxs','xxs','s','m','l','xxxl');
+    $length = count($fuente) - 1 ;
+    for ($i=0; $i <= $length ; $i++):
 
       $content_mix = str_shuffle($content);
       ?>
 
-      <h1 class="columns p-0 h-a text-center font-<?php echo $fuente[$i]; ?> text-shadow">
+      <h1 class="grid-x h-a text-right font-<?php echo $fuente[$i]; ?> text-shadow">
 
-        <?php if ($i > 4):
+        <?php if ($i > 4 ):
 
           echo $content;
-
+          // echo $i;
         else:
 
           echo $content_mix;
@@ -29,7 +26,5 @@
 
 
     <?php endfor; ?>
-
-  </div>
 
 </div>

@@ -50,7 +50,7 @@
   </header>
 
   <!-- menu que entra por la derecha -->
-  <div id="menu-movil" class="grid-x cell h-100-v fixed p-top p-bottom color-primario-0-bg z1k text-center color-white v-center hide-for-large">
+  <div id="menu-movil" class="grid-x columns h-100-v fixed p-top p-bottom color-primario-0-bg z1k text-center color-white v-center hide-for-large">
     <?php echo "este será el menu movil"; ?>
   </div>
 
