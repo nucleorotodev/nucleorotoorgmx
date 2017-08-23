@@ -4,6 +4,7 @@ jQuery(document).ready(function() {
 
   setup()
 
+
 })
 //fin ready
 // funciones
@@ -12,7 +13,31 @@ function setup() {
   img_liquid()
   menu_movil()
   slider_heroscreen()
+  //
+  setInterval(function() {
+    titulo_roto()
+  },250)
+  //
 
+}
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }
 
 function img_liquid() {
@@ -135,5 +160,18 @@ function slider_heroscreen() {
     cssEase: 'linear'
     // vertical: true,
     // verticalSwiping: true,
+  })
+}
+
+function titulo_roto() {
+
+  var classes = ['text-left','text-center','text-right', 'text-justify','text-left','text-center','text-right', 'text-justify']
+  var desorden;
+  jQuery("#iteracion-titulo li").each(function(i) {
+
+    desorden = shuffle(classes)
+
+    jQuery(this).toggleClass(desorden[i])
+
   })
 }

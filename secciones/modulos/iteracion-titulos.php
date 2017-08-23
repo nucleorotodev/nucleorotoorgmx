@@ -1,5 +1,7 @@
 <div class="grid-x cell">
 
+  <ul id="iteracion-titulo" class="">
+
     <?php
 
     $content = get_the_title();
@@ -9,22 +11,26 @@
 
       $content_mix = str_shuffle($content);
       ?>
+      <li class="cell h-a">
+        <h1 class="grid-x h-a font-<?php echo $fuente[$i]; ?> text-shadow">
 
-      <h1 class="grid-x h-a text-right font-<?php echo $fuente[$i]; ?> text-shadow">
+          <?php if ($i > 4 ):
 
-        <?php if ($i > 4 ):
+            echo $content;
+            // echo $i;
+          else:
 
-          echo $content;
-          // echo $i;
-        else:
+            echo $content_mix;
 
-          echo $content_mix;
+          endif; ?>
 
-        endif; ?>
+        </h1>
 
-      </h1>
-
+      </ li>
 
     <?php endfor; ?>
+
+  </ul>
+
 
 </div>
