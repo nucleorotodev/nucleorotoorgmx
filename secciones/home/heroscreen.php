@@ -1,6 +1,6 @@
-<section id="heroscreen" class="columns p-0 h-100-v p-top p-bottom">
-  
-  <div id="hero-slider" class="slider-portada columns p-0">
+<section id="heroscreen" class="grid-x cell h-100-v p-top">
+
+  <div id="hero-slider" class="slider-portada columns p-0 ovH">
 
     <?php
 
@@ -13,7 +13,7 @@
       while ($query->have_posts()): $query -> the_post();
       ?>
       <div class="columns p-0 rel text-shadow">
-
+        <!-- fondo slide -->
         <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 
           <?php
@@ -21,14 +21,14 @@
           ?>
 
         </div>
-        <div class="textos-slider columns z1 absUpL p-0 color-white v-center">
 
-          <h1 class="columns p-1 h-a text-center text-shadow color-blanco">
+        <div class="textos-slider row align-middle rel p-0">
+        <div class="textos-slider columns h-a p-0 color-white">
+
+          <h1 class="columns p-1 text-center text-shadow color-blanco">
 
             <?php
-
             echo get_the_title();
-
             ?>
 
           </h1>
@@ -45,11 +45,11 @@
         </div>
         <div class="columns small-8 medium-4 large-2 small-centered h-a">
 
-          <a href="<?php echo get_permalink();?>" class="color-azul-bg color-link-hover-bg color-claro-hover color-claro columns p-1-1 font-s font-sm-m font-lg-l text-center shadow">
+          <a href="<?php echo get_permalink();?>" class="color-primario-0-bg color-primario-1-hover-bg color-blanco-hover color-negro columns p-1-1 font-s font-sm-m font-lg-l text-center shadow">
 
             <?php
 
-            echo 'Conoce más';
+            echo 'Descarga  ';
 
             ?>
 
@@ -57,6 +57,7 @@
 
         </div>
 
+      </div>
       </div>
 
 

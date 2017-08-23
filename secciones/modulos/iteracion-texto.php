@@ -13,7 +13,7 @@
       $content_mix = str_shuffle($content);
       ?>
 
-      <h1 class="columns p-0 h-a text-center font-<?php echo $fuente[$i]; ?> text-shadow">
+      <div class="columns p-0 h-a text-center font-<?php echo $fuente[$i]; ?> text-shadow">
 
         <?php if ($i > 4):
 
@@ -25,7 +25,7 @@
 
         endif; ?>
 
-      </h1>
+      </div>
 
 
     <?php endfor; ?>

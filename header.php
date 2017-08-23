@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php bloginfo( 'name' ); wp_title('|', 'echo', 'right') ?></title>
+  <title><?php bloginfo( 'name' );?></title>
 </head>
 <body>
 
@@ -12,20 +12,18 @@
 
 
     <div id="header-logo" class="columns small-3 p-0-2">
-      <div id="header-logo" class="columns imgLiquid imgLiquidNoFillLeft" >
+      <div id="header-logo" class="columns imgLiquid imgLiquidNoFillLeft">
         <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-medium.jpg" alt="" />
       </div>
     </div>
 
-    <!-- escritorio -->
-    <nav id="menu-escritorio" class="columns small-9 show-for-large">
-
+    <!-- menu escritorio -->
+    <nav id="menu-escritorio" class="columns p-0 small-9 show-for-large align-right">
       <?php get_template_part('secciones/general/menu'); ?>
-
     </nav>
     <!--  -->
 
-    <!-- parte movil -->
+    <!-- boton menu movil -->
     <div id="header-movil" class="columns small-9 hide-for-large">
 
       <div class="columns small-9"></div>
@@ -50,15 +48,10 @@
     <?php wp_head(); ?>
 
   </header>
-  <div id="menu-movil" class="columns h-100-v fixed p-top p-bottom color-primary-0-bg z1k text-center color-white v-center hide-for-large">
 
-
+  <!-- menu que entra por la derecha -->
+  <div id="menu-movil" class="grid-x cell h-100-v fixed p-top p-bottom color-primario-0-bg z1k text-center color-white v-center hide-for-large">
     <?php echo "este será el menu movil"; ?>
-
   </div>
 
-
-
-
-
-  <main id="main" class="columns h-a">
+  <main id="main" class="grid-x cell h-a">

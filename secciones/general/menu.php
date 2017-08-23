@@ -1,16 +1,26 @@
-<ul id="menu-lista">
+<ul id="menu-lista" class="columns p-0 h-100">
 
 <?php
-for ($i=0; $i < 5; $i++):
+$items = array(
+  'Inicio ',
+  'Releases',
+  'Mixtapes',
+  'Artístas',
+  'Rotoblog',
+  'Radio ',
+  'Mercado ',
+  'Contacto'
+);
+for ($i=0; $i < count($items); $i++):
   ?>
 
-  <li class="w-a columns p-l-1 p-r-1 h-100 align-right">
+  <li class="w-a columns p-l-1 p-r-1 h-100 end">
 
     <a href="" class="row p-0 h-100 align-middle">
 
       <div class="columns h-a p-0 text-shadow">
 
-        <?php echo "Elemento " . $i; ?>
+        <?php echo $items[$i]; ?>
 
       </div>
 

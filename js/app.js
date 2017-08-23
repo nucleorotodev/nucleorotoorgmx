@@ -2,7 +2,7 @@ jQuery(document).foundation()
 //
 jQuery(document).ready(function() {
 
-setup()
+  setup()
 
 })
 //fin ready
@@ -125,12 +125,14 @@ function menu_movil() {
 // sliders
 function slider_heroscreen() {
 
-  $('.slider-portada').slick({
+  jQuery('.slider-portada').slick({
     autoplay: true,
-    autoPlaySpeed: 5000,
-    arrows: false,
-    fade, true,
+    autoPlaySpeed: 1000,
     dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
     // vertical: true,
     // verticalSwiping: true,
   })

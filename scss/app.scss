@@ -54,12 +54,13 @@
 @import "bower_components/font-awesome/scss/font-awesome";
 @import "submodulos/style_utils/scss/style_utils";
 @import "paleta_color";
+@import "responsivos";
 
 //reset general
 
-* {outline: 1px solid rgba(0,0,0,0.35)}
+* {outline: 1px solid rgba(150,150,150,1)}
 
-div, section, nav, ul, li {
+div, section, nav, li {
   display: block;
   @extend .h-100;
 }
@@ -83,6 +84,30 @@ div, section, nav, ul, li {
 .p-bottom {
   padding-bottom: 10vh;
 }
+// slider
+.slick-dots {
+  height: 10vh;
+}
+.slick-dots li button::before {
+    color: black;
+    content: "•";
+    font-family: "slick";
+    // font-size: 19px;
+    @extend .font-m;
+    @extend .font-xl;
+    @extend .color-primario-0;
+    @extend .color-primario-1-hover;
+    height: auto;
+    left: 0;
+    line-height: 20px;
+    opacity: 0.75;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: auto;
+}
+// fin slider
+
 
 //posicion menu movil
 .gira-icono-menu {
