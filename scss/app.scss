@@ -64,6 +64,15 @@ div, section, nav, li {
   display: block;
   @extend .h-100;
 }
+hr {
+    border-color: -moz-use-text-color -moz-use-text-color #cacaca;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    clear: both;
+    height: 0;
+    margin: 0.5rem auto;
+    max-width: 75rem;
+}
 //
 // generales
 .shadow {
@@ -92,7 +101,6 @@ div, section, nav, li {
     color: black;
     content: "•";
     font-family: "slick";
-    // font-size: 19px;
     @extend .font-m;
     @extend .font-xl;
     @extend .color-primario-0;

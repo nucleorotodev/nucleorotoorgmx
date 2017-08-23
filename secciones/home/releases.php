@@ -1,8 +1,8 @@
-<section id="inicio-releases" class="grid-x cell small-4 grid-padding-x h-25-v h-md-50-v">
+<div id="inicio-releases" class="grid-x cell columns p-0-2 small-12 medium-4 h-35-v h-md-50-v">
 
   <?php
   $args = array(
-    'page_id' => 40,
+    'page_id' => 38,
   );
   $query = new WP_Query($args);
 
@@ -10,7 +10,9 @@
     while ($query->have_posts()): $query -> the_post();
     ?>
 
-  <div class="row align-middle rel">
+    <div class="columns p-1 p-lg-2">
+
+  <a href="#" class="row align-middle rel card color-secundario-0-bg color-secundario-1-hover-bg color-blanco shadow-up">
 
   <div class="columns absUpL z-1 imgLiquid imgLiquidFill">
     <img src="http://fakeimg.pl/320x480/?text=Placeholder" alt="" />
@@ -18,9 +20,10 @@
   </div>
 
     <div class="columns h-a">
-      <h3 class="columns p-0-2"><?php echo get_the_title(); ?></h3>
-      <span class="columns p-0-2 text-justify"><?php get_the_content(); ?></span>
+      <h3 class="columns p-0-2 text-center"><?php echo get_the_title(); ?></h3>
+      <span class="columns p-0-2 text-justify font-s font-md-m"><?php echo get_the_content(); ?></span>
     </div>
+  </a>
   </div>
 
   <?php
@@ -29,4 +32,4 @@ endif;
 
 ?>
 
-</section>
+</div>

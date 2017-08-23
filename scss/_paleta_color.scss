@@ -10,8 +10,8 @@ $color-primario-1: #717785;
 $color-secundario-0: #95AB00;
 $color-secundario-1: #DFF069;
 
-$color-terciario-0: #870058;
-$color-terciario-1: #BF5399;
+$color-terciario-0: #BF5399;
+$color-terciario-1: #Aa3143;
 
 $color-complementario-0: #FFCA00;
 $color-complementario-1: #FFEEAC;
@@ -34,17 +34,17 @@ primario-1 $color-primario-1,
 secundario-0 $color-secundario-0,
 secundario-1 $color-secundario-1,
 
-tertiary-0 $color-terciario-0,
-tertiary-1 $color-terciario-1,
+terciario-0 $color-terciario-0,
+terciario-1 $color-terciario-1,
 
-complement-0 $color-complementario-0,
-complement-1 $color-complementario-1,
+complementario-0 $color-complementario-0,
+complementario-1 $color-complementario-1,
 
 neutral-0 $color-neutral-0,
 neutral-1 $color-neutral-1,
 
-accent-0 $color-acento-0,
-accent-1 $color-acento-1
+acento-0 $color-acento-0,
+acento-1 $color-acento-1
 
 );
 // Crea las clases

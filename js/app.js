@@ -13,10 +13,8 @@ function setup() {
   img_liquid()
   menu_movil()
   slider_heroscreen()
+  titulo_roto()
   //
-  setInterval(function() {
-    titulo_roto()
-  },250)
   //
 
 }
@@ -165,13 +163,22 @@ function slider_heroscreen() {
 
 function titulo_roto() {
 
-  var classes = ['text-left','text-center','text-right', 'text-justify','text-left','text-center','text-right', 'text-justify']
+  var classes = ['text-left','text-center','text-right','text-left','text-center','text-right', 'text-justify']
   var desorden;
-  jQuery("#iteracion-titulo li").each(function(i) {
+  setInterval(function() {
 
     desorden = shuffle(classes)
+    jQuery("#iteracion-titulo li").each(function(i) {
 
-    jQuery(this).toggleClass(desorden[i])
 
-  })
+      jQuery(this).toggleClass(desorden[i])
+
+    })
+    jQuery(".titulo-inicio-label").each(function(i) {
+
+      jQuery(this).toggleClass(desorden[i])
+
+    })
+
+  },250)
 }

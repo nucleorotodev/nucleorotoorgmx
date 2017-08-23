@@ -9,7 +9,7 @@ get_header();
 
 get_template_part('secciones/home/heroscreen');
 get_template_part('secciones/home/nosotros');
-get_template_part('secciones/home/secciones');
+get_template_part('secciones/home/label');
 
 
 
