@@ -12,7 +12,7 @@
 
     <div class="columns p-1 p-lg-2">
 
-  <a href="#" class="row align-middle rel card color-secundario-0-bg color-secundario-1-hover-bg color-blanco shadow-up">
+  <a href="#" class="row align-middle rel p-b-0-3 card color-secundario-0-bg color-secundario-1-hover-bg color-blanco shadow-up">
 
   <div class="columns absUpL z-1 imgLiquid imgLiquidFill">
     <img src="http://fakeimg.pl/320x480/?text=Placeholder" alt="" />

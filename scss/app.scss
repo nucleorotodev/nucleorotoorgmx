@@ -54,12 +54,14 @@
 @import "bower_components/font-awesome/scss/font-awesome";
 @import "submodulos/style_utils/scss/style_utils";
 @import "paleta_color";
-@import "responsivos";
 
 //reset general
 
 // *   {outline: 1px solid rgba(150,150,150,1)}
 
+body {
+  @extend .color-blanco-bg;
+}
 div, section, nav, li {
   display: block;
   @extend .h-100;
@@ -101,8 +103,8 @@ hr {
   color: black;
   content: "•";
   font-family: "slick";
+  @extend .font-s;
   @extend .font-m;
-  @extend .font-xl;
   @extend .color-primario-0;
   @extend .color-primario-1-hover;
   height: auto;
@@ -136,7 +138,10 @@ hr {
   word-break: break-all;
   line-height: 45px;
 }
-
+//font redes heroscren
+.heroscreen-redes div a i {
+  font-size: 1em;
+}
 //posicion menu movil
 .gira-icono-menu {
   transition: 0.4s;
@@ -146,3 +151,9 @@ hr {
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+
+
+
+// Responsivos al final
+@import "responsivos";
+//

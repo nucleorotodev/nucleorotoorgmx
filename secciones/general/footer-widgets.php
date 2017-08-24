@@ -1,4 +1,4 @@
-<div id="footer-widgets" class="grid-x cell columns h-a h-md-70-v">
+<div id="footer-widgets" class="grid-x cell columns h-a h-md-60-v color-blanco-bg">
 
   <?php
   $arr = array('footer widget 1', 'footer-widget 2', 'footer-widget-3');

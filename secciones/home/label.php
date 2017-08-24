@@ -40,8 +40,11 @@ if($query->have_posts()):
   ?>
 
 
-  <div class="columns text-justify font-s font-md-m">
-    <?php echo get_the_content(); ?>
+  <div class="columns">
+    <div class="columns text-justify font-s font-md-m">
+
+      <?php echo get_the_content(); ?>
+    </div>
   </div>
 
   <?php

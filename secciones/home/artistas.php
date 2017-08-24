@@ -11,7 +11,7 @@
     ?>
 
     <div class="columns p-1 p-lg-2">
-      <a href="" class="row align-middle rel card color-primario-0-bg color-primario-1-hover-bg color-blanco shadow-up">
+      <a href="" class="row align-middle rel p-b-0-3 card color-primario-0-bg color-primario-1-hover-bg color-blanco shadow-up">
 
         <div class="columns absUpL z-1 imgLiquid imgLiquidFill">
           <img src="http://fakeimg.pl/320x480/?text=Placeholder" alt="" />
@@ -20,7 +20,7 @@
 
         <div class="columns h-a">
           <h3 class="columns p-0-2 text-left"><?php echo get_the_title(); ?></h3>
-          <span class="columns p-0-2 text-justify font-s font-md-m"><?php echo get_the_content(); ?></span>
+          <span class="columns p-0-2 text-justify font-s font-md-m card-section"><?php echo get_the_content(); ?></span>
         </div>
       </a href="">
     </div>

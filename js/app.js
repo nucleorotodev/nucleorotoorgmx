@@ -3,7 +3,7 @@ jQuery(document).foundation()
 jQuery(document).ready(function() {
 
   setup()
-
+  resize_reset()
 
 })
 //fin ready
@@ -39,6 +39,14 @@ function shuffle(array) {
   return array;
 }
 
+function resize_reset() {
+
+  jQuery(window).on('resize', function() {
+    menu_movil()
+  })
+
+}
+
 function img_liquid() {
 
   jQuery(".imgLiquid.imgLiquidFill").imgLiquid()
@@ -62,14 +70,14 @@ function menu_movil() {
   // registra su posicion actual, fuera de la pantalla
   var anchomenumovil = menumovil.width() + 40
   var posicioninicial = menumovil.css({
-    'transition': '0.01s',
+    'transition': '2s',
     '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
     '-moz-transform': 'translateX(' + anchomenumovil +'px)',
     '-ms-transform': 'translateX(' + anchomenumovil +'px)',
     '-o-transform': 'translateX(' + anchomenumovil +'px)',
     'transform': 'translateX(' + anchomenumovil +'px)'
   })
-  var menuicono = jQuery('#boton-menu-movil i');
+  var menuicono = jQuery('#boton-menu-movil i')
 
   // reset del icono en caso de resize
   if (menuicono.hasClass('fa-close')) {
@@ -79,7 +87,7 @@ function menu_movil() {
   }
   //
   var salemenu = {
-    'transition': '0.5s',
+    'transition': '0.35s',
     '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
     '-moz-transform': 'translateX(' + anchomenumovil +'px)',
     '-ms-transform': 'translateX(' + anchomenumovil +'px)',
@@ -164,7 +172,7 @@ function slider_blog() {
 
   jQuery('.slider-blog').slick({
     autoplay: true,
-    autoPlaySpeed: 1000,
+    autoPlaySpeed: 2000,
     dots: true,
     arrows: false,
     slidesToShow: 3,
@@ -172,35 +180,9 @@ function slider_blog() {
     infinite: false,
     vertical: true,
     verticalSwiping: true,
-    speed: 300,
+    speed: 500,
     // fade: true,
-    cssEase: 'linear',
-//     responsive: [
-//       {
-//         breakpoint: 1220,
-//         settings: {
-//           slidesToShow: 3
-//         }
-//       },
-//       {
-//         breakpoint: 1024,
-//         settings: {
-//           slidesToShow: 3
-//         }
-//       },
-//   {
-//     breakpoint: 640,
-//     settings: {
-//       slidesToShow: 2
-//     }
-//   },
-//   {
-//     breakpoint: 480,
-//     settings: {
-//       slidesToShow: 2
-//     }
-//   }
-// ]
+    cssEase: 'linear'
   })
 }
 

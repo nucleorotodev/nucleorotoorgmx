@@ -1,76 +1,93 @@
 <section id="heroscreen" class="grid-x cell h-100-v p-top">
 
-  <div id="hero-slider" class="slider-portada columns p-0 ovH">
+  <div class="columns p-0 h-80">
+    <div id="hero-slider" class="slider-portada columns p-0 h-80 ovH fixed top left z-1k">
 
-    <?php
+      <?php
 
-    $args = array(
-      'cat' => 20,
-    );
-    $query = new WP_Query($args);
+      $args = array(
+        'cat' => 20,
+      );
+      $query = new WP_Query($args);
 
-    if($query->have_posts()):
-      while ($query->have_posts()): $query -> the_post();
-      ?>
-      <div class="columns p-0 rel text-shadow">
-        <!-- fondo slide -->
-        <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
+      if($query->have_posts()):
+        while ($query->have_posts()): $query -> the_post();
+        ?>
+        <div class="columns p-0 rel text-shadow">
+          <!-- fondo slide -->
+          <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 
-          <img src="http://fakeimg.pl/1920x600/?text=RotoSlider" alt="" />
-          <?php
-          //echo get_the_post_thumbnail();
-          ?>
-
-        </div>
-
-        <div class="textos-slider row align-middle rel p-0">
-          <div class="textos-slider columns h-a p-0 color-white">
-
-            <h1 class="columns p-1 text-center text-shadow color-blanco">
-
-              <?php
-              echo get_the_title();
-              ?>
-
-            </h1>
-            <div class="columns small-10 medium-8 large-6 p-1 m-b-0-3 rel bold h-a text-shadow text-justify small-centered font-s font-sm-m font-lg-l color-blanco">
-              <!-- <div class="columns p-0-3 cortina-negro absUpL z-1">
-
-            </div> -->
+            <img src="http://fakeimg.pl/1920x600/?text=RotoSlider" alt="" />
             <?php
-
-            // echo excerpt(19);
-
+            //echo get_the_post_thumbnail();
             ?>
 
           </div>
-          <div class="columns small-8 medium-4 large-2 small-centered h-a">
 
-            <a href="<?php echo get_permalink();?>" class="color-primario-0-bg color-primario-1-hover-bg color-blanco-hover color-negro columns p-1-1 font-s font-sm-m font-lg-l text-center shadow">
+          <div class="textos-slider row align-middle rel p-0">
+            <div class="textos-slider columns h-a p-0 color-white">
 
+              <h1 class="columns p-1 text-center text-shadow color-blanco">
+
+                <?php
+                echo get_the_title();
+                ?>
+
+              </h1>
+              <div class="columns small-10 medium-8 large-6 p-1 m-b-0-3 rel bold h-a text-shadow text-justify small-centered font-s font-sm-m font-lg-l color-blanco">
+                <!-- <div class="columns p-0-3 cortina-negro absUpL z-1">
+
+              </div> -->
               <?php
 
-              echo 'Descarga  ';
+              // echo excerpt(19);
 
               ?>
 
-            </a>
+            </div>
+            <div class="columns small-8 medium-4 large-2 small-centered h-a">
+
+              <a href="<?php echo get_permalink();?>" class="color-primario-0-bg color-primario-1-hover-bg color-blanco-hover color-negro columns p-1-1 font-s font-sm-m font-lg-l text-center shadow">
+
+                <?php
+
+                echo 'Descarga  ';
+
+                ?>
+
+              </a>
+
+            </div>
 
           </div>
-
         </div>
+
+
       </div>
 
+      <?php
+
+    endwhile;
+  endif;
+
+  ?>
+
+</div>
+</div>
+
+<div class="heroscreen-redes columns h-20 color-blanco-bg">
+
+  <div class="row small-10 medium-8 large-6 small-centered align-middle">
+
+    <div class="columns p-0 h-a">
+
+      <?php echo get_template_part('secciones/modulos/redes') ?>
 
     </div>
 
-    <?php
-
-  endwhile;
-endif;
-
-?>
+  </div>
 
 </div>
+
 
 </section>
