@@ -13,6 +13,7 @@ function setup() {
   img_liquid()
   menu_movil()
   slider_heroscreen()
+  slider_footer()
   slider_blog()
   titulo_roto()
   //
@@ -165,6 +166,19 @@ function slider_heroscreen() {
     infinite: true,
     speed: 500,
     fade: true,
+    cssEase: 'linear'
+  })
+}
+function slider_footer() {
+
+  jQuery('.slider-footer').slick({
+    autoplay: true,
+    autoPlaySpeed: 1000,
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 1000,
+    fade: false,
     cssEase: 'linear'
   })
 }

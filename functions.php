@@ -76,29 +76,30 @@ function excerpt($limit, $string = " ... mas") {
 }
 
 // wp-admin login
-function my_login_logo() { ?>
+function login_logo() { ?>
   <style type="text/css">
   #login h1 a, .login h1 a {
-    background-image: url(<?php echo get_template_directory_uri(); ?>/img/logo-grande-negro.png);
-    height:80px;
-    width:100px;
-    background-size: 100px 80px;
+    background-image: url(<?php echo get_template_directory_uri(); ?>/img/nr-logo-header-medium.jpg);
+    height:120px;
+    width:120px;
+    background-size: 120px 120px;
     background-repeat: no-repeat;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 0px;
   }
   </style>
   <?php
 }
-function my_login_logo_url() {
+function login_logo_url() {
   return home_url();
 }
 
-function my_login_logo_url_title() {
+function login_logo_url_title() {
   return 'Ilab Backend';
 }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
-add_filter( 'login_headerurl', 'my_login_logo_url' );
-add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+add_action( 'login_enqueue_scripts', 'login_logo' );
+add_filter( 'login_headerurl', 'login_logo_url' );
+add_filter( 'login_headertitle', 'login_logo_url_title' );
 //fin wp-admin login
 
 // Agrega tags despues del contenidos
