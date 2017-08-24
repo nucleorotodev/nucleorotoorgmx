@@ -85,15 +85,35 @@ function excerpt($limit, $string = " ... mas") {
 // wp-admin login
 function login_logo() { ?>
   <style type="text/css">
+  body {background-color: black !important;}
   #login h1 a, .login h1 a {
     background-image: url(<?php echo get_template_directory_uri(); ?>/img/nr-logo-header-medium.jpg);
     height:120px;
     width:120px;
+    color: #B2C652 !important;
     background-size: 120px 120px;
     background-repeat: no-repeat;
     padding-bottom: 5px;
     padding-top: 0px;
   }
+  #loginform {
+    background-color: black !important;
+    color: #B2C652 !important;
+}
+  #loginform p label {
+    font-weight: bold;
+    color: #B2C652 !important;
+}
+  #loginform p label input,
+  #wp-submit, #login p.message {
+    background-color: #B2C652 !important;
+    color:black;
+    border: none !important;
+}
+#wp-submit:hover {
+  background-color: black !important;
+  color:#B2C652;
+}
   </style>
   <?php
 }
