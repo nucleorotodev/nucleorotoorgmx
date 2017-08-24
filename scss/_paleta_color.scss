@@ -86,7 +86,7 @@ acento-1 $color-acento-1
   .cortina-#{nth($value, 1)} {
     & {
       background-color: nth($value, 2) !important;
-      opacity: 0.5;
+      opacity: 0.35;
 
     }
   }

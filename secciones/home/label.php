@@ -54,7 +54,7 @@ endif;
   <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2">
   </div>
 
-  <a href="#" class="columns small-10 medium-8 large-4 p-0-2 p-l-0-2 p-r-0-2 font-m font-md-lg text-center color-negro color-negro-bd color-blanco-hover color-negro-hover-bg">Bookea algún proyecto</a>
+  <a href="#" class="columns small-10 medium-6 large-4 p-0-2 p-l-0-2 p-r-0-2 font-m font-md-lg text-center color-negro color-negro-bd color-blanco-hover color-negro-hover-bg">Bookea algún proyecto</a>
 
   <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2">
   </div>

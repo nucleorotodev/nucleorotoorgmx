@@ -12,9 +12,13 @@
 
 
     <div id="header-logo" class="columns p-0 small-3 large-2 p-0-2">
+      <a href="<?php echo home_url(); ?>" class="columns p-0 h-100">
+
       <div id="header-logo" class="grid-x cell imgLiquid imgLiquidNoFillLeft">
-        <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-medium.jpg" alt="" />
+        <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-small.jpg" alt="" />
       </div>
+
+    </a>
     </div>
 
     <!-- menu escritorio -->
@@ -32,7 +36,7 @@
 
         <div class="row p-0 text-right align-middle">
 
-          <a id="boton-menu-movil" class="columns p-0 h-a" href="#">
+          <a id="boton-menu-movil" class="columns p-0 h-a" href="javascript:void(0)">
 
             <i class="fa fa-bars font-l"></i>
 

@@ -1,4 +1,4 @@
-<section id="inicio-blog" class="grid-x cell columns small-12 medium-6 h-100-v p-top rel color-secundario-0-bg color-blanco end">
+<section id="inicio-blog" class="grid-x cell columns small-12 medium-6 h-100-v rel color-secundario-0-bg end">
 
 
 
@@ -14,11 +14,11 @@
     ?>
 
 
-  <div class="row small-12 align-middle text-center">
+  <div class="row small-12 align-middle">
 
     <div class="columns p-0 h-a text-center">
       <a href="#" target="_blank">
-      <h1 class="titulo-inicio-radio text-center columns p-0"><?php echo get_the_title(); ?></h1>
+      <h1 class="titulo-inicio-radio p-b-2 text-center columns p-0"><?php echo get_the_title(); ?></h1>
 
       <!-- <i class="icono-radio small-3 fa fa-step-backward"></i> -->
       <i class="icono-radio small-4 fa fa-stop"></i>
@@ -26,7 +26,7 @@
       <!-- <i class="icono-radio small-3 fa fa-step-forward"></i> -->
 
 
-      <div class="columns h-a p-t-1 font-s font-md-m">
+      <div class="columns h-a p-t-2 font-s font-md-m">
           <?php echo excerpt(22," ... Ir a la radio >>"); ?>
       </div>
     </a>

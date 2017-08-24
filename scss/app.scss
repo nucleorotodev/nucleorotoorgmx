@@ -58,7 +58,7 @@
 
 //reset general
 
-* {outline: 1px solid rgba(150,150,150,1)}
+// *   {outline: 1px solid rgba(150,150,150,1)}
 
 div, section, nav, li {
   display: block;
@@ -88,7 +88,7 @@ hr {
 // tienen la misma altura que footer y header
 // para contenedor seccion esencialmente
 .p-top {
-  padding-top: 10vh;
+  padding-top: 9vh;
 }
 .p-bottom {
   padding-bottom: 10vh;
@@ -131,6 +131,11 @@ hr {
   font-size: 5em;
 }
 
+.font-huge {
+  font-size: 6em;
+  word-break: break-all;
+  line-height: 45px;
+}
 
 //posicion menu movil
 .gira-icono-menu {
