@@ -30,7 +30,7 @@ for ($i=0; $i < 4; $i++):
           <h1 class="columns p-1 text-center text-shadow color-blanco">
 
             <?php
-            echo get_the_title();
+            //echo get_the_title();
             ?>
 
           </h1>

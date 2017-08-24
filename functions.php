@@ -30,6 +30,13 @@ function registro_menu() {
   register_nav_menu('menu-footer',__( 'Menú footer' ));
 }
 add_action( 'init', 'registro_menu' );
+//
+// custom post types
+include_once "cpts/artistas-cpt.php";
+include_once "cpts/banners-cpt.php";
+include_once "cpts/releases-cpt.php";
+include_once "cpts/mixtapes-cpt.php";
+//
 
 // analytics
 add_action('wp_head', 'add_analytics');
@@ -38,7 +45,7 @@ function add_analytics() { ?>
 
 
   </script>
-<?php
+  <?php
 }
 //
 //paginas
@@ -121,4 +128,4 @@ add_filter( 'the_content', 'tags' );
 add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 //
 
- ?>
+?>

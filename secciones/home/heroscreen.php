@@ -1,7 +1,7 @@
 <section id="heroscreen" class="grid-x cell h-100-v p-top">
 
   <div class="columns p-0 h-80">
-    <div id="hero-slider" class="slider-portada columns p-0 h-80 ovH fixed top left z-1k">
+    <div id="hero-slider" class="slider-portada columns p-0">
 
       <?php
 
@@ -24,7 +24,7 @@
 
           </div>
 
-          <div class="textos-slider row align-middle rel p-0">
+          <div class="textos-slider row align-middle rel p-0 z-1k1 absUpL">
             <div class="textos-slider columns h-a p-0 color-white">
 
               <h1 class="columns p-1 text-center text-shadow color-blanco">
