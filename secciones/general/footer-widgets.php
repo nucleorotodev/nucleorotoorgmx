@@ -6,14 +6,14 @@
   for ($i=0; $i < 3; $i++):
     ?>
 
-    <div class="grid-x cell columns small-12 medium-4 h-60-v h-md-100 card">
-      <div class="row align-middle">
-        <div class="columns h-a font-xxl">
+    <div class="grid-x cell columns small-12 medium-4 p-0 h-60-v h-md-100 card">
+      <!-- <div class="row align-middle">
+        <div class="columns h-a font-xxl"> -->
 
           <?php get_template_part('secciones/general/footer-widgets-content/footer-' . $arr[$i]); ?>
 
-        </div>
-      </div>
+        <!-- </div>
+      </div> -->
     </div>
 
     <?php
