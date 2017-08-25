@@ -11,13 +11,14 @@ jQuery(document).ready(function() {
 function setup() {
 
   img_liquid()
+  classes_menu_movil()
   menu_movil()
   slider_heroscreen()
+  parallax_home()
   slider_footer()
   slider_blog()
   titulo_roto()
   //
-  parallax_home()
   //
 
 
@@ -243,4 +244,12 @@ function parallax_home() {
     bleed: 100,
     androidFix: true
   });
+}
+
+function classes_menu_movil() {
+
+jQuery('.menu-movil-ul li').each(function() {
+  jQuery(this).addClass('columns small-4 p-b-0-2')
+})
+
 }

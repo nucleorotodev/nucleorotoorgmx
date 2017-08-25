@@ -27,8 +27,7 @@ function dependencias() {
 
 function registro_menu() {
   register_nav_menu('menu-header',__( 'Menú header' ));
-  register_nav_menu('menu-sidebar',__( 'Menú sidebar' ));
-  register_nav_menu('menu-footer',__( 'Menú footer' ));
+  register_nav_menu('menu-movil',__( 'Menú movil' ));
 }
 add_action( 'init', 'registro_menu' );
 //
