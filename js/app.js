@@ -236,19 +236,19 @@ function titulo_roto() {
 
 function parallax_home() {
   jQuery('.fondo-label').parallax({
-    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
+    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
   });
   jQuery('.fondo-logo').parallax({
-    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
+    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
   });
   jQuery('.fondo-mercado').parallax({
-    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
+    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true

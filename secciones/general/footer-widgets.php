@@ -2,7 +2,7 @@
 
   <?php
   // $arr = array('footer widget 1', 'footer-widget 2', 'footer-widget-3');
-  $arr = array('texto', 'friendly-links', 'banner');
+  $arr = array('ultimos-releases', 'friendly-links', 'banner');
   for ($i=0; $i < 3; $i++):
     ?>
 

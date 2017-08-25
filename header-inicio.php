@@ -8,10 +8,10 @@
 </head>
 <body>
 
-  <header id="header" class="columns h-10 fixed top left color-negro-bg shadow z1k1">
+  <header id="header" class="columns p-0 h-10 fixed top left color-negro-bg shadow z1k1">
 
 
-    <div id="header-logo" class="columns p-0 small-6 large-2 p-0-2">
+    <div id="header-logo" class="columns small-6 large-2 p-0-2 color-verde-roto-bg">
       <a href="<?php echo home_url(); ?>" class="columns p-0 h-100">
 
         <div id="header-logo" class="grid-x cell imgLiquid imgLiquidNoFillLeft">
@@ -54,7 +54,7 @@
   </header>
 
   <!-- menu que entra por la derecha -->
-  <div id="menu-movil" class="grid-x columns h-100-v fixed p-top p-bottom color-negro-bg z1k text-center color-white v-center hide-for-large">
+  <div id="menu-movil" class="grid-x columns h-100-v fixed p-top color-negro-bg z1k text-center color-white v-center hide-for-large">
     <?php get_template_part('secciones/general/menu-movil') ?>
   </div>
 

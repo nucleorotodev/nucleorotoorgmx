@@ -1,4 +1,4 @@
-<div id="footer-banners" class="slider-footer columns p-0">
+<div id="footer-banners" class="slider-footer columns p-1">
 
   <?php
 

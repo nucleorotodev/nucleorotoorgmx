@@ -207,6 +207,14 @@ p, li, div, span, small, strong {
   transform: rotate(360deg);
 }
 
+.thumb-ultimos {
+  height: 33%;
+}
+.thumb-card:hover {
+  transition: 0.25s;
+  box-shadow: 2px 2px 2px (rgba(255,255,255,0.35));
+}
+
 
 
 // Responsivos al final
