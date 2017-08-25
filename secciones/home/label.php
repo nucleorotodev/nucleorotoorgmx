@@ -44,8 +44,7 @@ if($query->have_posts()):
 
 
   <div class="columns color-blanco">
-    <div class="columns text-justify font-s font-md-m">
-
+    <div class="columns text-justify font-s font-md-m font-lg-l">
       <?php echo get_the_content(); ?>
     </div>
   </div>

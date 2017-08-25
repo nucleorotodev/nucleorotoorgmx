@@ -73,6 +73,10 @@ function menu_movil() {
   var menumovil = jQuery("#menu-movil");
   // registra su posicion actual, fuera de la pantalla
   var anchomenumovil = menumovil.width() + 40
+  var menuicono = jQuery('#boton-menu-movil i')
+  // activa menu movil despues de 2 segundos
+  setTimeout(function() {
+    // jQuery('.menu-movil').removeClass('hidden')
   var posicioninicial = menumovil.css({
     'transition': '2s',
     '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
@@ -81,7 +85,11 @@ function menu_movil() {
     '-o-transform': 'translateX(' + anchomenumovil +'px)',
     'transform': 'translateX(' + anchomenumovil +'px)'
   })
-  var menuicono = jQuery('#boton-menu-movil i')
+},1000)
+// activa menu movil despues de 2 segundos
+setTimeout(function() {
+  jQuery('.menu-movil').removeClass('hidden')
+},3000)
 
   // reset del icono en caso de resize
   if (menuicono.hasClass('fa-close')) {

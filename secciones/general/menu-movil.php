@@ -2,7 +2,7 @@
   <?php
   wp_nav_menu( array(
     'theme_location' => 'menu-movil',
-    'container_class' => 'columns small-12 h-100',
+    'container_class' => 'columns small-12 h-100 menu-movil hidden',
     'menu_class' => 'menu-movil-ul columns h-a small-12 p-t-2') );
     ?>
 
@@ -12,9 +12,9 @@
 
     <div class="row align-middle">
 
-      <div class="columns text-center h-a font-huge">
+      <h1 class="columns text-center h-a font-huge">
         <?php echo "Nucleoroto" ?>
-      </div>
+      </h1>
 
     </div>
 
