@@ -78,18 +78,19 @@ function menu_movil() {
   setTimeout(function() {
     // jQuery('.menu-movil').removeClass('hidden')
   var posicioninicial = menumovil.css({
-    'transition': '2s',
+    'transition': '0.75s',
     '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
     '-moz-transform': 'translateX(' + anchomenumovil +'px)',
     '-ms-transform': 'translateX(' + anchomenumovil +'px)',
     '-o-transform': 'translateX(' + anchomenumovil +'px)',
     'transform': 'translateX(' + anchomenumovil +'px)'
   })
-},1000)
+},2500)
 // activa menu movil despues de 2 segundos
 setTimeout(function() {
   jQuery('.menu-movil').removeClass('hidden')
-},3000)
+  jQuery('#menu-logo').addClass('hidden')
+},3500)
 
   // reset del icono en caso de resize
   if (menuicono.hasClass('fa-close')) {
@@ -235,19 +236,19 @@ function titulo_roto() {
 
 function parallax_home() {
   jQuery('.fondo-label').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
+    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
   });
   jQuery('.fondo-logo').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
+    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
   });
   jQuery('.fondo-mercado').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
+    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true

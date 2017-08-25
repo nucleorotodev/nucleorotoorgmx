@@ -2,7 +2,7 @@
 
   <?php
 
-  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $paged = get_query_var('paged');
   $args = cpt('roto-banners', $paged);
   $q = new WP_Query( $args );
 

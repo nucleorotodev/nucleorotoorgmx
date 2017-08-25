@@ -1,6 +1,6 @@
 <section id="heroscreen" class="grid-x cell h-100-v p-top">
 
-  <div class="columns p-0 h-80">
+  <div class="columns p-0 h-85">
     <div id="hero-slider" class="slider-portada columns ovH p-0">
 
       <?php
@@ -75,7 +75,7 @@
 </div>
 </div>
 
-<div class="heroscreen-redes columns h-20 color-blanco-bg">
+<div class="heroscreen-redes columns h-15 color-verde-roto-bg">
 
   <div class="row small-10 medium-8 large-6 small-centered align-middle">
 

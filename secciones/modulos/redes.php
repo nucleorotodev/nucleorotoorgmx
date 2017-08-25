@@ -12,7 +12,7 @@ for ($i=0; $i < $iconos_size; $i++):
 
       <a class="columns p-0 text-center" href="#">
 
-        <i class="fa fa-<?php echo $iconos[$i];?> text-shadow"></i>
+        <i class="fa fa-<?php echo $iconos[$i];?>"></i>
 
       </a>
 

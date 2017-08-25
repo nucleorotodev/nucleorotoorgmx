@@ -1,7 +1,6 @@
 <section id="inicio-label" class="grid-x cell columns p-0 h-a p-top rel">
   <!-- Textura fondo -->
   <div class="fondo-label columns p-0 absUpL top left h-100-v z-1k">
-
   </div>
   <?php
 

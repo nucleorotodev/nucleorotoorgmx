@@ -61,32 +61,19 @@
 // *   {outline: 1px solid rgba(150,150,150,1)}
 
 body {
-  @extend .color-blanco-bg;
-}
-p, li, div, span, small, strong {
-  // @extend .font-contenidos-1;
-  // @extend .font-contenidos-2;
-  // @extend .font-contenidos-3;
-  // @extend .font-contenidos-4;
-  @extend .font-contenidos-5;
-  // @extend .font-contenidos-6;
-  //
-}
-//fuentes especiales, especificas para algo
-#menu-escritorio ul li a, #menu-movil ul li a {
-  @extend .font-especial-1;
-  // @extend .font-especial-2;
-  // @extend .font-especial-3;
-  // @extend .font-especial-4;
-  // @extend .font-especial-5;
-  //
-  @extend .font-m;
+  @extend .color-negro-bg;
 }
 //
 //
 div, section, nav, li {
   display: block;
   @extend .h-100;
+}
+a {
+  @extend .color-verde-roto;
+}
+a:hover {
+  @extend .color-blanco;
 }
 hr {
   border-color: -moz-use-text-color -moz-use-text-color #cacaca;
@@ -108,16 +95,25 @@ h1,h2,h3,h4,h5,h6 {
   // @extend .font-headings-8;
   //
 }
-//parallax
-div.fondo-label, div.fondo-mercado {
-  // position: relative;
-  // background-attachment: fixed;
-  // background-position: center;
-  // background-repeat: no-rt;
-  // background-size: cover;
-  // transform: scale(1.15);
-  // -webkit-transform: scale(1.15);
-
+p, li, div, span, small, strong {
+  // @extend .font-contenidos-1;
+  // @extend .font-contenidos-2;
+  // @extend .font-contenidos-3;
+  // @extend .font-contenidos-4;
+  @extend .font-contenidos-5;
+  // @extend .font-contenidos-6;
+  //
+}
+//fuentes especiales, especificas para algo
+#menu-escritorio ul li a, #menu-movil ul li a,
+.friendly-ul {
+  @extend .font-especial-1;
+  // @extend .font-especial-2;
+  // @extend .font-especial-3;
+  // @extend .font-especial-4;
+  // @extend .font-especial-5;
+  //
+  @extend .font-m;
 }
 //
 // generales
@@ -185,10 +181,21 @@ div.fondo-label, div.fondo-mercado {
 //font redes heroscren
 .heroscreen-redes div a i {
   font-size: 1em;
+  @extend .color-negro;
+}
+.heroscreen-redes div a i a {
+  @extend .color-negro;
+
+  &:hover {
+    @extend .color-terciario-0;
+  }
+}
+#social div a i {
+  font-size: 0.7em;
 }
 // mercado
 #mercado-inicio, #inicio-label {
-  background-color: rgba(255,255,255,0.01)
+  background-color: rgba(0,0,0,0.15)
 }
 //posicion menu movil
 .gira-icono-menu {

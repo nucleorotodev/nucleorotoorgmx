@@ -8,9 +8,9 @@
 
   <div class="row h-70 align-middle card">
 
-    <div class="columns h-a text-center font-huge ">
+    <h1 class="columns h-a text-center font-huge ">
         Proximamente.
-    </div>
+    </h1>
 
   </div>
 

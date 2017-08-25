@@ -1,4 +1,4 @@
-<section id="inicio-nosotros" class="grid-x cell columns grid-padding-x h-100-v h-md-50 p-bottom color-blanco-bg">
+<section id="inicio-nosotros" class="grid-x cell columns grid-padding-x h-100-v h-md-50 p-bottom color-verde-roto-bg">
 
   <div class="row align-middle">
 
