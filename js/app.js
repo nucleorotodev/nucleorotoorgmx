@@ -17,16 +17,9 @@ function setup() {
   slider_blog()
   titulo_roto()
   //
+  parallax_home()
   //
-  jQuery('.fondo-label').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
-  });
-  jQuery('.fondo-logo').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
-  });
-  jQuery('.fondo-mercado').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
-  });
+
 
 }
 
@@ -173,7 +166,7 @@ function slider_heroscreen() {
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 750,
     fade: true,
     cssEase: 'linear'
   })
@@ -229,4 +222,25 @@ function titulo_roto() {
     })
 
   },250)
+}
+
+function parallax_home() {
+  jQuery('.fondo-label').parallax({
+    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
+    speed: 0.5,
+    bleed: 100,
+    androidFix: true
+  });
+  jQuery('.fondo-logo').parallax({
+    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
+    speed: 0.5,
+    bleed: 100,
+    androidFix: true
+  });
+  jQuery('.fondo-mercado').parallax({
+    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
+    speed: 0.5,
+    bleed: 100,
+    androidFix: true
+  });
 }

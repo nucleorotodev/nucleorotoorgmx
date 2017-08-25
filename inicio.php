@@ -3,7 +3,7 @@
 Template Name: Inicio NR
 */
 
-get_header();
+get_header('inicio');
 
 
 
@@ -16,4 +16,4 @@ get_template_part('secciones/home/mercado');
 
 
 
-get_footer();
+get_footer('inicio');
