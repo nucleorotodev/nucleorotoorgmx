@@ -14,11 +14,11 @@
     <div id="header-logo" class="columns p-0 small-3 large-2 p-0-2">
       <a href="<?php echo home_url(); ?>" class="columns p-0 h-100">
 
-      <div id="header-logo" class="grid-x cell imgLiquid imgLiquidNoFillLeft">
-        <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-small.jpg" alt="" />
-      </div>
+        <div id="header-logo" class="grid-x cell imgLiquid imgLiquidNoFillLeft">
+          <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-small.jpg" alt="" />
+        </div>
 
-    </a>
+      </a>
     </div>
 
     <!-- menu escritorio -->
@@ -58,4 +58,8 @@
     <?php echo "este será el menu movil"; ?>
   </div>
 
-  <main id="main" class="grid-container fluid h-a">
+  <main id="main" class="grid-container fluid h-a rel">
+
+    <!-- Logo fondo -->
+    <div class="fondo-logo columns p-0 absUpL h-100-v z-1k">
+    </div>

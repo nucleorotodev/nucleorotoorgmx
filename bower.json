@@ -12,7 +12,8 @@
     "foundation-sites": "~6.3.0",
     "motion-ui": "~1.2.2",
     "imgLiquid": "^0.9.944",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "parallax.js": "^1.4.2"
   },
   "ignore": [
     "**/.*",

@@ -1,5 +1,8 @@
-<section id="inicio-label" class="grid-x cell columns h-a p-top p-bottom rel">
+<section id="inicio-label" class="grid-x cell columns p-0 h-a p-top rel">
+  <!-- Textura fondo -->
+  <div class="fondo-label columns p-0 absUpL top left h-100-v z-1k">
 
+  </div>
   <?php
 
   $args = array(
@@ -11,12 +14,12 @@
     while ($query->have_posts()): $query -> the_post();
     ?>
 
-    <div class="columns absUpL z-1 imgLiquid imgLiquidFill">
+    <!-- <div class="columns absUpL z-1 imgLiquid imgLiquidFill">
       <img src="http://fakeimg.pl/320x480/?text=Placeholder" alt="" />
       <?php //echo get_the_post_thumbnail(); ?>
-    </div>
+    </div> -->
 
-    <h1 class="titulo-inicio-label columns p-0"><?php echo get_the_title(); ?></h1>
+    <h1 class="titulo-inicio-label columns p-0 color-blanco"><?php echo get_the_title(); ?></h1>
 
     <?php
   endwhile;
@@ -40,7 +43,7 @@ if($query->have_posts()):
   ?>
 
 
-  <div class="columns">
+  <div class="columns color-blanco">
     <div class="columns text-justify font-s font-md-m">
 
       <?php echo get_the_content(); ?>
@@ -52,12 +55,14 @@ endwhile;
 endif;
 ?>
 
-<div id="boton-inicio-booking" class="columns p-top align-center">
+<div id="boton-inicio-booking" class="columns p-top m-b-2 align-center">
 
   <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2">
   </div>
 
-  <a href="#" class="columns small-10 medium-6 large-4 p-0-2 p-l-0-2 p-r-0-2 font-m font-md-lg text-center color-negro color-negro-bd color-blanco-hover color-negro-hover-bg">Bookea algún proyecto</a>
+  <a href="#" class="columns small-10 medium-6 large-4 p-0-2 p-l-0-2 p-r-0-2 font-m font-md-lg text-center color-blanco color-blanco-bd color-negro-hover color-blanco-hover-bg">
+    Bookea algún proyecto
+  </a>
 
   <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2">
   </div>

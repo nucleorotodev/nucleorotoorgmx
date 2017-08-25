@@ -18,6 +18,15 @@ function setup() {
   titulo_roto()
   //
   //
+  jQuery('.fondo-label').parallax({
+    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
+  });
+  jQuery('.fondo-logo').parallax({
+    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
+  });
+  jQuery('.fondo-mercado').parallax({
+    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
+  });
 
 }
 

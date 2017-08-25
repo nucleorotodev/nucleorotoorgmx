@@ -2,25 +2,24 @@
 
   <?php
 
-  // $args = array(
-  //   'cat' => 20,
-  // );
-  // $query = new WP_Query($args);
-  //
-  // if($query->have_posts()):
-  //   while ($query->have_posts()): $query -> the_post();
-  //
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $args = cpt('roto-banners', $paged);
+  $q = new WP_Query( $args );
 
-for ($i=0; $i < 4; $i++):
+  if($q->have_posts()):
+    while ($q->have_posts()): $q -> the_post();
+
+
+// for ($i=0; $i < 4; $i++):
 ?>
     <div class="columns p-0 rel text-shadow">
-      <!-- fondo slide -->
-      <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
+      <a href="<?php echo the_field('link_banner');?>" target="_blank">
 
-        <img src="http://fakeimg.pl/420x420/?text=Banners" alt="" />
-        <?php
-        //echo get_the_post_thumbnail();
-        ?>
+      <!-- fondo slide -->
+      <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidNoFill">
+
+        <img src="<?php echo the_field('banner');?>" alt="" />
+
 
       </div>
 
@@ -50,13 +49,14 @@ for ($i=0; $i < 4; $i++):
     </div>
 
 
+  </a>
   </div>
 
   <?php
 
-//endwhile;
-//endif;
-endfor;
+endwhile;
+endif;
+// endfor;
 ?>
 
 </div>

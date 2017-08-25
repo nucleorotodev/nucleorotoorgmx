@@ -1,7 +1,7 @@
 <section id="heroscreen" class="grid-x cell h-100-v p-top">
 
   <div class="columns p-0 h-80">
-    <div id="hero-slider" class="slider-portada columns p-0">
+    <div id="hero-slider" class="slider-portada columns ovH p-0">
 
       <?php
 
