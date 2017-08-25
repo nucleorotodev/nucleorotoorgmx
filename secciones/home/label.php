@@ -19,7 +19,7 @@
       <?php //echo get_the_post_thumbnail(); ?>
     </div> -->
 
-    <h1 class="titulo-inicio-label columns p-0 color-blanco"><?php echo get_the_title(); ?></h1>
+    <h1 class="titulo-inicio-label columns color-blanco"><?php echo get_the_title(); ?></h1>
 
     <?php
   endwhile;
@@ -60,7 +60,7 @@ endif;
   <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2">
   </div>
 
-  <a href="#" class="columns small-10 medium-6 large-4 p-0-2 p-l-0-2 p-r-0-2 font-m font-md-lg text-center color-blanco color-blanco-bd color-negro-hover color-blanco-hover-bg">
+  <a href="#" class="columns small-10 medium-6 large-4 p-0-2 p-l-0-2 p-r-0-2 font-m font-md-lg text-center color-blanco color-blanco-bd color-negro-bg color-negro-hover color-blanco-hover-bg">
     Bookea algún proyecto
   </a>
 
