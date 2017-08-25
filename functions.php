@@ -12,6 +12,7 @@ function dependencias() {
   wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/bower_components/slick-carousel/slick/slick-theme.css');
   wp_enqueue_style( 'app-styles', get_template_directory_uri() . '/css/app.css');
   wp_enqueue_style( 'wp-styles', get_template_directory_uri() . '/style.css');
+  wp_enqueue_style( 'cdn-fonts', 'https://fonts.googleapis.com/css?family=Allerta+Stencil|Audiowide|Bungee+Hairline|Gafata|Geostar|Heebo|Iceberg|Megrim|Montserrat+Alternates|Nova+Cut|Nova+Square|Orbitron|PT+Mono|Plaster|Quantico|Rock+Salt|Share+Tech+Mono|Source+Code+Pro|Space+Mono|Stalinist+One|VT323');
   //
   wp_enqueue_script( 'jquery', get_template_directory_uri() . '/bower_components/jquery/dist/jquery.js' );
   wp_enqueue_script( 'what-input', get_template_directory_uri() . '/bower_components/what-input/dist/what-input.js' );

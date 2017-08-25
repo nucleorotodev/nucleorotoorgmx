@@ -1,28 +1,26 @@
 
-// <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Audiowide|Bungee+Hairline|Gafata|Geostar|Heebo|Iceberg|Megrim|Montserrat+Alternates|Nova+Cut|Nova+Square|Orbitron|PT+Mono|Plaster|Quantico|Rock+Salt|Share+Tech+Mono|Source+Code+Pro|Space+Mono|Stalinist+One|VT323" rel="stylesheet">
+// <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Audiowide|Bungee+Hairline|Gafata|Heebo|Iceberg|Megrim|Montserrat+Alternates|Nova+Cut|Nova+Square|Orbitron|PT+Mono|Plaster|Quantico|Share+Tech+Mono|Source+Code+Pro|Space+Mono|Stalinist+One|VT323" rel="stylesheet">
 $headings-1: 'Orbitron', sans-serif;
 $headings-2: 'Audiowide', cursive;
-$headings-3: 'VT323', monospace;
-$headings-4: 'Allerta Stencil', sans-serif;
-$headings-5: 'Share Tech Mono', monospace;
-$headings-6: 'Plaster', cursive;
-$headings-7: 'Bungee Hairline', cursive;
+$headings-3: 'Montserrat Alternates', sans-serif;
+$headings-4: 'Stalinist One', cursive;
+$headings-5: 'Nova Cut', cursive;
+$headings-6: 'Megrim', cursive;
+$headings-7: 'Nova Square', cursive;
+$headings-8: 'Iceberg', cursive;
 //
 $contenidos-1: 'Source Code Pro', monospace;
-$contenidos-2: 'Rock Salt', cursive;
-$contenidos-3: 'Montserrat Alternates', sans-serif;
-$contenidos-4: 'Quantico', sans-serif;
-$contenidos-5: 'Geostar', cursive;
-$contenidos-6: 'Nova Cut', cursive;
-$contenidos-7: 'Iceberg', cursive;
+$contenidos-2: 'Share Tech Mono', monospace;
+$contenidos-3: 'PT Mono', monospace;
+$contenidos-4: 'Heebo', sans-serif;
+$contenidos-5: 'Gafata', sans-serif;
+$contenidos-6: 'Space Mono', monospace;
 //
-$especial-1: 'Heebo', sans-serif;
-$especial-2: 'PT Mono', monospace;
-$especial-3: 'Space Mono', monospace;
-$especial-4: 'Gafata', sans-serif;
-$especial-5: 'Megrim', cursive;
-$especial-6: 'Nova Square', cursive;
-$especial-7: 'Stalinist One', cursive;
+$especial-1: 'Quantico', sans-serif;
+$especial-2: 'VT323', monospace;
+$especial-3: 'Allerta Stencil', sans-serif;
+$especial-4: 'Bungee Hairline', cursive;
+$especial-5: 'Plaster', cursive;
 
 // array de colores
 $lista-fuentes: (
@@ -34,6 +32,7 @@ headings-4 $headings-4,
 headings-5 $headings-5,
 headings-6 $headings-6,
 headings-7 $headings-7,
+headings-8 $headings-8,
 //
 contenidos-1 $contenidos-1,
 contenidos-2 $contenidos-2,
@@ -41,16 +40,12 @@ contenidos-3 $contenidos-3,
 contenidos-4 $contenidos-4,
 contenidos-5 $contenidos-5,
 contenidos-6 $contenidos-6,
-contenidos-7 $contenidos-7,
 //
 especial-1 $especial-1,
 especial-2 $especial-2,
 especial-3 $especial-3,
 especial-4 $especial-4,
 especial-5 $especial-5,
-especial-6 $especial-6,
-especial-7 $especial-7,
-
 );
 // Crea las clases
 @each $value in $lista-fuentes {

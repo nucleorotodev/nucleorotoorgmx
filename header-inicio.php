@@ -11,7 +11,7 @@
   <header id="header" class="columns h-10 fixed top left color-negro-bg shadow z1k1">
 
 
-    <div id="header-logo" class="columns p-0 small-3 large-2 p-0-2">
+    <div id="header-logo" class="columns p-0 small-6 large-2 p-0-2">
       <a href="<?php echo home_url(); ?>" class="columns p-0 h-100">
 
         <div id="header-logo" class="grid-x cell imgLiquid imgLiquidNoFillLeft">
@@ -28,13 +28,13 @@
     <!--  -->
 
     <!-- boton menu movil -->
-    <div id="header-movil" class="columns p-0 small-9 hide-for-large">
+    <div id="header-movil" class="columns p-0 small-6 hide-for-large">
 
       <div class="columns small-9"></div>
 
       <div class="columns small-3 p-0">
 
-        <div class="row p-0 text-right align-middle">
+        <div class="row small-3 small-centered p-0 text-right align-middle">
 
           <a id="boton-menu-movil" class="columns p-0 h-a" href="javascript:void(0)">
 

@@ -12,8 +12,8 @@
 
     <div class="row align-middle">
 
-      <div class="columns text-center h-a">
-        <?php echo "aqui que?" ?>
+      <div class="columns text-center h-a font-huge">
+        <?php echo "Nucleoroto" ?>
       </div>
 
     </div>

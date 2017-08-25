@@ -62,10 +62,26 @@
 
 body {
   @extend .color-blanco-bg;
-
 }
-// parallax fondo simple
-
+p, li, div, span, small, strong {
+  // @extend .font-contenidos-1;
+  // @extend .font-contenidos-2;
+  // @extend .font-contenidos-3;
+  // @extend .font-contenidos-4;
+  @extend .font-contenidos-5;
+  // @extend .font-contenidos-6;
+  //
+}
+//fuentes especiales, especificas para algo
+#menu-escritorio ul li a, #menu-movil ul li a {
+  @extend .font-especial-1;
+  // @extend .font-especial-2;
+  // @extend .font-especial-3;
+  // @extend .font-especial-4;
+  // @extend .font-especial-5;
+  //
+}
+//
 //
 div, section, nav, li {
   display: block;
@@ -80,11 +96,22 @@ hr {
   margin: 0.5rem auto;
   max-width: 75rem;
 }
+h1,h2,h3,h4,h5,h6 {
+  // @extend .font-headings-1;
+  // @extend .font-headings-2;
+  // @extend .font-headings-3;
+  @extend .font-headings-4;
+  // @extend .font-headings-5;
+  // @extend .font-headings-6;
+  // @extend .font-headings-7;
+  // @extend .font-headings-8;
+  //
+}
 //parallax
 div.fondo-label, div.fondo-mercado {
   // position: relative;
-  background-attachment: fixed;
-  background-position: center;
+  // background-attachment: fixed;
+  // background-position: center;
   // background-repeat: no-rt;
   // background-size: cover;
   // transform: scale(1.15);
