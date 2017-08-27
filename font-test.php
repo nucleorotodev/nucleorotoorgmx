@@ -7,7 +7,7 @@ get_header();
 
 ?>
 
-<section class="grid-x cell h-a p-top">
+<section class="grid-x cell h-a p-top color-blanco">
 
   <div class="columns small-10 small-centered">
 

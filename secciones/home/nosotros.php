@@ -18,7 +18,7 @@
           <?php get_template_part('secciones/modulos/iteracion-titulos'); ?>
         </div>
         <hr>
-        <div class="grid-x p-1 p-t-0 h-a font-s font-md-m font-lg-l text-justify">
+        <div class="grid-x p-1 p-t-0 h-a font-s font-sm-m font-lg-l text-justify">
           <?php echo get_the_content(); ?>
         </div>
 

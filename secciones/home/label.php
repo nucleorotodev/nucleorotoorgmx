@@ -42,8 +42,8 @@ if($query->have_posts()):
   ?>
 
 
-  <div class="columns color-blanco">
-    <div class="columns text-justify font-s font-md-m font-lg-l">
+  <div class="columns p-2 color-blanco">
+    <div class="column text-justify font-s font-sm-m font-lg-l">
       <?php echo get_the_content(); ?>
     </div>
   </div>
@@ -53,7 +53,7 @@ endwhile;
 endif;
 ?>
 
-<div id="boton-inicio-booking" class="columns p-top m-b-2 align-center">
+<div id="boton-inicio-booking" class="columns p-t-0-2 m-b-2 align-center">
 
   <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2">
   </div>

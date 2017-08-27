@@ -86,7 +86,7 @@ function menu_movil() {
     'transform': 'translateX(' + anchomenumovil +'px)'
   })
 },2500)
-// activa menu movil despues de 2 segundos
+// activa menu movil despues de 3.5 segundos
 setTimeout(function() {
   jQuery('.menu-movil').removeClass('hidden')
   jQuery('#menu-logo').addClass('hidden')
@@ -205,7 +205,7 @@ function slider_blog() {
     slidesToScroll: 1,
     infinite: false,
     vertical: true,
-    verticalSwiping: true,
+    verticalSwiping: false,
     speed: 500,
     // fade: true,
     cssEase: 'linear'

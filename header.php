@@ -8,10 +8,10 @@
 </head>
 <body>
 
-  <header id="header" class="columns h-10 fixed top left color-negro-bg shadow z1k1">
+  <header id="header" class="columns p-0 h-10 fixed top left color-negro-bg shadow z1k1">
 
 
-    <div id="header-logo" class="columns p-0 small-6 large-2 p-0-2">
+    <div id="header-logo" class="columns small-6 large-2 p-0-2 color-verde-roto-bg">
       <a href="<?php echo home_url(); ?>" class="columns p-0 h-100">
 
         <div id="header-logo" class="grid-x cell imgLiquid imgLiquidNoFillLeft">
@@ -28,13 +28,13 @@
     <!--  -->
 
     <!-- boton menu movil -->
-    <div id="header-movil" class="columns p-0 small-6 hide-for-large">
+    <div id="header-movil" class="columns small-6 hide-for-large">
 
       <div class="columns small-9"></div>
 
       <div class="columns small-3 p-0">
 
-        <div class="row p-0 text-right align-middle">
+        <div class="row small-3 small-centered p-0 text-right align-middle">
 
           <a id="boton-menu-movil" class="columns p-0 h-a" href="javascript:void(0)">
 
@@ -54,12 +54,12 @@
   </header>
 
   <!-- menu que entra por la derecha -->
-  <div id="menu-movil" class="grid-x columns h-100-v fixed p-top p-bottom color-primario-0-bg z1k text-center color-white v-center hide-for-large">
-    <?php echo "este será el menu movil"; ?>
+  <div id="menu-movil" class="grid-x columns h-100-v fixed p-top color-negro-bg z1k text-center color-white v-center hide-for-large">
+    <?php get_template_part('secciones/general/menu-movil') ?>
   </div>
 
   <main id="main" class="grid-container fluid h-a rel">
 
     <!-- Logo fondo -->
-    <!-- <div class="fondo-logo columns p-0 absUpL h-100-v z-1k">
-    </div> -->
+    <div class="fondo-logo columns p-0 fixed top left h-100-v z-1k">
+    </div>
