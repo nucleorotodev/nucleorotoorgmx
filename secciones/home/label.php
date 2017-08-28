@@ -13,11 +13,6 @@
     while ($query->have_posts()): $query -> the_post();
     ?>
 
-    <!-- <div class="columns absUpL z-1 imgLiquid imgLiquidFill">
-      <img src="http://fakeimg.pl/320x480/?text=Placeholder" alt="" />
-      <?php //echo get_the_post_thumbnail(); ?>
-    </div> -->
-
     <h1 class="titulo-inicio-label columns color-blanco"><?php echo get_the_title(); ?></h1>
 
     <?php
@@ -42,7 +37,7 @@ if($query->have_posts()):
   ?>
 
 
-  <div class="columns p-2 color-blanco">
+  <div class="columns p-2 p-t-1 color-blanco">
     <div class="column text-justify font-s font-sm-m font-lg-l">
       <?php echo get_the_content(); ?>
     </div>

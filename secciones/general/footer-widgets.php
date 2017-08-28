@@ -1,19 +1,25 @@
 <div id="footer-widgets" class="grid-x cell columns h-a h-md-60-v color-negro-bg ovH">
 
   <?php
-  // $arr = array('footer widget 1', 'footer-widget 2', 'footer-widget-3');
-  $arr = array('ultimos-releases', 'friendly-links', 'banner');
-  for ($i=0; $i < 3; $i++):
+  // cambia el numero de widgets en el footer
+  if (is_front_page() && is_home()  ):
+
+    $arr = array('ultimos-releases', 'friendly-links', 'banner');
+    $col = 'large-4';
+  else:
+
+    $arr = array('friendly-links', 'banner');
+    $col = 'medium-6';
+
+  endif;
+
+  for ($i=0; $i < count($arr); $i++):
     ?>
 
-    <div class="grid-x cell columns small-12 large-4 p-0 h-60-v h-md-100 color-negro-bg">
-      <!-- <div class="row align-middle">
-        <div class="columns h-a font-xxl"> -->
+    <div class="grid-x cell columns small-12  <?php echo $col;?> p-0 h-60-v h-md-100 color-negro-bg">
 
-          <?php get_template_part('secciones/general/footer-widgets-content/footer-' . $arr[$i]); ?>
+      <?php get_template_part('secciones/general/footer-widgets-content/footer-' . $arr[$i]); ?>
 
-        <!-- </div>
-      </div> -->
     </div>
 
     <?php

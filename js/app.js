@@ -47,6 +47,7 @@ function resize_reset() {
 
   jQuery(window).on('resize', function() {
     menu_movil()
+    
   })
 
 }

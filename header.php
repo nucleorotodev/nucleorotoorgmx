@@ -34,9 +34,9 @@
 
       <div class="columns small-3 p-0">
 
-        <div class="row small-3 small-centered p-0 text-right align-middle">
+        <div class="row text-right align-middle">
 
-          <a id="boton-menu-movil" class="columns p-0 h-a" href="javascript:void(0)">
+          <a id="boton-menu-movil" class="columns h-a" href="javascript:void(0)">
 
             <i class="fa fa-bars font-l"></i>
 
@@ -61,5 +61,5 @@
   <main id="main" class="grid-container fluid h-a rel">
 
     <!-- Logo fondo -->
-    <div class="fondo-logo columns p-0 fixed top left h-100-v z-1k">
-    </div>
+    <!-- <div class="fondo-logo columns p-0 fixed top left h-100-v z-1k">
+    </div> -->
