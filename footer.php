@@ -1,7 +1,14 @@
-<?php echo get_template_part('secciones/general/footer-widgets') ?>
+
+
+<aside class="columns small-12 medium-3 large-2 h-100-v">
+<?php /dynamic_sidebar('RotoSidebar 1'); ?>
+<?php //get_template_part('sidebar'); ?>
+</aside>
+
 
 </main>
-<!--  -->
+<!-- fuera de main por el sidebar  -->
+<?php echo get_template_part('secciones/general/footer-widgets') ?>
 
 
 <footer id="footer" class="columns h-a p-t-1 p-b-1 color-blanco-bg shadow-up z1k1 color-negro-bg">

@@ -47,7 +47,7 @@ function resize_reset() {
 
   jQuery(window).on('resize', function() {
     menu_movil()
-    
+
   })
 
 }
@@ -208,6 +208,23 @@ function slider_blog() {
     vertical: true,
     verticalSwiping: false,
     speed: 500,
+    // fade: true,
+    cssEase: 'linear'
+  })
+}
+function slider_sidebar() {
+
+  jQuery('.slider-blog').slick({
+    autoplay: true,
+    autoPlaySpeed: 250,
+    dots: false,
+    arrows: false,
+    // slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    vertical: true,
+    verticalSwiping: false,
+    speed: 250,
     // fade: true,
     cssEase: 'linear'
   })

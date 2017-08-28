@@ -2,7 +2,7 @@
 
   <?php
   // cambia el numero de widgets en el footer
-  if (is_front_page() && is_home()  ):
+  if (is_front_page() || is_home()  ):
 
     $arr = array('ultimos-releases', 'friendly-links', 'banner');
     $col = 'large-4';

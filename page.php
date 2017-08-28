@@ -4,13 +4,13 @@ get_header();
 
 
 ?>
-<section class="x-grid cell color-blanco">
+<section class="columns small-12 medium-9 large-10 p-0 color-blanco">
 
 
 
   <?php
 
-  for ($i=0; $i < 200; $i++) {
+  for ($i=0; $i < 999; $i++) {
     ?>
     <div class="columns small-1 text-center end">
       <?php
