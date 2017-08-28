@@ -12,7 +12,7 @@ function dependencias() {
   wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/bower_components/slick-carousel/slick/slick-theme.css');
   wp_enqueue_style( 'app-styles', get_template_directory_uri() . '/css/app.css');
   wp_enqueue_style( 'wp-styles', get_template_directory_uri() . '/style.css');
-  // wp_enqueue_style( 'cdn-fonts', 'https://fonts.googleapis.com/css?family=Allerta+Stencil|Audiowide|Bungee+Hairline|Gafata|Heebo|Iceberg|Megrim|Montserrat+Alternates|Nova+Cut|Nova+Square|Orbitron|PT+Mono|Plaster|Quantico|Share+Tech+Mono|Source+Code+Pro|Space+Mono|Stalinist+One|VT323');
+  wp_enqueue_style( 'cdn-fonts', 'https://fonts.googleapis.com/css?family=Allerta+Stencil|Audiowide|Bungee+Hairline|Gafata|Heebo|Iceberg|Megrim|Montserrat+Alternates|Nova+Cut|Nova+Square|Orbitron|PT+Mono|Plaster|Quantico|Share+Tech+Mono|Source+Code+Pro|Space+Mono|Stalinist+One|VT323');
   //
   wp_enqueue_script( 'jquery', get_template_directory_uri() . '/bower_components/jquery/dist/jquery.js' );
   wp_enqueue_script( 'what-input', get_template_directory_uri() . '/bower_components/what-input/dist/what-input.js' );
@@ -39,10 +39,11 @@ include_once "cpts/releases-cpt.php";
 include_once "cpts/mixtapes-cpt.php";
 //
 // registro de 3 sidebars
-function sidebars() {
-  register_sidebars( 3, array( 'name' => 'RotoSidebar %d' ) );
-}
-add_action('get_sidebar','sidebars');
+// add_action('get_sidebar','rotosidebars');
+// function rotosidebars() {
+//   register_sidebars( 3, array( 'name' => 'RotoSidebar %d' ) );
+// }
+//
 // analytics
 add_action('wp_head', 'add_analytics');
 function add_analytics() { ?>
@@ -152,5 +153,22 @@ add_filter( 'the_content', 'tags' );
 // fix contact form 7 date field
 add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 //
+// backend topbar logo
+function backend_custom_logo() {
+echo '
+<style type="text/css">
+#wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
+background-image: url(' . get_template_directory_uri() . '/img/nr-logo-header-small.jpg) !important;
+background-position: center center;
+background-size: 20px 20px;
+color:rgba(0, 0, 0, 0);
+}
+#wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {
+background-position: 0 0;
+}
+</style>
+';
+}
 
-?>
+//hook into the administrative header output
+add_action('wp_before_admin_bar_render', 'backend_custom_logo');

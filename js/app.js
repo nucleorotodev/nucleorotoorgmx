@@ -1,7 +1,8 @@
-jQuery(document).foundation()
 //
 jQuery(document).ready(function() {
 
+  jQuery(document).foundation()
+  // 
   setup()
   resize_reset()
 
@@ -17,6 +18,7 @@ function setup() {
   parallax_home()
   slider_footer()
   slider_blog()
+  slider_sidebar()
   titulo_roto()
   //
   //
@@ -78,20 +80,20 @@ function menu_movil() {
   // activa menu movil despues de 2 segundos
   setTimeout(function() {
     // jQuery('.menu-movil').removeClass('hidden')
-  var posicioninicial = menumovil.css({
-    'transition': '0.75s',
-    '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
-    '-moz-transform': 'translateX(' + anchomenumovil +'px)',
-    '-ms-transform': 'translateX(' + anchomenumovil +'px)',
-    '-o-transform': 'translateX(' + anchomenumovil +'px)',
-    'transform': 'translateX(' + anchomenumovil +'px)'
-  })
-},2500)
-// activa menu movil despues de 3.5 segundos
-setTimeout(function() {
-  jQuery('.menu-movil').removeClass('hidden')
-  jQuery('#menu-logo').addClass('hidden')
-},3500)
+    var posicioninicial = menumovil.css({
+      'transition': '0.75s',
+      '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
+      '-moz-transform': 'translateX(' + anchomenumovil +'px)',
+      '-ms-transform': 'translateX(' + anchomenumovil +'px)',
+      '-o-transform': 'translateX(' + anchomenumovil +'px)',
+      'transform': 'translateX(' + anchomenumovil +'px)'
+    })
+  },2500)
+  // activa menu movil despues de 3.5 segundos
+  setTimeout(function() {
+    jQuery('.menu-movil').removeClass('hidden')
+    jQuery('#menu-logo').addClass('hidden')
+  },3500)
 
   // reset del icono en caso de resize
   if (menuicono.hasClass('fa-close')) {
@@ -214,17 +216,17 @@ function slider_blog() {
 }
 function slider_sidebar() {
 
-  jQuery('.slider-blog').slick({
+  jQuery('.slider-sidebar').slick({
     autoplay: true,
-    autoPlaySpeed: 250,
-    dots: false,
+    autoPlaySpeed: 2000,
+    dots: true,
     arrows: false,
-    // slidesToShow: 3,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    infinite: true,
+    infinite: false,
     vertical: true,
     verticalSwiping: false,
-    speed: 250,
+    speed: 500,
     // fade: true,
     cssEase: 'linear'
   })
@@ -275,8 +277,8 @@ function parallax_home() {
 
 function classes_menu_movil() {
 
-jQuery('.menu-movil-ul li').each(function() {
-  jQuery(this).addClass('columns small-4 p-b-0-2')
-})
+  jQuery('.menu-movil-ul li').each(function() {
+    jQuery(this).addClass('columns small-4 p-b-0-2')
+  })
 
 }

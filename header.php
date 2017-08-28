@@ -12,7 +12,7 @@
 
 
     <div id="header-logo" class="columns small-6 large-2 p-0-2 color-verde-roto-bg">
-      <a href="<?php echo home_url(); ?>" class="columns p-0 h-100">
+      <a href="<?php echo home_url(); ?>" class="columns h-100">
 
         <div id="header-logo" class="grid-x cell imgLiquid imgLiquidNoFillLeft">
           <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-small.jpg" alt="" />
