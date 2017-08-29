@@ -1,6 +1,6 @@
 <section class="row align-middle color-blanco font-m font-md-s font-lg-l">
 
-  <div class="columns h-a p-t-0-2 small-11 medium-6 large-10 small-centered">
+  <div class="columns h-a p-t-0-2 small-11 medium-10 small-centered">
 
     <div class="columns h-a small-6">
       <h5 class="columns h-a text-left p-0">Friendly</h5>

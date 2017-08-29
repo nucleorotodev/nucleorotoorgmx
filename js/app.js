@@ -218,17 +218,17 @@ function slider_sidebar() {
 
   jQuery('.slider-sidebar').slick({
     autoplay: true,
-    autoPlaySpeed: 500,
+    autoPlaySpeed: 250,
     dots: false,
     arrows: false,
-    slidesToShow:4,
+    slidesToShow:8,
     slidesToScroll: 1,
     infinite: true,
     vertical: true,
     verticalSwiping: false,
-    speed: 250,
+    speed: 500,
     // fade: true,
-    cssEase: 'linear'
+    cssEase: 'swing'
   })
 }
 

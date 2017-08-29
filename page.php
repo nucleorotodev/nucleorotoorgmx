@@ -4,7 +4,7 @@ get_header();
 
 
 ?>
-<section class="columns small-12 medium-9 p-0 color-blanco">
+<section class="columns small-12 large-9 p-0 color-blanco">
 
 
 
