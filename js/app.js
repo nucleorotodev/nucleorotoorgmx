@@ -2,7 +2,7 @@
 jQuery(document).ready(function() {
 
   jQuery(document).foundation()
-  // 
+  //
   setup()
   resize_reset()
 
@@ -218,15 +218,15 @@ function slider_sidebar() {
 
   jQuery('.slider-sidebar').slick({
     autoplay: true,
-    autoPlaySpeed: 2000,
-    dots: true,
+    autoPlaySpeed: 500,
+    dots: false,
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow:4,
     slidesToScroll: 1,
-    infinite: false,
+    infinite: true,
     vertical: true,
     verticalSwiping: false,
-    speed: 500,
+    speed: 250,
     // fade: true,
     cssEase: 'linear'
   })

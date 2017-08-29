@@ -168,7 +168,10 @@ p, li, div, span, small, strong {
   }
 }
 // fin sliders
-
+.titulo-sidebar {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
 .icono-radio {
   font-size: 5em;
 }
