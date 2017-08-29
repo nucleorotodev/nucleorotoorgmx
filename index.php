@@ -1,14 +1,11 @@
 <?php
 
 get_header();
-// include_once 'header.php';
 
-
-
-get_template_part('secciones/home/heroscreen');
-// include_once "secciones/home/inicio.php";
+// Pagina de blog por defecto
+get_template_part('secciones/blog/contenido');
+get_template_part('secciones/blog/sidebar');
 
 
 
 get_footer();
-// include_once 'footer.php';

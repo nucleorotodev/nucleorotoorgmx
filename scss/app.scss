@@ -231,10 +231,13 @@ form {
     @extend .color-blanco;
   }
 
-  input, textarea {
+  input, textarea, select, option {
     @extend .color-verde-roto-bg;
     @extend .color-negro;
     border: 0 !important;
+  }
+  option {
+    @extend .bold;
   }
   input.wpcf7-submit {
     @extend .columns;
