@@ -218,7 +218,43 @@ p, li, div, span, small, strong {
   transition: 0.25s;
   box-shadow: 2px 2px 2px (rgba(255,255,255,0.35));
 }
+.pointer {
+  cursor: pointer;
+}
+//
+// formularios
+form {
 
+  label {
+    @extend .font-headings-2;
+    @extend .font-s;
+    @extend .color-blanco;
+  }
+
+  input, textarea {
+    @extend .color-verde-roto-bg;
+    @extend .color-negro;
+    border: 0 !important;
+  }
+  input.wpcf7-submit {
+    @extend .columns;
+    @extend .color-verde-roto-bg;
+    @extend .color-secundario-0-hover-bg;
+    @extend .color-negro;
+    @extend .color-blanco-hover;
+    @extend .pointer;
+    @extend .p-1;
+  }
+  div.wpcf7-validation-errors {
+    border: 0px !important;
+    @extend .font-especial-1;
+    @extend .font-m;
+    color: red;
+}
+}
+
+
+// fin formularios
 
 
 // Responsivos al final

@@ -4,23 +4,25 @@ get_header();
 
 
 ?>
-<section class="columns small-12 large-9 p-0 color-blanco">
-
-
+<section class="columns small-12 large-9 p-0 color-blanco p-top">
 
   <?php
-
-  for ($i=0; $i < 999; $i++) {
+  if (have_posts()):
+    while (have_posts()): the_post();
     ?>
-    <div class="columns small-1 text-center end">
-      <?php
-      echo 'page ' . $i;
-      ?>
 
+    <h1 class="columns text-center p-0-3 color-blanco"><?php echo get_the_title(); ?></h1>
+
+
+    <div class="columns p-1 text-justify">
+      <?php echo get_the_content(); ?>
     </div>
+
     <?php
-  }
-  ?>
+  endwhile;
+endif;
+?>
+
 
 
 </section>

@@ -2,7 +2,7 @@
 <div class="slider-sidebar columns p-0">
   <?php
   // cambiar query por releases CPT cuando este terminado
-  $args =  array( 'post_type' => 'post', 'showposts' => 8 );
+  $args =  array( 'post_type' => 'post', 'showposts' => 9 );
   $q =  new WP_Query($args);
 
   if($q->have_posts()):

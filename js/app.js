@@ -218,10 +218,10 @@ function slider_sidebar() {
 
   jQuery('.slider-sidebar').slick({
     autoplay: true,
-    autoPlaySpeed: 250,
+    autoPlaySpeed: 500,
     dots: false,
     arrows: false,
-    slidesToShow:8,
+    slidesToShow:7,
     slidesToScroll: 1,
     infinite: true,
     vertical: true,
@@ -256,19 +256,19 @@ function titulo_roto() {
 
 function parallax_home() {
   jQuery('.fondo-label').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
+    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
   });
   jQuery('.fondo-logo').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
+    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
   });
   jQuery('.fondo-mercado').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
+    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
