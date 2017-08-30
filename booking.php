@@ -16,13 +16,13 @@ get_header();
       <?php echo get_the_title(); ?>
     </h1>
     <!--  -->
-    <div class="columns small-10 medium-9 large-10 xlarge-9 small-centered h-a">
+    <div class="columns small-10 medium-9 large-10 xlarge-9 p-0 small-centered h-a">
 
       <div class="columns p-1 font-s font-sm-m text-justify">
         <?php echo get_the_content(); ?>
       </div>
       <!--  -->
-      <div class="columns p-1 p-md-2 font-s font-sm-m text-justify color-blanco">
+      <div class="columns p-0-2 p-md-1 font-s font-sm-m text-justify color-blanco">
         <?php echo do_shortcode('[contact-form-7 id="20" title="RotoBooking"]'); ?>
       </div>
 

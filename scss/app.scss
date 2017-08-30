@@ -130,7 +130,7 @@ p, li, div, span, small, strong {
 // tienen la misma altura que footer y header
 // para contenedor seccion esencialmente
 .p-top {
-  padding-top: 9vh;
+  padding-top: 10vh;
 }
 .p-bottom {
   padding-bottom: 10vh;
@@ -253,7 +253,7 @@ form {
     @extend .font-especial-1;
     @extend .font-m;
     color: red;
-}
+  }
 }
 
 

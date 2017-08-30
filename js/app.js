@@ -6,8 +6,8 @@ jQuery(document).ready(function() {
   setup()
   resize_reset()
 
-// date picker reset
-jQuery('#ui-datepicker-div').addClass('h-a')
+  // date picker reset
+  jQuery('#ui-datepicker-div').addClass('h-a')
 
 })
 //fin ready
@@ -23,6 +23,7 @@ function setup() {
   slider_blog()
   slider_sidebar()
   titulo_roto()
+  blog_random_colors()
   //
   //
 
@@ -259,19 +260,19 @@ function titulo_roto() {
 
 function parallax_home() {
   jQuery('.fondo-label').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
+    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
   });
   jQuery('.fondo-logo').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
+    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
   });
   jQuery('.fondo-mercado').parallax({
-    imageSrc: '/nr.wp/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
+    imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
     speed: 0.75,
     bleed: 100,
     androidFix: true
@@ -282,6 +283,38 @@ function classes_menu_movil() {
 
   jQuery('.menu-movil-ul li').each(function() {
     jQuery(this).addClass('columns small-4 p-b-0-2')
+  })
+
+}
+
+function blog_random_colors() {
+
+  var colores = [
+    'color-negro-bg',
+    'color-negro-bg',
+    'color-negro-bg',
+    'color-verde-roto-bg',
+    'color-blanco-bg'
+  ]
+  var fondo = [
+    'color-primario-1-bg',
+    'color-secundario-0-bg',
+    'color-secundario-1-bg',
+    'color-terciario-1-bg',
+    'color-terciario-0-bg',
+  ]
+  var mixed,mixedfondo
+
+  setInterval(function() {
+    mixed = shuffle(colores)
+    jQuery(".card").each(function(i) {
+      jQuery(this).toggleClass(mixed[i])
+    })
+  },150)
+  jQuery(".card-divider").each(function(i) {
+    mixedfondo = shuffle(colores)
+    jQuery(this).addClass(mixedfondo[i])
+
   })
 
 }
