@@ -23,7 +23,10 @@ function setup() {
   slider_blog()
   slider_sidebar()
   titulo_roto()
+  //blog
   blog_random_colors()
+  masonry_blog()
+  blog_cats()
   //
   //
 
@@ -294,27 +297,56 @@ function blog_random_colors() {
     'color-negro-bg',
     'color-negro-bg',
     'color-verde-roto-bg',
-    'color-blanco-bg'
+    'color-secundario-0-bg',
+    'color-negro-bg',
+    'color-negro-bg',
+    'color-negro-bg',
+    'color-verde-roto-bg',
+    'color-secundario-0-bg',
+    'color-verde-roto-bg',
+    'color-secundario-0-bg'
   ]
   var fondo = [
     'color-primario-1-bg',
     'color-secundario-0-bg',
     'color-secundario-1-bg',
-    'color-terciario-1-bg',
+    'color-complementario-1-bg',
+    'color-complementario-0-bg',
+    'color-primario-1-bg',
+    'color-secundario-0-bg',
+    'color-secundario-1-bg',
+    'color-complementario-1-bg',
     'color-terciario-0-bg',
+    'color-complementario-1-bg',
+    'color-complementario-0-bg'
   ]
   var mixed,mixedfondo
+  mixed = shuffle(colores)
+  mixedfondo = shuffle(fondo)
 
   setInterval(function() {
-    mixed = shuffle(colores)
     jQuery(".card").each(function(i) {
       jQuery(this).toggleClass(mixed[i])
     })
   },150)
-  jQuery(".card-divider").each(function(i) {
-    mixedfondo = shuffle(colores)
+
+  jQuery(".card .card-divider").each(function(i) {
     jQuery(this).addClass(mixedfondo[i])
 
   })
 
+}
+function masonry_blog() {
+  jQuery('.blog-cards').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.blog-card',
+  // use element for option
+  columnWidth: '.blog-sizer',
+  percentPosition: true
+})
+}
+
+function blog_cats() {
+  jQuery('.cat-item').addClass('columns small-4 medium-3 large-2 p-0-2 end')
+  jQuery('.cat-item a').addClass('columns text-center p-0-1 color-verde-roto-bg color-negro')
 }

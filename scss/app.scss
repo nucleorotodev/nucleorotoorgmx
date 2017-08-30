@@ -221,6 +221,15 @@ p, li, div, span, small, strong {
 .pointer {
   cursor: pointer;
 }
+// color de tachitas manual
+.cat-item a {
+  border-radius: 50px;
+  background: linear-gradient(to right, #B2C750 0%,#B2C750 50%,#BF5399 50%,#BF5399 50%,#BF5399 100%); /* W3C */
+}
+.cat-item a:hover {
+  border-radius: 50px;
+  background: linear-gradient(to left, #B2C750 0%,#B2C750 50%,#BF5399 50%,#BF5399 50%,#BF5399 100%); /* W3C */
+}
 //
 // formularios
 form {
