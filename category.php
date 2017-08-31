@@ -2,16 +2,6 @@
 
 get_header();
 
+get_template_part('secciones/blog/contenido-category');
 
-for ($i=0; $i < ; $i++) {
-echo 'category';}
- ?>
-
-
-
-
-
-
-<?php
 get_footer();
- ?>

@@ -2,16 +2,6 @@
 
 get_header();
 
+get_template_part('secciones/blog/contenido-archive');
 
-for ($i=0; $i < ; $i++) {
-echo 'archive';}
- ?>
-
-
-
-
-
-
-<?php
 get_footer();
- ?>

@@ -1,8 +1,7 @@
 <section id="blog-cards" class="columns small-12 large-9 h-a p-1 p-top color-blanco">
 
   <h1 class="titulo-inicio-blog columns p-t-1">
-    <?php //echo get_the_archive_title(). " RotoBlog" ?>
-    <?php echo "RotoBlog" ?>
+    <?php echo single_cat_title(); ?>
   </h1>
 
   <div class="columns text-center h-a font-s font-sm-m">

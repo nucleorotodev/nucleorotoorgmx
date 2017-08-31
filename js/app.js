@@ -338,8 +338,8 @@ function blog_random_colors() {
 
     // jQuery(this).on('mouseover', function() {
 
-        // jQuery(this).toggleClass(mixed[i])
-        jQuery(this).toggleClass('color-negro-bg')
+        jQuery(this).toggleClass(mixed[i])
+        // jQuery(this).toggleClass('color-negro-bg')
 
     // })
 
