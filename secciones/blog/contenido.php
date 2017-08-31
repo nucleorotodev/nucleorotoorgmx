@@ -27,7 +27,7 @@
   <?php
   $ext = range(6,60,7);
   $palabras = shuffle($ext);
-  $cols = array(3,6,3,6,3,6,3,6,3,6,3,6,3,6,3,6,3,6);//mas largo que el numero de entradas a mostrar
+  $cols = array(3,6,3,6,3,6,3,6,3,6,3,6,3,6,6,3,3,3,3);//mas largo que el numero de entradas a mostrar
   $i = 0;
   if (have_posts()):
     while (have_posts()): the_post();
@@ -37,7 +37,7 @@
     <div class="blog-sizer columns small-12 medium-<?php echo $cols[$rcol[$i]];?> h-a"></div>
 
     <div class="blog-card columns small-12 medium-<?php echo $cols[$rcol[$i]];?> p-0-1 h-a end">
-      <a class="columns p-0 h-100" href="<?php echo get_the_permalink();?>">
+      <a class="columns p-0 h-100" href="<?php echo get_the_permalink();?>" target="_blank">
 
         <div class="columns p-0-1 h-a card">
 

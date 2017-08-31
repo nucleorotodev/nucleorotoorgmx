@@ -16,7 +16,7 @@ get_header();
       <?php echo get_the_title(); ?>
     </h1>
     <!--  -->
-    <div class="columns p-0 small-11 medium-10 large-9 small-centered h-a">
+    <div class="columns p-0 small-11 medium-9 large-10 xlarge-9 small-centered h-a">
 
       <div class="columns p-1 font-s font-sm-m text-justify">
         <?php echo get_the_content(); ?>

@@ -222,6 +222,13 @@ p, li, div, span, small, strong {
   cursor: pointer;
 }
 // color de tachitas manual
+.blog-card .card:hover {
+  transition: 0.25s;
+  box-shadow: 4px 4px 2px rgba(250,250,250,0.35);
+  -webkit-trasform: scale(1.01);
+  transform: scale(1.01);
+
+}
 .cat-item a {
   border-radius: 50px;
   background: linear-gradient(to right, #B2C750 0%,#B2C750 50%,#BF5399 50%,#BF5399 50%,#BF5399 100%); /* W3C */

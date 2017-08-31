@@ -25,8 +25,8 @@ function setup() {
   titulo_roto()
   //blog
   blog_random_colors()
-  masonry_blog()
   blog_cats()
+  masonry_blog()
   //
   //
 
@@ -294,30 +294,39 @@ function blog_random_colors() {
 
   var colores = [
     'color-negro-bg',
-    'color-negro-bg',
-    'color-negro-bg',
-    'color-verde-roto-bg',
-    'color-secundario-0-bg',
-    'color-negro-bg',
-    'color-negro-bg',
+    'color-terciario-0-bg',
+    'color-terciario-0-bg',
     'color-negro-bg',
     'color-verde-roto-bg',
-    'color-secundario-0-bg',
+    'color-terciario-0-bg',
+    'color-terciario-0-bg',
+    'color-negro-bg',
+    'color-terciario-0-bg',
+    'color-negro-bg',
     'color-verde-roto-bg',
-    'color-secundario-0-bg'
+    'color-verde-roto-bg',
+    'color-terciario-0-bg',
+    'color-verde-roto-bg',
+    'color-terciario-0-bg',
+    'color-terciario-0-bg'
   ]
   var fondo = [
-    'color-primario-1-bg',
-    'color-secundario-0-bg',
-    'color-secundario-1-bg',
+    'color-acento-1-bg',
     'color-complementario-1-bg',
+    'color-acento-1-bg',
+    'color-neutral-0-bg',
+    'color-acento-0-bg',
+    'color-complementario-1-bg',
+    'color-complementario-1-bg',
+    'color-neutral-0-bg',
     'color-complementario-0-bg',
-    'color-primario-1-bg',
-    'color-secundario-0-bg',
-    'color-secundario-1-bg',
+    'color-complementario-0-bg',
+    'color-acento-1-bg',
+    'color-neutral-0-bg',
+    'color-neutral-1-bg',
+    'color-complementario-0-bg',
     'color-complementario-1-bg',
-    'color-terciario-0-bg',
-    'color-complementario-1-bg',
+    'color-acento-0-bg',
     'color-complementario-0-bg'
   ]
   var mixed,mixedfondo
@@ -325,10 +334,17 @@ function blog_random_colors() {
   mixedfondo = shuffle(fondo)
 
   setInterval(function() {
-    jQuery(".card").each(function(i) {
-      jQuery(this).toggleClass(mixed[i])
-    })
-  },150)
+  jQuery(".card").each(function(i) {
+
+    // jQuery(this).on('mouseover', function() {
+
+        // jQuery(this).toggleClass(mixed[i])
+        jQuery(this).toggleClass('color-negro-bg')
+
+    // })
+
+  })
+},500)
 
   jQuery(".card .card-divider").each(function(i) {
     jQuery(this).addClass(mixedfondo[i])
@@ -336,17 +352,18 @@ function blog_random_colors() {
   })
 
 }
-function masonry_blog() {
-  jQuery('.blog-cards').masonry({
-  // set itemSelector so .grid-sizer is not used in layout
-  itemSelector: '.blog-card',
-  // use element for option
-  columnWidth: '.blog-sizer',
-  percentPosition: true
-})
-}
 
 function blog_cats() {
   jQuery('.cat-item').addClass('columns small-4 medium-3 large-2 p-0-2 end')
   jQuery('.cat-item a').addClass('columns text-center p-0-1 color-verde-roto-bg color-negro')
+}
+
+function masonry_blog() {
+  jQuery('.blog-cards').masonry({
+    // set itemSelector so .grid-sizer is not used in layout
+    itemSelector: '.blog-card',
+    // use element for option
+    columnWidth: '.blog-sizer',
+    percentPosition: true
+  })
 }
