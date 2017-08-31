@@ -7,7 +7,7 @@
 
   <div class="columns text-center h-a font-s font-sm-m">
     <?php
-    echo the_archive_description();
+    echo 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.';
     ?>
   </div>
 
@@ -18,6 +18,7 @@
     'title_li' => false,
     'style' => 'list',
     'echo' => 0,
+    // 'exclude' => array( 8 )
   );
   echo str_replace( "<br>", "", wp_list_categories( $args ) );
   ?>
@@ -84,6 +85,19 @@ if (have_posts()):
 <?php
 
 get_template_part('secciones/general/paginacion');
+
+
+else:
+  ?>
+  <div class="row align-midle p-1 p-md-2">
+    <h1 class="columns h-a text-center color-blanco">
+
+      <?php echo 'No existen publicaciónes de esta categoría' ?>
+
+    </h1>
+  </div>
+
+  <?php
 
 endif;
 

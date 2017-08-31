@@ -24,7 +24,7 @@
 </div>
 
 <?php
-$ext = range(6,60,7);
+$ext = range(6,72,5);
 $palabras = shuffle($ext);
 $cols = array(3,6,3,6,3,6,3,6,3,6,3,6,3,6,6,3,3,3,3);//mas largo que el numero de entradas a mostrar
 $i = 0;
@@ -85,6 +85,17 @@ if (have_posts()):
 
 get_template_part('secciones/general/paginacion');
 
+else:
+?>
+<div class="row align-midle p-1 p-md-2">
+  <h1 class="columns h-a text-center color-blanco">
+
+    <?php echo 'No existen posts de esta categoría' ?>
+
+  </h1>
+</div>
+
+<?php
 endif;
 
 ?>

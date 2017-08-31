@@ -56,6 +56,15 @@ function resize_reset() {
 
   jQuery(window).on('resize', function() {
     menu_movil()
+    // al cambiar tamano cubre la pagina con el menu movil
+    jQuery("#menu-movil").css({
+        'transition': '0.01s',
+        '-webkit-transform': 'translateX(0px)',
+        '-moz-transform': 'translateX(0px)',
+        '-ms-transform': 'translateX(0px)',
+        '-o-transform': 'translateX(0px)',
+        'transform': 'translateX(0px)'
+      })
 
   })
 
@@ -334,17 +343,13 @@ function blog_random_colors() {
   mixedfondo = shuffle(fondo)
 
   setInterval(function() {
-  jQuery(".card").each(function(i) {
+    jQuery(".card").each(function(i) {
 
-    // jQuery(this).on('mouseover', function() {
+      jQuery(this).toggleClass(mixed[i])
+      // jQuery(this).toggleClass('color-negro-bg')
 
-        jQuery(this).toggleClass(mixed[i])
-        // jQuery(this).toggleClass('color-negro-bg')
-
-    // })
-
-  })
-},500)
+    })
+  },250)
 
   jQuery(".card .card-divider").each(function(i) {
     jQuery(this).addClass(mixedfondo[i])

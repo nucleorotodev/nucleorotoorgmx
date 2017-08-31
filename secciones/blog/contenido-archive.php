@@ -84,6 +84,17 @@ if (have_posts()):
 
 get_template_part('secciones/general/paginacion');
 
+else:
+?>
+<div class="row align-midle p-1 p-md-2">
+  <h1 class="columns h-a text-center color-blanco">
+
+    <?php echo 'No existen posts de este tema en el RotoArchivo' ?>
+
+  </h1>
+</div>
+
+<?php
 endif;
 
 ?>
