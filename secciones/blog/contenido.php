@@ -22,14 +22,17 @@
   ?>
 </div>
 
-<div class="blog-cards columns p-0 p-t-1 p-b-1 h-a">
+<?php
+$ext = range(6,60,7);
+$palabras = shuffle($ext);
+$cols = array(3,6,3,6,3,6,3,6,3,6,3,6,3,6,6,3,3,3,3);//mas largo que el numero de entradas a mostrar
+$i = 0;
+if (have_posts()):
+  ?>
 
-  <?php
-  $ext = range(6,60,7);
-  $palabras = shuffle($ext);
-  $cols = array(3,6,3,6,3,6,3,6,3,6,3,6,3,6,6,3,3,3,3);//mas largo que el numero de entradas a mostrar
-  $i = 0;
-  if (have_posts()):
+  <div class="blog-cards columns p-0 p-t-1 p-b-1 h-a">
+
+    <?php
     while (have_posts()): the_post();
 
     $rcol = array_rand($cols,count($cols));
@@ -72,9 +75,17 @@
 
     <?php
     $i ++;
-  endwhile;
-endif; ?>
 
+  endwhile;
+  ?>
 </div>
+
+<?php
+
+get_template_part('secciones/general/paginacion');
+
+endif;
+
+?>
 
 </section>
