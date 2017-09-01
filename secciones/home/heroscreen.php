@@ -5,22 +5,17 @@
 
       <?php
 
-      $args = array(
-        'cat' => 20,
-      );
-      $query = new WP_Query($args);
+      $args = cpt('roto-releases',true,7);
+      $q = new WP_Query($args);
 
-      if($query->have_posts()):
-        while ($query->have_posts()): $query -> the_post();
+      if($q->have_posts()):
+        while ($q->have_posts()): $q -> the_post();
         ?>
         <div class="columns p-0 rel text-shadow">
           <!-- fondo slide -->
           <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 
-            <img src="http://fakeimg.pl/1920x600/?text=RotoSlider" alt="" />
-            <?php
-            //echo get_the_post_thumbnail();
-            ?>
+            <img src="<?php echo the_field('imagen_portada');?>" alt="<?php echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" />
 
           </div>
 

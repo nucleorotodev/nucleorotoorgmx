@@ -82,7 +82,7 @@ if (have_posts()):
 
 <?php
 
-get_template_part('secciones/general/paginacion');
+get_template_part('secciones/modulos/paginacion');
 
 else:
 ?>

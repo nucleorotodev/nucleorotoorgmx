@@ -1,6 +1,6 @@
 <section id="blog-cards" class="columns small-12 large-9 h-a p-1 p-top color-blanco">
 
-  <h1 class="titulo-inicio-blog columns p-t-1">
+  <h1 class="titulo-anim columns p-t-1">
     <?php //echo get_the_archive_title(). " RotoBlog" ?>
     <?php echo "RotoBlog" ?>
   </h1>
@@ -84,7 +84,7 @@ if (have_posts()):
 
 <?php
 
-get_template_part('secciones/general/paginacion');
+get_template_part('secciones/modulos/paginacion');
 
 
 else:

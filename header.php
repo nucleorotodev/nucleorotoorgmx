@@ -11,10 +11,10 @@
   <header id="header" class="columns p-0 h-10 fixed top left color-negro-bg shadow z1k1">
 
 
-    <div id="header-logo" class="columns small-6 large-2 p-0-2 color-verde-roto-bg">
+    <div id="header-logo" class="columns small-6 large-2 p-0-1 color-verde-roto-bg">
       <a href="<?php echo home_url(); ?>" class="columns h-100">
 
-        <div id="header-logo" class="grid-x cell imgLiquid imgLiquidNoFillLeft">
+        <div class="grid-x cell imgLiquid imgLiquidNoFillLeft">
           <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-small.jpg" alt="" />
         </div>
 

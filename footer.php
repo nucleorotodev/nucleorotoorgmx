@@ -26,7 +26,7 @@
 
   <div class="row p-1 p-md-2 p-top h-90-v">
 
-    <div class="columns small-11 medium-9 small-centered p-0">
+    <div class="columns small-11 medium-10 small-centered p-0">
 
       <div class="columns small-1  p-0 text-center p-b-1">
         <div class="columns color-verde-roto-bg rel">

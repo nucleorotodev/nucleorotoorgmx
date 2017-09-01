@@ -1,13 +1,13 @@
 <section id="blog-cards" class="columns small-12 large-9 h-a p-1 p-top color-blanco">
 
   <h1 class="titulo-inicio-blog columns p-t-1">
-    <?php //echo get_the_archive_title("");?>
-    <?php echo single_cat_title();?>
+    <?php //echo get_the_archive_title(). " RotoBlog" ?>
+    <?php echo "RotoBlog" ?>
   </h1>
 
   <div class="columns text-center h-a font-s font-sm-m">
     <?php
-    echo the_archive_description();
+    echo 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.';
     ?>
   </div>
 
@@ -18,13 +18,14 @@
     'title_li' => false,
     'style' => 'list',
     'echo' => 0,
+    // 'exclude' => array( 8 )
   );
   echo str_replace( "<br>", "", wp_list_categories( $args ) );
   ?>
 </div>
 
 <?php
-$ext = range(6,72,5);
+$ext = range(6,60,7);
 $palabras = shuffle($ext);
 $cols = array(3,6,3,6,3,6,3,6,3,6,3,6,3,6,6,3,3,3,3);//mas largo que el numero de entradas a mostrar
 $i = 0;
@@ -83,19 +84,21 @@ if (have_posts()):
 
 <?php
 
-get_template_part('secciones/modulos/paginacion');
+get_template_part('secciones/general/paginacion');
+
 
 else:
-?>
-<div class="row align-midle p-1 p-md-2">
-  <h1 class="columns h-a text-center color-blanco">
+  ?>
+  <div class="row align-midle p-1 p-md-2">
+    <h1 class="columns h-a text-center color-blanco">
 
-    <?php echo 'No existen posts de esta categoría' ?>
+      <?php echo 'No existen publicaciónes de esta categoría' ?>
 
-  </h1>
-</div>
+    </h1>
+  </div>
 
-<?php
+  <?php
+
 endif;
 
 ?>

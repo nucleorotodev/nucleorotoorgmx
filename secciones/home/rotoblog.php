@@ -1,6 +1,6 @@
 <section id="inicio-blog" class="grid-x cell columns small-12 medium-6 h-100-v p-top rel color-terciario-0-bg color-blanco end">
 
-  <a href="#" class="columns p-0">
+  <a href="<?php echo get_the_permalink(7);?>" class="columns p-0 color-negro-hover">
     <h1 class="titulo-inicio-blog h-a columns p-0 text-center">
       RotoBlog
     </h1>
@@ -20,10 +20,10 @@
         <div class="columns h-30 p-0-2">
 
 
-          <a href="<?php echo get_the_permalink();?>" class="columns rel p-0-3 color-negro color-primario-0-hover ">
+          <a href="<?php echo get_the_permalink();?>" class="columns rel p-0-3 color-negro color-verde-roto-hover color-negro-bd color-verde-roto-hover-bd">
             <div class="columns absUpL z-1 imgLiquid imgLiquidFill">
-              <img src="http://fakeimg.pl/320x480/?text=Placeholder" alt="" />
-              <?php //echo get_the_post_thumbnail(); ?>
+              <!-- <img src="http://fakeimg.pl/320x480/?text=Placeholder" alt="" /> -->
+              <?php echo get_the_post_thumbnail(); ?>
             </div>
             <div class="columns absUpL z0 cortina-negro-bg">
             </div>

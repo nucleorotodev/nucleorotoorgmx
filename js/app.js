@@ -58,13 +58,13 @@ function resize_reset() {
     menu_movil()
     // al cambiar tamano cubre la pagina con el menu movil
     jQuery("#menu-movil").css({
-        'transition': '0.01s',
-        '-webkit-transform': 'translateX(0px)',
-        '-moz-transform': 'translateX(0px)',
-        '-ms-transform': 'translateX(0px)',
-        '-o-transform': 'translateX(0px)',
-        'transform': 'translateX(0px)'
-      })
+      'transition': '0.01s',
+      '-webkit-transform': 'translateX(0px)',
+      '-moz-transform': 'translateX(0px)',
+      '-ms-transform': 'translateX(0px)',
+      '-o-transform': 'translateX(0px)',
+      'transform': 'translateX(0px)'
+    })
 
   })
 
@@ -217,7 +217,7 @@ function slider_blog() {
 
   jQuery('.slider-blog').slick({
     autoplay: true,
-    autoPlaySpeed: 2000,
+    autoPlaySpeed: 1000,
     dots: true,
     arrows: false,
     slidesToShow: 3,
@@ -226,7 +226,6 @@ function slider_blog() {
     vertical: true,
     verticalSwiping: false,
     speed: 500,
-    // fade: true,
     cssEase: 'linear'
   })
 }
@@ -234,7 +233,7 @@ function slider_sidebar() {
 
   jQuery('.slider-sidebar').slick({
     autoplay: true,
-    autoPlaySpeed: 500,
+    autoPlaySpeed: 750,
     dots: false,
     arrows: false,
     slidesToShow:7,
@@ -243,31 +242,42 @@ function slider_sidebar() {
     vertical: true,
     verticalSwiping: false,
     speed: 500,
-    // fade: true,
-    cssEase: 'swing'
+    cssEase: 'linear'
   })
 }
 
 function titulo_roto() {
 
   var classes = ['text-left','text-center','text-right','text-left','text-center','text-right', 'text-justify']
-  var desorden;
+  var espaciado = ['0vw','0.25vw','0.5vw','0.75vw','1vw']
+  var desorden, espacios
+  var iter = 0
   setInterval(function() {
 
     desorden = shuffle(classes)
+    espacios = shuffle(espaciado)
+
     jQuery("#iteracion-titulo li").each(function(i) {
 
+      jQuery(this).toggleClass(desorden[i])
+
+    })
+    jQuery(".titulo-inicio-label, .titulo-inicio-radio, .titulo-inicio-blog, .titulo-anim").each(function(i) {
 
       jQuery(this).toggleClass(desorden[i])
 
     })
-    jQuery(".titulo-inicio-label, .titulo-inicio-radio, .titulo-inicio-blog").each(function(i) {
 
-      jQuery(this).toggleClass(desorden[i])
-
-    })
+    // abre espacio de las letras
+    if (iter < 4 ) {
+      jQuery(".titulo-anim, #iteracion-titulo li").css('letter-spacing',espacios[iter])
+      iter = iter ++
+    } else {
+      iter = 0
+    }
 
   },250)
+
 }
 
 function parallax_home() {
@@ -286,7 +296,7 @@ function parallax_home() {
   jQuery('.fondo-mercado').parallax({
     imageSrc: '/nrdev/wp-content/themes/nucleorotoorgmx/img/nr-parallax1.jpg',
     speed: 0.75,
-    bleed: 100,
+    bleed: 150,
     androidFix: true
   });
 }
@@ -294,7 +304,7 @@ function parallax_home() {
 function classes_menu_movil() {
 
   jQuery('.menu-movil-ul li').each(function() {
-    jQuery(this).addClass('columns small-4 p-b-0-2')
+    jQuery(this).addClass('columns small-4 p-b-0-1')
   })
 
 }
@@ -365,9 +375,7 @@ function blog_cats() {
 
 function masonry_blog() {
   jQuery('.blog-cards').masonry({
-    // set itemSelector so .grid-sizer is not used in layout
     itemSelector: '.blog-card',
-    // use element for option
     columnWidth: '.blog-sizer',
     percentPosition: true
   })

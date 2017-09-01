@@ -62,10 +62,15 @@ function page_id($id) {
 
 }
 //cpts
-function cpt($cpt_slug,$paginado) {
+function cpt($cpt_slug,$paginado,$post_num=8,$orderby='ID') {
 
-
-  return array( 'post_type' => $cpt_slug, 'paged' => $paginado );
+  return array(
+    'post_type' => $cpt_slug,
+    'paged' => $paginado,
+    'posts_per_page' => $post_num,
+    'orderby' => $orderby,
+    'order'   => 'ASC',
+  );
 
 }
 //menus para paginas

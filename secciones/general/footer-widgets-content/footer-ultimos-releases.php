@@ -5,26 +5,19 @@
     <!-- <h5 class="columns text-center p-0">Ultimos Releases</h5> -->
     <?php
 
-    // $args = array(
-    //   'cat' => 20,
-    // );
-    // $query = new WP_Query($args);
-    //
-    // if($query->have_posts()):
-    //   while ($query->have_posts()): $query -> the_post();
-    //
-    for ($i=0; $i < 9; $i++):
+    $args = cpt('roto-releases',true,9,'rand');
+    $q = new WP_Query($args);
+
+    if($q->have_posts()):
+      while ($q->have_posts()): $q -> the_post();
       ?>
       <div class="thumb-ultimos columns small-4 p-0-1 rel">
-        <a href="#" class="columns p-0 h-100">
+        <a href="<?php echo get_permalink()?>" class="columns p-0 h-100">
 
           <!-- thumbnail -->
           <div class="thumb-card columns  p-0 z1 imgLiquid imgLiquidNoFill">
 
-            <img src="http://fakeimg.pl/32x32/?text=thumby" alt="" />
-            <?php
-            //echo get_the_post_thumbnail();
-            ?>
+            <img src="<?php echo the_field('imagen_portada');?>" alt="<?php echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" />
 
           </div>
         </a>
@@ -33,9 +26,8 @@
 
       <?php
 
-      //   endwhile;
-      // endif;
-    endfor;
+        endwhile;
+      endif;
     ?>
 
   </div>
