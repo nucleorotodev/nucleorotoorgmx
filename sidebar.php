@@ -4,42 +4,75 @@
   </div>
   <div class="slider-sidebar columns p-0">
     <?php
-    $args =  cpt('roto-releases',true,12,'ID');
+    if (!is_page(11)):
+      $args =  cpt('roto-releases',true,12,'rand');
+    else:
+      $args =  array(
+        'post_type' => 'post',
+        'posts_per_page' => 12,
+        'orderby' => 'rand',
+        // 'order'   => 'ASC',
+      );
+    endif;
+    ?>
+    <?php
     $q =  new WP_Query($args);
     if($q->have_posts()):
-      while ($q->have_posts()): $q -> the_post();
+      while ($q->have_posts()): $q->the_post();
       ?>
       <div class="columns p-0-2 rel">
-
-        <div class="columns absUpL z-1 imgLiquid imgLiquidFill">
-          <img src="<?php echo the_field('imagen_portada');?>" alt="<?php echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" />
+        <div class="columns absUpL z-1 imgLiquid imgLiquidFill"><?php
+        if (!is_page(11)):
+          ?>
+          <img src="<?php echo the_field('imagen_portada');?>" alt="<?php if (!is_page(11)): echo the_field('titulo_de_release'); else: echo get_the_title(); endif;?>" />
+            <?php
+          else:
+            echo get_the_post_thumbnail();
+          endif;
+          ?>"  />
         </div>
 
         <div class="columns p-0-1 h-a cortina-negro-bg">
           <a href="<?php echo get_the_permalink();?>" class="columns rel h-100 p-0-1 color-blanco color-primario-0-hover ">
             <!-- Titulo release -->
             <h4 class="h-a columns text-justify p-0 font-s">
+              <?php
+              if (!is_page(11)):
+                echo the_field('titulo_de_release');
+              else:
+                echo get_the_title();
+              endif;
+              ?>
+            </h4>
 
-              <?php echo the_field('titulo_de_release'); ?></h4>
+            <div class="columns h-a font-m">
+              <?php
+              if (!is_page(11)):
+                echo the_field('nombre_artista_release');;
+              else:
+                echo get_the_author();
+              endif;
+              ?>
+            </div>
 
-              <!-- artista -->
-              <div class="columns h-a font-m">
-                <?php echo the_field('nombre_artista_release'); ?>
-              </div>
-
-              <!-- fecha release -->
-              <div class="columns p-0 small-6 h-a text-right font-s">
-                <?php echo the_field('dia_release') ."/". the_field('mes_release') ."/" . the_field('ano_release'); ?>
-              </div>
-            </a>
-          </div>
-
+            <div class="columns p-0 small-6 h-a text-right font-s">
+              <?php
+              if (!is_page(11)):
+                echo the_field('dia_release') ." / ". the_field('mes_release') ." / " . the_field('ano_release');
+              else:
+                echo get_the_date();
+              endif;
+              ?>
+            </div>
+          </a>
         </div>
 
-        <?php
-      endwhile;
-    endif;
-    ?>
+      </div>
 
-  </div>
+      <?php
+    endwhile;
+  endif;
+  ?>
+
+</div>
 </div>

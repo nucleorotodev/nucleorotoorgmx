@@ -233,7 +233,7 @@ function slider_sidebar() {
 
   jQuery('.slider-sidebar').slick({
     autoplay: true,
-    autoPlaySpeed: 750,
+    autoPlaySpeed: 2000,
     dots: false,
     arrows: false,
     slidesToShow:7,
@@ -276,7 +276,7 @@ function titulo_roto() {
       iter = 0
     }
 
-  },250)
+  },350)
 
 }
 
@@ -304,7 +304,7 @@ function parallax_home() {
 function classes_menu_movil() {
 
   jQuery('.menu-movil-ul li').each(function() {
-    jQuery(this).addClass('columns small-4 p-b-0-1')
+    jQuery(this).addClass('columns small-3 medium-4 p-b-0-1')
   })
 
 }

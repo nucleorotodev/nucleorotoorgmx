@@ -1,4 +1,4 @@
-<section id="inicio-nosotros" class="grid-x cell columns grid-padding-x h-100-v h-md-50 p-bottom color-verde-roto-bg">
+<section id="inicio-nosotros" class="grid-x cell columns grid-padding-x h-a p-bottom color-verde-roto-bg">
 
   <div class="row align-middle">
 
@@ -14,11 +14,11 @@
         while ($query->have_posts()): $query -> the_post();
         ?>
 
-        <div class="grid-x p-1 p-t-0 p-b-0 h-a">
+        <div class="grid-x p-0 p-md-1 h-a">
           <?php get_template_part('secciones/modulos/iteracion-titulos'); ?>
         </div>
         <hr>
-        <div class="grid-x p-1 p-t-0 h-a font-s font-sm-m font-lg-l text-justify">
+        <div class="grid-x p-0 p-md-1 p-t-1-2 h-a font-s font-sm-m font-lg-l text-justify">
           <?php echo get_the_content(); ?>
         </div>
 

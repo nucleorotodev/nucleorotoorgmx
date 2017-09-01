@@ -58,8 +58,4 @@
     <?php get_template_part('secciones/general/menu-movil') ?>
   </div>
 
-  <main id="main" class="grid-container fluid h-a rel">
-
-    <!-- Logo fondo -->
-    <!-- <div class="fondo-logo columns p-0 fixed top left h-100-v z-1k">
-    </div> -->
+  <main id="main" class="grid-container fluid h-a">

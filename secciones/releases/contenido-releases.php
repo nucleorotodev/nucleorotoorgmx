@@ -1,13 +1,18 @@
 <section id="releases-cards" class="columns small-12 large-9 h-a p-1 p-top color-blanco">
 
-  <?php
-  if (have_posts()):the_post();
-  ?>
-  <h1 class="titulo-anim columns p-t-1">
-    <?php echo get_the_title(); ?>
-  </h1>
+<!--  -->
+<?php if (have_posts()):the_post(); ?>
 
-  <div class="columns text-justify h-a font-s font-sm-m">
+<section class="grid-x cell h-90-v h-md-95-v" data-parallax="scroll" data-speed="0.5" data-image-src="<?php echo get_template_directory_uri();?>/img/header-dummie.jpg">
+
+<div class="row align-middle">
+<div class="columns p-l-3 p-r-3 h-a color-blanco">
+  <?php get_template_part('secciones/modulos/iteracion-titulos'); ?>
+</div>
+</div>
+</section>
+<!--  -->
+  <div class="columns text-justify h-a font-s font-sm-m p-t-2">
     <?php
     echo get_the_content();
     ?>
@@ -26,25 +31,28 @@ endif;
     ?>
     <div class="columns small-12 medium-6 h-45-v p-0 rel">
 
-      <div class="columns absUpL z-1 p-0-2">
+      <div class="columns absUpL z-1 p-0-3">
         <div class="columns imgLiquid imgLiquidFill">
           <img src="<?php echo the_field('imagen_portada');?>" alt="<?php echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" />
         </div>
       </div>
 
-      <div class="small-7 p-0-2 p-md-1 p-lg-2 absUpL z-1 h-a text-left">
+      <a href="<?php echo get_the_permalink();?>" class="small-7 p-0-2 p-md-1 p-lg-2 absUpL z1k h-a text-left">
+
         <div class="columns p-0 z-1 cortina-negro absDownR">
         </div>
-        <!-- <a href="<?php echo get_the_permalink();?>" class="columns rel h-100 p-0-1 color-blanco color-primario-0-hover "> -->
+
         <!-- Titulo release -->
         <h4 class="release-titulo columns p-0 h-a">
 
           <?php echo the_field('titulo_de_release'); ?>
 
         </h4>
-        <!-- </a> -->
+        <small class="columns p-0-2 text-center">Descarga</small>
 
-      </div>
+        </a>
+
+
 
       <div class="small-5 p-0-2 p-md-1 p-lg-2 absDownR z-1 h-a text-right">
         <div class="columns p-0 z-1 cortina-negro absDownR">
@@ -91,5 +99,6 @@ endif;
 ?>
 
 </div>
+
 
 </section>

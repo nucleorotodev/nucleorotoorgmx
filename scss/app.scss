@@ -249,6 +249,9 @@ p, li, div, span, small, strong {
   @extend .color-blanco;
 }
 //
+.titulo-inicio-label, .titulo-inicio-radio, .titulo-inicio-blog, .titulo-anim {
+  transition: 0.2s;
+}
 // formularios
 form {
 

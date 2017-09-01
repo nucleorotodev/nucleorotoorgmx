@@ -1,6 +1,6 @@
 <div class="grid-x cell">
 
-  <ul id="iteracion-titulo" class="">
+  <ul id="iteracion-titulo" class="grid-x">
 
     <?php
 
@@ -17,7 +17,6 @@
           <?php if ($i > 4 ):
 
             echo $content;
-            // echo $i;
           else:
 
             echo $content_mix;

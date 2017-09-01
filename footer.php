@@ -10,7 +10,14 @@
       <div class="columns small-1 medium-2 large-1 p-0 text-center p-b-1">
         <div class="columns p-0 color-verde-roto-bg rel">
           <h6 class="titulo-sidebar h-a color-negro-bg color-verde-roto p-t-0-2 p-b-0-2 absUpL top right">
-            Random Releases
+            <?php if (!is_page(11)): ?>
+              Random Releases
+              <?php else: ?>
+              Random Posts
+              <?php
+            endif;
+            ?>
+
           </h6>
         </div>
       </div>
