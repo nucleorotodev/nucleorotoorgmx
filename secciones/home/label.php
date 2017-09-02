@@ -1,19 +1,19 @@
-<section id="inicio-label" class="grid-x cell columns p-0 h-a p-top rel">
+ <section id="inicio-label" class="grid-x cell columns p-0 h-a p-top rel">
   <!-- Textura fondo -->
   <div class="fondo-label columns p-0 absUpL top left h-100-v z-1k">
   </div>
-  <?php
 
+  <?php
   $args = array(
     'page_id' => 43,
   );
-  $query = new WP_Query($args);
+  $q = new WP_Query($args);
 
-  if($query->have_posts()):
-    while ($query->have_posts()): $query -> the_post();
+  if($q->have_posts()):
+    while ($q->have_posts()): $q -> the_post();
     ?>
 
-    <h1 class="titulo-inicio-label columns color-blanco"><?php echo get_the_title(); ?></h1>
+    <h1 class="titulo-inicio-anim columns color-blanco text-center"><?php echo get_the_title();?></h1>
 
     <?php
   endwhile;

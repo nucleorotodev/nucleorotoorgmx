@@ -262,7 +262,7 @@ function titulo_roto() {
       jQuery(this).toggleClass(desorden[i])
 
     })
-    jQuery(".titulo-inicio-label, .titulo-inicio-radio, .titulo-inicio-blog, .titulo-anim").each(function(i) {
+    jQuery(".titulo-anim").each(function(i) {
 
       jQuery(this).toggleClass(desorden[i])
 
@@ -270,7 +270,7 @@ function titulo_roto() {
 
     // abre espacio de las letras
     if (iter < 4 ) {
-      jQuery(".titulo-anim, #iteracion-titulo li").css('letter-spacing',espacios[iter])
+      jQuery(".titulo-anim, #iteracion-titulo li, .titulo-inicio-anim").css('letter-spacing',espacios[iter])
       iter = iter ++
     } else {
       iter = 0

@@ -4,7 +4,7 @@
 
   </div>
 
-  <h1 class="titulo-inicio-radio p-b-2 text-center columns p-0 color-blanco">Mercado</h1>
+  <h1 class="titulo-inicio-anim p-b-2 text-center columns p-0 color-blanco">Mercado</h1>
 
   <div class="row h-70 align-middle card">
 

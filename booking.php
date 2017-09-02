@@ -12,7 +12,7 @@ get_header();
     while (have_posts()): the_post();
     ?>
 
-    <h1 class="columns text-center p-0-3 color-blanco">
+    <h1 class="titulo-anim columns text-center p-0-3 color-blanco">
       <?php echo get_the_title(); ?>
     </h1>
     <!--  -->

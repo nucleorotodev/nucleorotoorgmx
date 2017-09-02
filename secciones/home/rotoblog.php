@@ -1,14 +1,14 @@
 <section id="inicio-blog" class="grid-x cell columns small-12 medium-6 h-100-v p-top rel color-terciario-0-bg color-blanco end">
 
   <a href="<?php echo get_the_permalink(7);?>" class="columns p-0 color-negro-hover">
-    <h1 class="titulo-inicio-blog h-a columns p-0 text-center">
+    <h1 class="titulo-inicio-anim h-a columns p-0 text-center">
       RotoBlog
     </h1>
   </a>
 
   <div class="row columns small-12 align-middle">
 
-    <div id="inicio-blog-slider" class="slider-blog columns p-0 h-80 ovH">
+    <div id="inicio-blog-slider" class="slider-blog columns p-0 h-75 ovH">
       <?php
 
       $args =  array( 'post_type' => 'post', 'showposts' => 8 );
@@ -53,6 +53,11 @@
 
     </div>
 
+    <!--  -->
+    <div class="columns text-center h-5 p-0">
+      <small class="color-verde-roto"> << drag >> </small>
+    </div>
+    <!--  -->
   </div>
 
 </section>

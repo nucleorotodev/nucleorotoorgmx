@@ -13,7 +13,7 @@ if (have_posts()):
   while (have_posts()): the_post();
   ?>
 
-  <h1 class="columns text-center p-0-3 color-blanco"><?php echo get_the_title(); ?></h1>
+  <h1 class="titulo-anim columns text-center p-0-3 color-blanco"><?php echo get_the_title(); ?></h1>
 
 
   <!-- <div class="columns p-1 text-justify"> -->
@@ -21,9 +21,9 @@ if (have_posts()):
 
 
     <!-- mientras -->
-    <div class="row small-10 small-centered h-70 p-1 align-middle card">
+    <div class="row small-10 small-centered h-80 p-1 align-middle card">
 
-      <h1 class="columns h-a text-center font-huge ">
+      <h1 class="titulo-anim columns h-a text-center font-huge ">
         Proximamente.
       </h1>
 
