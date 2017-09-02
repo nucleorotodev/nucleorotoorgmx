@@ -12,7 +12,7 @@
       $content_mix = str_shuffle($content);
       ?>
       <li class="cell h-a">
-        <h1 class="grid-x h-a font-<?php echo $fuente[$i]; ?> text-shadow">
+        <h1 class="titulo-anim grid-x h-a font-<?php echo $fuente[$i]; ?> text-shadow">
 
           <?php if ($i > 4 ):
 

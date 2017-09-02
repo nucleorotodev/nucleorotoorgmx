@@ -1,106 +1,109 @@
-<section id="blog-cards" class="columns small-12 large-9 h-a p-1 p-top color-blanco">
+<section id="mixtapes-cards" class="columns small-12 large-9 h-a p-0 p-lg-1 p-top color-blanco">
 
-  <h1 class="titulo-inicio-blog columns p-t-1">
-    <?php //echo get_the_archive_title(). " RotoBlog" ?>
-    <?php echo "RotoBlog" ?>
-  </h1>
+  <!--  -->
+  <?php if (have_posts()):the_post(); ?>
 
-  <div class="columns text-center h-a font-s font-sm-m">
-    <?php
-    echo 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.';
+    <section class="grid-x cell h-100-v h-md-85-v" data-parallax="scroll" data-speed="0.5" data-image-src="<?php echo get_the_post_thumbnail_url();?>">
+
+      <div class="row align-middle">
+        <div class="columns p-l-3 p-r-3 h-a color-blanco">
+          <?php get_template_part('secciones/modulos/iteracion-titulos'); ?>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <div class="columns h-a">
+
+      <div class="columns text-justify h-a font-s font-sm-m p-t-2">
+        <?php
+        echo get_the_content();
+        ?>
+      </div>
+      <?php
+    endif;
     ?>
-  </div>
 
-  <div class="lista-categorias columns text-left p-0 font-m m-t-2">
-    <?php
-    $args = array (
-    'hide_empty' => 0,
-    'title_li' => false,
-    'style' => 'list',
-    'echo' => 0,
-    // 'exclude' => array( 8 )
-  );
-  echo str_replace( "<br>", "", wp_list_categories( $args ) );
-  ?>
-</div>
+    <div class="columns small-12 p-0-3 h-a rel">
 
-<?php
-$ext = range(6,60,7);
-$palabras = shuffle($ext);
-$cols = array(3,6,3,6,3,6,3,6,3,6,3,6,3,6,6,3,3,3,3);//mas largo que el numero de entradas a mostrar
-$i = 0;
-if (have_posts()):
-  ?>
+      <?php
+      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+      $args =  cpt('roto-mixtapes',$paged,6,'ID');
+      $q =  new WP_Query($args);
+      if($q->have_posts()):
+        while ($q->have_posts()): $q -> the_post();
+        ?>
+        <div class="columns small-12 medium-6 h-45-v p-0 rel">
 
-  <div class="blog-cards columns p-0 p-t-1 p-b-1 h-a">
+          <div class="columns absUpL z-1 p-0-3">
+            <div class="columns imgLiquid imgLiquidFill">
+              <img src="<?php echo the_field('imagen_portada_mixtape');?>" alt="<?php echo the_field('titulo_del_mixtape')  . " - " . the_field('nombre_proyecto_mixtape');?>" />
+            </div>
+          </div>
 
-    <?php
-    while (have_posts()): the_post();
+          <a href="<?php echo get_the_permalink();?>" class="small-7 p-0-2 p-md-1 p-lg-2 absUpR z1k h-a text-right">
 
-    $rcol = array_rand($cols,count($cols));
-    ?>
-    <div class="blog-sizer columns small-12 medium-<?php echo $cols[$rcol[$i]];?> h-a"></div>
-
-    <div class="blog-card columns small-12 medium-<?php echo $cols[$rcol[$i]];?> p-0-1 h-a end">
-      <a class="columns p-0 h-100" href="<?php echo get_the_permalink();?>" target="_blank">
-
-        <div class="columns p-0-1 h-a card">
-
-          <div class="columns p-0-2 color-negro text-center card-divider">
-
-            <h6 class="columns p-0">
-              <?php echo get_the_title(); ?>
-            </h6>
-
-            <div class="card-section text-justify">
-              <?php echo excerpt($ext[$i]); ?>
+            <div class="columns p-0 z-1 cortina-negro absDownR">
             </div>
 
-            <div class="columns small-6 p-0 p-t-0-2 text-left">
-              <small>
-                Escrito por: <?php echo get_the_author(); ?>
-              </small>
+            <!-- Titulo release -->
+            <h4 class="release-titulo columns p-0 h-a">
+
+              <?php echo the_field('titulo_del_mixtape'); ?>
+
+            </h4>
+            <small class="columns p-0-2 text-center">Descarga</small>
+
+          </a>
+
+
+
+          <div class="small-5 p-0-2 p-md-1 p-lg-2 absDownL z-1 h-a text-left">
+            <div class="columns p-0 z-1 cortina-negro absDownR">
             </div>
-            <div class="columns small-6 p-0 p-t-0-2 text-right">
-              <small>
-                <?php echo get_the_date(); ?>
-              </small>
+            <!-- artista -->
+            <div class="columns p-0 h-a font-m font-sm-l">
+              <?php echo the_field('nombre_proyecto_mixtape'); ?>
             </div>
 
+            <!-- fecha release -->
+            <div class="columns p-0 p-b-1 h-a text-left font-s font-sm-m">
+              <span>
+                <?php echo the_field('mes_mixtape') ?>
+              </span>  /
+              <span>
+                <?php echo the_field('ano_mixtape') ?>
+              </span>
+
+            </div>
 
           </div>
+
         </div>
 
-      </a>
+        <?php
+      endwhile;
 
-    </div>
+      get_template_part('secciones/modulos/paginacion-cpt');
 
-    <?php
-    $i ++;
+    else:
+      ?>
+      <div class="row align-midle p-1 p-md-2">
+        <h1 class="columns h-a text-center color-blanco">
 
-  endwhile;
-  ?>
-</div>
+          <?php echo 'NRMT00 este colectívo aún no tiene Mixtapes' ?>
 
-<?php
+        </h1>
+      </div>
 
-get_template_part('secciones/general/paginacion');
+      <?php
 
+    endif;
 
-else:
-  ?>
-  <div class="row align-midle p-1 p-md-2">
-    <h1 class="columns h-a text-center color-blanco">
+    ?>
 
-      <?php echo 'No existen publicaciónes de esta categoría' ?>
-
-    </h1>
   </div>
 
-  <?php
-
-endif;
-
-?>
+</div>
 
 </section>

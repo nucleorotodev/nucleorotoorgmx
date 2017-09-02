@@ -11,7 +11,7 @@
     <div id="inicio-blog-slider" class="slider-blog columns p-0 h-80 ovH">
       <?php
 
-      $args =  array( 'post_type' => 'post', 'showposts' => 6 );
+      $args =  array( 'post_type' => 'post', 'showposts' => 8 );
       $query =  new WP_Query($args);
 
       if($query->have_posts()):

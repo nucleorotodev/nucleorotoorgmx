@@ -47,6 +47,7 @@ include_once "cpts/mixtapes-cpt.php";
 //
 // analytics
 add_action('wp_head', 'add_analytics');
+//pegar aqui codigo google analytics
 function add_analytics() { ?>
   <script>
 
@@ -63,11 +64,13 @@ function page_id($id) {
 }
 //cpts
 function cpt($cpt_slug,$paginado,$post_num=8,$orderby='ID') {
-
+// esto  en la pag del wp query pasarlo por parametro $paginado
+// $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+//
   return array(
     'post_type' => $cpt_slug,
-    'paged' => $paginado,
     'posts_per_page' => $post_num,
+    'paged' => $paginado,
     'orderby' => $orderby,
     'order'   => 'ASC',
   );

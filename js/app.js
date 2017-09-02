@@ -276,7 +276,7 @@ function titulo_roto() {
       iter = 0
     }
 
-  },350)
+  },500)
 
 }
 
@@ -304,7 +304,7 @@ function parallax_home() {
 function classes_menu_movil() {
 
   jQuery('.menu-movil-ul li').each(function() {
-    jQuery(this).addClass('columns small-3 medium-4 p-b-0-1')
+    jQuery(this).addClass('columns small-4 p-b-0-1 end')
   })
 
 }
