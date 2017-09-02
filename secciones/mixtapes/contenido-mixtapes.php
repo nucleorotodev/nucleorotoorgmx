@@ -41,7 +41,7 @@
             </div>
           </div>
 
-          <a href="<?php echo get_the_permalink();?>" class="small-7 p-0-2 p-md-1 p-lg-2 absUpR z1k h-a text-right">
+          <a href="<?php echo get_the_permalink();?>" class="small-7 p-0-2 p-md-1 p-lg-2 absUpR z1 h-a text-right">
 
             <div class="columns p-0 z-1 cortina-negro absDownR">
             </div>
@@ -91,7 +91,7 @@
       <div class="row align-midle p-1 p-md-2">
         <h1 class="columns h-a text-center color-blanco">
 
-          <?php echo 'NRMT00 este colectívo aún no tiene Mixtapes' ?>
+          <?php echo 'NRMT00 este colectívo aún no tiene Mixtapes'; ?>
 
         </h1>
       </div>

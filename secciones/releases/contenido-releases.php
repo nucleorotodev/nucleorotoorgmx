@@ -3,7 +3,7 @@
   <!--  -->
   <?php if (have_posts()):the_post(); ?>
 
-    <section class="grid-x cell h-100-v h-md-85-v" data-parallax="scroll" data-speed="0.5" data-image-src="<?php echo get_template_directory_uri();?>/img/header-dummie.jpg">
+    <section class="grid-x cell h-100-v h-md-85-v" data-parallax="scroll" data-speed="0.5" data-image-src="<?php echo get_the_post_thumbnail_url();?>">
 
       <div class="row align-middle">
         <div class="columns p-l-3 p-r-3 h-a color-blanco">
@@ -41,7 +41,7 @@
             </div>
           </div>
 
-          <a href="<?php echo get_the_permalink();?>" class="small-7 p-0-2 p-md-1 p-lg-2 absUpL z1k h-a text-left">
+          <a href="<?php echo get_the_permalink();?>" class="small-7 p-0-2 p-md-1 p-lg-2 absUpL z1 h-a text-left">
 
             <div class="columns p-0 z-1 cortina-negro absDownR">
             </div>

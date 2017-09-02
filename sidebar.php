@@ -4,7 +4,7 @@
   </div>
   <div class="slider-sidebar columns p-0">
     <?php
-    if (!is_page(11)):
+    if (!is_page(array(11,13))):
       $args =  cpt('roto-releases',true,12,'rand');
     else:
       $args =  array(
@@ -22,14 +22,14 @@
       ?>
       <div class="columns p-0-2 rel">
         <div class="columns absUpL z-1 imgLiquid imgLiquidFill"><?php
-        if (!is_page(11)):
+        if (!is_page(array(11,13))):
           ?>
-          <img src="<?php echo the_field('imagen_portada');?>" alt="<?php if (!is_page(11)): echo the_field('titulo_de_release'); else: echo get_the_title(); endif;?>" />
+          <img src="<?php echo the_field('imagen_portada');?>" alt="<?php echo the_field('titulo_de_release');?>"/>
             <?php
           else:
             echo get_the_post_thumbnail();
           endif;
-          ?>"  />
+          ?>
         </div>
 
         <div class="columns p-0-1 h-a cortina-negro-bg">
@@ -37,7 +37,7 @@
             <!-- Titulo release -->
             <h4 class="h-a columns text-justify p-0 font-s">
               <?php
-              if (!is_page(11)):
+              if (!is_page(array(11,13))):
                 echo the_field('titulo_de_release');
               else:
                 echo get_the_title();
@@ -47,7 +47,7 @@
 
             <div class="columns h-a font-m">
               <?php
-              if (!is_page(11)):
+              if (!is_page(array(11,13))):
                 echo the_field('nombre_artista_release');;
               else:
                 echo get_the_author();
@@ -57,7 +57,7 @@
 
             <div class="columns p-0 small-6 h-a text-right font-s">
               <?php
-              if (!is_page(11)):
+              if (!is_page(array(11,13))):
                 echo the_field('dia_release') ." / ". the_field('mes_release') ." / " . the_field('ano_release');
               else:
                 echo get_the_date();
