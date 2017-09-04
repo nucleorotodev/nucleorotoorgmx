@@ -3,7 +3,7 @@
 Template Name: RotoFontTest
 */
 
-get_header();
+get_header('inicio');
 
 ?>
 
@@ -60,4 +60,4 @@ get_header();
 
 
 
-<?php get_footer(); ?>
+<?php get_footer('inicio'); ?>

@@ -58,7 +58,7 @@
             <div class="columns p-0 small-6 h-a text-right font-s">
               <?php
               if (!is_page(array(11,13))):
-                echo the_field('dia_release') ." / ". the_field('mes_release') ." / " . the_field('ano_release');
+                echo the_field('dia_release') . the_field('mes_release') . the_field('ano_release');
               else:
                 echo get_the_date();
               endif;

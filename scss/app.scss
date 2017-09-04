@@ -104,6 +104,27 @@ p, li, div, span, small, strong {
   // @extend .font-contenidos-6;
   //
 }
+#single-artistas div small {
+  @extend .font-especial-4;
+  // @extend .bold;
+  @extend .font-md-m;
+  @extend .font-s;
+}
+#artista-descripcion div {
+  @extend .font-especial-4;
+  @extend .bold;
+  @extend .font-l;
+}
+#artista-labels div {
+  @extend .font-especial-1;
+  @extend .bold;
+  @extend .font-l;
+}
+.info-releases {
+  @extend .font-especial-1;
+  @extend .font-l;
+}
+
 //fuentes especiales, especificas para algo
 #menu-escritorio ul li a, #menu-movil ul li a,
 .friendly-ul {
@@ -169,7 +190,8 @@ p, li, div, span, small, strong {
 }
 // fin sliders
 .titulo-sidebar {
-  writing-mode: sideways-lr;
+  // writing-mode: sideways-lr;
+  writing-mode: vertical-lr;
   text-orientation: mixed;
 }
 

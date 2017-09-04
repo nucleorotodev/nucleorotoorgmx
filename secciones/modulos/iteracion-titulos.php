@@ -25,7 +25,7 @@
 
         </h1>
 
-      </ li>
+      </li>
 
     <?php endfor; ?>
 
