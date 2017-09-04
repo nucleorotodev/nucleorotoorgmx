@@ -41,7 +41,7 @@
             </div>
           </div>
 
-          <div href="<?php echo get_the_permalink();?>" class="row align-middle small-10 small-centered p-0-2 p-md-1 p-lg-2">
+          <div class="row align-middle small-10 small-centered p-0-2 p-md-1 p-lg-2">
             <a href="<?php echo get_the_permalink();?>" class="columns h-a h-a text-center">
 
               <div class="columns p-0 z-1 cortina-negro absDownR">

@@ -56,15 +56,20 @@ function resize_reset() {
 
   jQuery(window).on('resize', function() {
     menu_movil()
+
     // al cambiar tamano cubre la pagina con el menu movil
-    jQuery("#menu-movil").css({
-      'transition': '0.01s',
-      '-webkit-transform': 'translateX(0px)',
-      '-moz-transform': 'translateX(0px)',
-      '-ms-transform': 'translateX(0px)',
-      '-o-transform': 'translateX(0px)',
-      'transform': 'translateX(0px)'
-    })
+    /*revisar, esto causa conflicto con los navegaores
+    moviles, por que al mostrar la barra de url cambia el tamano de la
+    ventana y ejecuta el resize solo haciendo scroll*/
+
+    // jQuery("#menu-movil").css({
+    //   'transition': '0.01s',
+    //   '-webkit-transform': 'translateX(0px)',
+    //   '-moz-transform': 'translateX(0px)',
+    //   '-ms-transform': 'translateX(0px)',
+    //   '-o-transform': 'translateX(0px)',
+    //   'transform': 'translateX(0px)'
+    // })
 
   })
 

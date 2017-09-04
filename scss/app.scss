@@ -58,7 +58,7 @@
 
 //reset general
 
-// *   {outline: 1px solid rgba(150,150,150,1)}
+// *   {outline: 1px solid rgba(100,100,100,1)}
 
 body {
   @extend .color-negro-bg;
@@ -186,16 +186,12 @@ p, li, div, span, small, strong {
   word-break: break-all;
 }
 //font redes heroscren
-.heroscreen-redes div a i {
+.heroscreen-redes div a {
   font-size: 1em;
   @extend .color-negro;
-}
-.heroscreen-redes div a i a {
-  @extend .color-negro;
-
-  &:hover {
-    @extend .color-terciario-0;
-  }
+    &:hover {
+      @extend .color-terciario-0;
+    }
 }
 #social div a i {
   font-size: 1em;
