@@ -17,45 +17,60 @@
     // setPostViews(get_the_ID());
     ?>
 
-    <div class="columns medium-6 p-3 h-60-v">
+    <div class="columns medium-6 p-4 h-60-v">
       <div class="columns p-0 imgLiquid imgLiquidNoFill">
         <img src="<?php echo the_field('imagen_artista');?>"/>
       </div>
     </div>
     <!-- side info -->
-    <div class="columns medium-6 p-0-2 p-md-1 h-60-v">
+    <div class="columns medium-6 p-0 p-md-1 h-a h-md-60-v">
       <div id="artista-descripcion" class="row align-middle h-100 text-left">
-        <div class="columns h-a">
-          <div class="columns h-a">
-            <small>País :</small> <?php echo the_field('pais_artista'); ?>
-          </div>
-          <div class="columns h-a">
-            <small>Proyectos alternos:</small> <?php echo the_field('proyectos_alternos'); ?>
-          </div>
-          <div class="columns h-a">
-            <small>Redes:</small>   <?php echo the_field('redes_artista'); ?>
-          </div>
-        </div>
-      </div>
 
+        <div class="columns p-0 h-a">
+
+          <div class="columns h-a">
+            <small>País :</small>
+            <div class="artista-descripcion columns h-a">
+              <?php echo the_field('pais_artista'); ?>
+            </div>
+          </div>
+
+          <div class="columns h-a">
+            <small>Redes:</small>
+            <div class="artista-descripcion columns h-a">
+              <?php echo the_field('redes_artista'); ?>
+            </div>
+          </div>
+
+          <div class="columns h-a">
+            <small>Proyectos alternos:</small>
+            <div class="artista-descripcion columns h-a">
+              <?php echo the_field('proyectos_alternos'); ?>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
+
     <!--  -->
 
     <!-- Bio labels info -->
     <div class="info-artista columns h-a">
       <small>Bio :</small>
       <div id="artista-bio" class="row align-middle h-100 text-left">
-        <div class="columns small-12 h-a text-left">
+        <div class="columns small-12 h-a text-left text-md-m">
           <?php echo the_field('bio'); ?>
         </div>
       </div>
     </div>
     <!-- otros labels info -->
-    <div class="info-artista columns h-a p-b-2">
+    <div class="info-artista columns h-a p-b-1">
       <small>Colectivos o Labels :</small>
       <div id="artista-labels" class="row align-middle h-100">
         <?php
-        for ($i=1; $i < 4; $i++):
+        for ($i=1; $i < 5; $i++):
           ?>
           <div class="columns small-12 medium-3 h-a text-left">
             <a href="<?php echo the_field('link_colectivo_' . $i); ?>" target="_blank">

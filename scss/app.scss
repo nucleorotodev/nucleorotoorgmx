@@ -104,16 +104,16 @@ p, li, div, span, small, strong {
   // @extend .font-contenidos-6;
   //
 }
-#single-artistas div small {
-  @extend .font-especial-4;
-  // @extend .bold;
-  @extend .font-md-m;
-  @extend .font-s;
-}
-#artista-descripcion div {
+.artista-descripcion {
   @extend .font-especial-4;
   @extend .bold;
   @extend .font-l;
+}
+#single-artistas div small {
+  @extend .font-especial-4;
+  // @extend .bold;
+  @extend .font-md-l;
+  @extend .font-m;
 }
 #artista-labels div {
   @extend .font-especial-1;
