@@ -9,7 +9,7 @@
 
     <p class="columns p-t-0-1 h-a font-xs font-md-s text-shadow color-blanco">
 
-      <i class="fa fa-copyright"></i> Nucleoroto <?php echo date("Y"); ?>
+      <i class="fa fa-copyright"></i> <? echo bloginfo(); ?> &nbsp; <?php echo date("Y"); ?>
 
     </p>
 
