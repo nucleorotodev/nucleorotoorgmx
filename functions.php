@@ -72,7 +72,7 @@ function cpt($cpt_slug,$paginado,$post_num=8,$orderby='ID') {
     'posts_per_page' => $post_num,
     'paged' => $paginado,
     'orderby' => $orderby,
-    'order'   => 'ASC',
+    'order'   => 'DESC',
   );
 
 }

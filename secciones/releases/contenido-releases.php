@@ -28,7 +28,7 @@
 
       <?php
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-      $args =  cpt('roto-releases',$paged,20,'ID');
+      $args =  cpt('roto-releases',$paged,20,'date');
       $q =  new WP_Query($args);
       if($q->have_posts()):
         while ($q->have_posts()): $q -> the_post();
