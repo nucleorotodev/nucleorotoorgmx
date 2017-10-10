@@ -51,7 +51,7 @@ function shuffle(array) {
 
   return array;
 }
-
+ 
 function resize_reset() {
 
   jQuery(window).on('resize', function() {
