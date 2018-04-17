@@ -36,7 +36,7 @@
         <div class="columns small-12 medium-6 h-45-v p-0 rel">
 
           <div class="columns absUpL z-1 p-0-3">
-            <div class="columns imgLiquid imgLiquidFill">
+            <div class="columns imgLiquid imgLiquidNoFill">
               <img src="<?php echo the_field('imagen_artista');?>" alt="<?php echo the_field('nombre_artista');?>">
             </div>
           </div>
