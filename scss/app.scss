@@ -104,7 +104,7 @@ p, li, div, span, small, strong {
   // @extend .font-contenidos-6;
   //
 }
-.artista-descripcion {
+.artista-descripcion, .release-descripcion {
   @extend .font-especial-4;
   @extend .bold;
   @extend .font-l;
@@ -130,7 +130,20 @@ p, li, div, span, small, strong {
   @extend .font-especial-1;
   @extend .font-l;
 }
-
+.numero-catalogo {
+  font-size: 3em !important;
+}
+.boton-release-descarga {
+  padding: 16px 8px;
+  font-size: 1.5em;
+  font-weight: bolder;
+  background-color: $verde-roto;
+  color: $blanco;
+  &:hover {
+    background-color: $color-terciario-0;
+    color: $verde-roto;
+  }
+}
 //fuentes especiales, especificas para algo
 #menu-escritorio ul li a, #menu-movil ul li a,
 .friendly-ul {
@@ -217,9 +230,9 @@ p, li, div, span, small, strong {
 .heroscreen-redes div a {
   font-size: 1em;
   @extend .color-negro;
-    &:hover {
-      @extend .color-terciario-0;
-    }
+  &:hover {
+    @extend .color-terciario-0;
+  }
 }
 #social div a i {
   font-size: 1em;
@@ -263,7 +276,7 @@ p, li, div, span, small, strong {
   transform: scale(1.01);
 }
 .release-titulo {
-    word-break: break-all;
+  word-break: break-all;
 }
 // color de tachitas manual
 .cat-item a {
