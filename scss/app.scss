@@ -120,6 +120,12 @@ p, li, div, span, small, strong {
   @extend .bold;
   @extend .font-l;
 }
+#single-releases div small {
+  @extend .font-especial-4;
+  // @extend .bold;
+  @extend .font-md-l;
+  @extend .font-m;
+}
 .info-releases {
   @extend .font-especial-1;
   @extend .font-l;
