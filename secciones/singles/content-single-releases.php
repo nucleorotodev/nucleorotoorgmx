@@ -82,15 +82,10 @@
         <li class="release-descripcion columns h-a">
           Fecha:  <?php echo the_field('dia_release'); ?> / <?php echo the_field('mes_release'); ?> / <?php echo the_field('ano_release'); ?>
         </li>
+        <li class="release-descripcion columns h-a">
+          Tipo:  <?php echo the_field('tipo_de_release'); ?>
+        </li>
       </ul>
-    </div>
-    <div class="info-release columns h-a">
-      <small>Tipo:</small>
-      <div id="release-tipo" class="row align-middle h-100 text-left">
-        <div class="release-descripcion columns small-12 h-a text-left">
-          <?php echo the_field('tipo_de_release'); ?>
-        </div>
-      </div>
     </div>
     <!--  -->
     <div class="info-release columns h-a p-b-1">
@@ -101,19 +96,23 @@
         </div>
       </div>
     </div>
-    <!--  releases y compilaciones-->
-    <div class="columns h-a">
-      <div class="info-releases columns small-12 medium-6 text-justify">
+    <!--  texto + html player-->
+    <div class="info-release columns p-0 h-a">
+      <!--  -->
+      <div class="info-releases columns small-12 large-6 text-justify">
         <small>
           Información:
         </small>
         <?php echo the_field('informacion_release'); ?>
       </div>
-      <div class="info-releases columns small-12 medium-6 p-0 text-left">
+      <!--  -->
+      <div class="info-releases columns small-12 large-6 text-left">
         <small>
-          Tracks:
+          Player:
         </small>
-        <?php echo the_field('release-player'); ?>
+        <div class="columns p-t-0-2">
+          <?php echo the_field('release-player'); ?>
+        </div>
       </div>
     </div>
 
