@@ -138,10 +138,10 @@ p, li, div, span, small, strong {
   font-size: 1.5em;
   font-weight: bolder;
   background-color: $verde-roto;
-  color: $blanco;
+  color: $color-terciario-0 !important;
   &:hover {
     background-color: $color-terciario-0;
-    color: $verde-roto;
+    color: $verde-roto !important;
   }
 }
 //fuentes especiales, especificas para algo

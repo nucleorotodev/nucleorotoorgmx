@@ -56,7 +56,7 @@
             </div>
           </div>
           <!--  -->
-          <div class="columns h-a m-t-1-2">
+          <div class="columns h-a m-t-1-2 p-1-2">
             <a class="boton-release-descarga columns text-center" href="<?php echo the_field('link-descarga-release')?>" target="_blank">
               Descarga / Download / Scaricare
             </a>
