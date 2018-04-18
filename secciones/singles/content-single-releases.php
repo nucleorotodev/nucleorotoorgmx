@@ -1,4 +1,4 @@
-<section id="single-releases" class="columns small-12 large-9 h-a p-0 p-md-1 p-top color-blanco">
+<section id="single-release" class="columns small-12 large-9 h-a p-0 p-md-1 p-top color-blanco">
 
   <?php
   if (have_posts()):
@@ -99,14 +99,14 @@
     <!--  texto + html player-->
     <div class="info-release columns p-0 h-a">
       <!--  -->
-      <div class="info-releases columns small-12 large-6 text-justify">
+      <div class="info-release columns small-12 large-6 text-justify">
         <small>
           Información:
         </small>
         <?php echo the_field('informacion_release'); ?>
       </div>
       <!--  -->
-      <div class="info-releases columns small-12 large-6 text-left">
+      <div class="info-release columns small-12 large-6 text-left">
         <small>
           Player:
         </small>

@@ -104,29 +104,35 @@ p, li, div, span, small, strong {
   // @extend .font-contenidos-6;
   //
 }
-.artista-descripcion, .release-descripcion {
+.artista-descripcion, .release-descripcion, .mixtape-descripcion {
   @extend .font-especial-4;
   @extend .bold;
   @extend .font-l;
 }
-#single-artistas div small {
+#single-artista div small {
   @extend .font-especial-4;
   // @extend .bold;
   @extend .font-md-l;
   @extend .font-m;
 }
 #artista-labels div {
-  @extend .font-especial-1;
-  @extend .bold;
-  @extend .font-l;
+  @extend .font-especial-4;
+  // @extend .bold;
+  @extend .font-m;
 }
-#single-releases div small {
+#single-release div small {
   @extend .font-especial-4;
   // @extend .bold;
   @extend .font-md-l;
   @extend .font-m;
 }
-.info-releases {
+#single-mixtape div small {
+  @extend .font-especial-4;
+  // @extend .bold;
+  @extend .font-md-l;
+  @extend .font-m;
+}
+.info-release, .info-mixtape, .info-artista {
   @extend .font-especial-1;
   @extend .font-l;
 }

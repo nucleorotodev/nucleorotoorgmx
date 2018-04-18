@@ -1,4 +1,4 @@
-<section id="single-artistas" class="columns small-12 large-9 h-a p-0 p-md-1 p-top color-blanco">
+<section id="single-artista" class="columns small-12 large-9 h-a p-0 p-md-1 p-top color-blanco">
 
   <?php
   if (have_posts()):
