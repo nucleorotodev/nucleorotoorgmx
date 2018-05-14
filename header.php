@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <header id="header" class="columns p-0 h-10 fixed top left color-negro-bg shadow z1k1">
+  <header id="header" class="columns p-0 fixed color-negro-bg shadow z1k1">
 
 
     <div id="header-logo" class="columns small-6 large-2 p-0-1 color-verde-roto-bg">

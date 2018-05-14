@@ -58,7 +58,10 @@
 
 //reset
 // *   {outline: 1px solid rgba(100,100,100,1)}
-
+// vars
+$altura-header: 60px;
+$altura-footer: 100px;
+//
 body {
   @extend .color-negro-bg;
 }
@@ -105,9 +108,15 @@ p, li, div, span, small, strong {
   //
 }
 .artista-descripcion, .release-descripcion, .mixtape-descripcion {
-  @extend .font-especial-4;
+  // @extend .font-especial-4;
   @extend .bold;
   @extend .font-l;
+}
+#header {
+  height: $altura-header;
+}
+#footer {
+  height: $altura-footer;
 }
 #single-artista div small {
   @extend .font-especial-4;
@@ -176,10 +185,10 @@ p, li, div, span, small, strong {
 // tienen la misma altura que footer y header
 // para contenedor seccion esencialmente
 .p-top {
-  padding-top: 10vh;
+  padding-top: $altura-header;
 }
 .p-bottom {
-  padding-bottom: 10vh;
+  padding-bottom: $altura-footer;
 }
 // slider
 .slick-dots {
