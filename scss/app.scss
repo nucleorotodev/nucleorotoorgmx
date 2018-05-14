@@ -56,8 +56,7 @@
 @import "paleta_color";
 @import "fonts";
 
-//reset general
-
+//reset
 // *   {outline: 1px solid rgba(100,100,100,1)}
 
 body {
@@ -88,11 +87,12 @@ h1,h2,h3,h4,h5,h6 {
   // @extend .font-headings-1;
   // @extend .font-headings-2;
   // @extend .font-headings-3;
-  @extend .font-headings-4;
+  // @extend .font-headings-4;
   // @extend .font-headings-5;
   // @extend .font-headings-6;
   // @extend .font-headings-7;
   // @extend .font-headings-8;
+  @extend .font-headings-9;
   //
 }
 p, li, div, span, small, strong {
