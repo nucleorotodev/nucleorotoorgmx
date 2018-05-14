@@ -1,4 +1,4 @@
-# Sitio nucleoroto.org.mx v2.0
+# Nucleoroto WP theme v3.0
 ## Desarrollos rotos
 
 ## Instrucciones
@@ -9,6 +9,3 @@
 - bower	install
 - git	submodule	update	--init	--recursive
 - foundation watch
-
-
-##### A desarrollar Rotos :D
