@@ -6,10 +6,10 @@
     <section class="grid-x cell h-70-v" data-parallax="scroll" data-speed="0.15" data-image-src="<?php echo the_field('imagen_cabecera_release');?>">
 
       <div class="row align-middle">
-        <h2 class="word-break titulo-anim columns p-l-3 p-r-3 h-a color-blanco text-shadow">
+        <h2 class="word-break titulo-header-releases titulo-anim columns p-l-3 p-r-3 h-a color-blanco text-shadow">
           <?php echo the_field('nombre_artista_release'); ?>
         </h2>
-        <h3 class="word-break titulo-anim columns p-l-3 p-r-3 h-a color-blanco text-shadow">
+        <h3 class="word-break subtitulo-header-releases titulo-anim columns p-l-3 p-r-3 h-a color-blanco text-shadow">
           <?php echo the_field('titulo_de_release'); ?>
         </h3>
       </div>

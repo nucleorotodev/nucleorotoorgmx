@@ -311,6 +311,17 @@ p, li, div, span, small, strong {
 .titulo-anim {
   transition: 0.25s;
 }
+.titulo-header-artistas {
+  font-size: 5rem;
+}
+.titulo-header-releases,
+.titulo-header-mixtapes {
+  font-size: 4rem;
+}
+.subtitulo-header-releases,
+.subtitulo-header-mixtapes {
+  font-size: 3rem;
+}
 // formularios
 form {
 

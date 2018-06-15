@@ -5,7 +5,7 @@
     <?php
 
     $content = get_the_title();
-    $fuente = array('xxxs','xxs','s','m','l','xl');
+    $fuente = array('xxs','xs','m','l','xl','xxl');
     $length = count($fuente) - 1 ;
     for ($i=0; $i <= $length ; $i++):
 
