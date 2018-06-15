@@ -1,4 +1,4 @@
-<section id="mercado-inicio" class="grid-x cell columns h-100-v p-top rel">
+<section id="mercado-inicio" class="grid-x cell columns h-100-v p-top p-bottom rel">
   <!-- Textura fondo -->
   <div class="fondo-mercado columns p-0 absUpL top left h-100-v z-1k">
 

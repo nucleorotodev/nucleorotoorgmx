@@ -1,4 +1,4 @@
-<section id="inicio-blog" class="grid-x cell columns small-12 medium-6 h-100-v rel color-verde-roto-bg end">
+<section id="inicio-blog" class="grid-x cell columns small-12 medium-6 h-100-v p-top p-bottom rel color-verde-roto-bg end">
 
 
 

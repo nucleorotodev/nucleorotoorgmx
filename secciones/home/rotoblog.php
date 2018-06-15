@@ -1,4 +1,4 @@
-<section id="inicio-blog" class="grid-x cell columns small-12 medium-6 h-100-v p-top rel color-terciario-0-bg color-blanco end">
+<section id="inicio-blog" class="grid-x cell columns small-12 medium-6 h-100-v p-top p-bottom rel color-terciario-0-bg color-blanco end">
 
   <a href="<?php echo get_the_permalink(7);?>" class="columns p-0 color-negro-hover">
     <h1 class="titulo-inicio-anim h-a columns p-0 text-center">

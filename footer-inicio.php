@@ -3,23 +3,32 @@
 </main>
 
 
-<footer id="footer" class="grid-container fluid h-a p-t-1 p-b-1 color-blanco-bg shadow-up z1k1 color-negro-bg">
+<footer id="footer" class="columns p-t-1 p-b-1 shadow-up z1k1 color-negro-bg">
 
-  <div class="copyright grid-x small-5 text-left align-middle">
+  <div class="copyright columns small-5 text-left align-middle">
 
-    <p class="cell p-t-0-1 h-a font-xs font-md-s text-shadow color-blanco">
+    <div class="row p-t-0-1 font-xs font-md-s text-shadow color-blanco align-middle">
 
-      <i class="fa fa-copyright"></i> <? echo bloginfo(); ?> &nbsp; <?php echo date("Y"); ?>
+      <div class="column h-a">
 
-    </p>
+        <i class="fa fa-copyright"></i> <? echo bloginfo(); ?> &nbsp; <?php echo date("Y"); ?>
+
+      </div>
+
+    </div>
 
   </div>
 
-  <div id="social" class="grid-x small-7 p-0">
+  <div id="social" class="column small-7 p-0">
 
-    <?php
-    get_template_part('secciones/modulos/redes');
-    ?>
+    <div class="row align-middle">
+
+      <?php
+      get_template_part('secciones/modulos/redes');
+      ?>
+
+    </div>
+
 
   </div>
 

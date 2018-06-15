@@ -58,4 +58,4 @@
     <?php get_template_part('secciones/general/menu-movil') ?>
   </div>
 
-  <main id="main" class="grid-container fluid h-a">
+  <main id="main" class="columns h-a">

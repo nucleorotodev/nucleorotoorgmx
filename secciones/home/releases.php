@@ -15,7 +15,7 @@
       <a href="<?php echo get_the_permalink(11);?>" class="row align-middle rel p-b-0-3 color-secundario-0-bg color-secundario-1-hover-bg color-blanco shadow-up">
 
         <div class="columns h-a">
-          <h3 class="columns p-0-2 text-center font-lg-xxl">
+          <h3 class="columns p-0-2 text-center">
             <?php echo get_the_title();?>
           </h3>
           <span class="columns p-0-2 text-justify font-s font-sm-m font-lg-l card-section">

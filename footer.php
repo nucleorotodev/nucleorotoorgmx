@@ -61,19 +61,27 @@
 
   <div class="copyright columns small-5 text-left v-center">
 
-    <p class="columns p-0 p-b-0-2 h-a font-xs font-md-s text-shadow color-blanco">
+    <div class="row p-t-0-1 font-xs font-md-s text-shadow color-blanco align-middle">
 
-      <i class="fa fa-copyright"></i> Nucleoroto <?php echo date("Y"); ?>
+      <div class="column h-a">
 
-    </p>
+        <i class="fa fa-copyright"></i> <? echo bloginfo(); ?> &nbsp; <?php echo date("Y"); ?>
+
+      </div>
+
+    </div>
 
   </div>
 
   <div id="social" class="columns small-7 p-0">
 
-    <?php
-    get_template_part('secciones/modulos/redes');
-    ?>
+    <div class="row align-middle">
+
+      <?php
+      get_template_part('secciones/modulos/redes');
+      ?>
+
+    </div>
 
   </div>
 
