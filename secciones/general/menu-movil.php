@@ -18,7 +18,7 @@
 
     <div class="row align-middle">
 
-      <h1 class="titulo-anim columns p-0 text-center h-a font-huge color-verde-roto">
+      <h1 class="titulo-anim titulo-menu-movil columns p-0 text-center h-a font-huge color-verde-roto">
         <?php echo "Nucleoroto" ?>
       </h1>
 

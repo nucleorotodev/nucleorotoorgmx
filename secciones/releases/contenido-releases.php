@@ -47,11 +47,11 @@
             </div>
 
             <!-- Titulo release -->
-            <h4 class="release-titulo columns p-0 h-a">
+            <h3 class="release-titulo columns p-0 h-a">
 
               <?php echo the_field('titulo_de_release'); ?>
 
-            </h4>
+            </h3>
             <small class="columns p-0-2 text-center">Descarga</small>
 
           </a>

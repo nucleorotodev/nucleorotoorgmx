@@ -6,7 +6,7 @@
     <?php
 
     $content = 'NUCLEOROTO Acid Trip Dev Team';
-    $fuente = array('xs','s','m','l','xl','xxl');
+    $fuente = array('s','m','l','xl','xxl','xxxl');
 
     for ($i=0; $i <= 5 ; $i++):
 

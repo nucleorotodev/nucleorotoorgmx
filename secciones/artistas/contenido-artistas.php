@@ -47,11 +47,11 @@
               <div class="columns p-0 z-1 cortina-negro absDownR">
               </div>
 
-              <h4 class="release-titulo columns p-0 h-a">
+              <h3 class="release-titulo columns p-0 h-a">
 
                 <?php echo the_field('nombre_artista'); ?>
 
-              </h4>
+              </h3>
 
             </a>
           </div>
