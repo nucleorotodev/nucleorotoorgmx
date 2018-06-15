@@ -9,7 +9,7 @@
 
       <div class="columns small-1 medium-2 large-1 p-0 text-center p-b-1">
         <div class="columns p-0 color-verde-roto-bg rel">
-          <h6 class="titulo-sidebar h-a color-negro-bg color-verde-roto p-t-0-2 p-b-0-2 absUpL top right">
+          <h3 class="titulo-sidebar h-a color-negro-bg color-verde-roto p-t-0-2 p-b-0-2 absUpL top right">
             <?php if (!is_page( array(11,13) )): ?>
               Random Releases
               <?php else: ?>
@@ -18,7 +18,7 @@
             endif;
             ?>
 
-          </h6>
+          </h3>
         </div>
       </div>
 
