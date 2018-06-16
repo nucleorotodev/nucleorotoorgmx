@@ -257,6 +257,9 @@ p, li, div, span, small, strong {
 #mercado-inicio, #inicio-label {
   background-color: rgba(0,0,0,0.15)
 }
+#inicio-label {
+  padding-bottom: $altura-footer/2;
+}
 //posicion menu movil
 .gira-icono-menu {
   transition: 0.4s;
