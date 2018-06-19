@@ -4,35 +4,52 @@ get_header();
 
 ?>
 
-<section id="primary" class="content-area">
-  <div id="content" class="site-content" role="main">
+<section id="busqueda" class="content-area columns small-12 large-9 p-0 color-blanco p-top">
+  <div id="content" class="site-content">
 
     <?php if ( have_posts() ) : ?>
 
-      <header class="page-header">
-        <h1 class="page-title"><?php printf( __( 'Buscaste: %s', 'shape' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-        </header><!-- .page-header -->
+      <div class="row text-center">
+        <h1 class="columns">
+          <?php printf( __( 'Encontramos:', 'shape' ), '<span>' . get_search_query() . '</span>' ); ?>
+        </h1>
+      </div>
 
-        <?php shape_content_nav( 'nav-above' ); ?>
+      <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php /* Start the Loop */ ?>
-        <?php while ( have_posts() ) : the_post(); ?>
 
-          <?php get_template_part( 'content', 'search' ); ?>
+        <div class="columns rel">
+          <!-- <div class="columns imgLiquid imgLiquidFill">
+            <img src="<?php //echo get_the_post_thumbnail_url();?>" alt="">
+          </div> -->
 
-        <?php endwhile; ?>
+          <a href="<?php echo get_the_permalink();?>" class="columns color-terciario-0-hover">
 
-        <!-- <?php //shape_content_nav( 'nav-below' ); ?> -->
+            <h1 class="columns text-center p-0-3 color-blanco"><?php echo get_the_title(); ?></h1>
 
-      <?php else : ?>
+          </a>
+        </div>
 
-        <?php get_template_part( 'no-results', 'search' ); ?>
+      <?php endwhile; ?>
 
-      <?php endif; ?>
+    <?php else : ?>
+      <div class="row align-middle h-50-v">
 
-    </div><!-- #content .site-content -->
-  </section><!-- #primary .content-area -->
+        <h1 class="titulo-menu-movil columns small-12 text-center">
+          <?php printf( __( '404' )); ?>
+        </h1>
 
-  <?php
+        <h1 class="columns small-12 text-center">
+          <?php printf( __( 'No encontramos: %s', 'shape' ), '<div class="h-a">' . get_search_query() . '</div>' ); ?>
+        </h1>
 
-  get_footer();
+      </div>
+
+    <?php endif; ?>
+
+  </div><!-- #content .site-content -->
+</section><!-- #primary .content-area -->
+
+<?php
+
+get_footer();

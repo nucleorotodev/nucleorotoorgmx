@@ -1,8 +1,8 @@
 <div class="columns p-1 small-11 medium-10 large-11 h-95 p-t-0 ovH">
-  <div class="columns text-center h-a p-0-1">
+  <div class="columns text-center h-a p-0 m-b-0-3">
     <!-- <small class="subheader"> << drag >> </small> -->
     <small class="subheader"> << Busca: >> </small>
-    <div class="h-a">
+    <div class="busqueda columns p-0 h-a">
       <?php echo get_search_form(); ?>
     </div>
   </div>
