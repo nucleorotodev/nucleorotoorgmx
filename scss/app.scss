@@ -115,14 +115,45 @@ p, li, div, span, small, strong {
   @extend .bold;
   @extend .font-l;
 }
+form input, form textarea, form select, form option {
+  width: 100%;
+}
+// .busqueda {
+//   height: 25px;
+//   form {
+//     .input-search {
+//       height: 25px;
+//       width: 85% !important;
+//       display: inline-block;
+//       input[type="text"] {
+//         height: 100%;
+//         width: 100%;
+//       }
+//     }
+//     .input-search-button {
+//       height: 25px;
+//       width: 25px;
+//       display: inline-block;
+//       input[type="image"] {
+//         height: 100%;
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
 .busqueda {
-  input[type="text"] {
-    width: 70% !important;
-    display: inline-block;
-  }
-  input[type="submit"] {
-    width: 25% !important;
-    display: inline-block;
+  height: 25px;
+  form {
+      input[type="text"] {
+      // height: 25px;
+      width: 65% !important;
+      display: inline-block;
+    }
+      input[type="submit"] {
+      // height: 30px;
+      width: 30%;
+      display: inline-block;
+    }
   }
 }
 #header {

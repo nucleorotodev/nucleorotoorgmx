@@ -6,7 +6,7 @@
     <section class="grid-x cell h-100-v h-md-85-v" data-parallax="scroll" data-speed="0.5" data-image-src="<?php echo get_the_post_thumbnail_url();?>">
 
       <div class="row align-middle">
-        <div class="columns p-l-3 p-r-3 h-a color-blanco">
+        <div class="columns h-a color-blanco">
           <?php get_template_part('secciones/modulos/iteracion-titulos'); ?>
         </div>
       </div>

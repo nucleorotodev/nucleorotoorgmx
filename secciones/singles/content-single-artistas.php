@@ -6,7 +6,7 @@
     <section class="grid-x cell h-60-v" data-parallax="scroll" data-speed="0.15" data-image-src="<?php echo the_field('imagen_header_artista');?>">
 
       <div class="row align-middle">
-        <h1 class="word-break titulo-header-artistas titulo-anim columns p-l-3 p-r-3 h-a color-blanco text-shadow">
+        <h1 class="word-break titulo-header-artistas titulo-anim columns h-a color-blanco text-shadow">
           <?php echo the_field('nombre_artista'); ?>
         </h1>
       </div>

@@ -22,7 +22,7 @@
           <div class="textos-slider row align-middle rel p-0 z-1k1 absUpL">
             <div class="textos-slider columns h-a p-0 color-white">
 
-              <h1 class="titulo-slider-home columns p-1 text-center text-shadow color-blanco">
+              <h1 class="titulo-slider-home columns text-center text-shadow color-blanco">
 
                 <?php
                 echo get_the_title();
