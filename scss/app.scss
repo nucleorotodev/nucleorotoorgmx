@@ -7,8 +7,8 @@
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-flex-grid;
-// @include foundation-typography;
-// @include foundation-button;
+@include foundation-typography;
+@include foundation-button;
 // @include foundation-forms;
 // @include foundation-range-input;
 // @include foundation-accordion;
@@ -19,14 +19,14 @@
 // @include foundation-callout;
 @include foundation-card;
 // @include foundation-close-button;
-// @include foundation-menu;
-// @include foundation-menu-icon;
+@include foundation-menu;
+@include foundation-menu-icon;
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown;
 // @include foundation-dropdown-menu;
 // @include foundation-responsive-embed;
 // @include foundation-label;
-// @include foundation-media-object;
+@include foundation-media-object;
 // @include foundation-off-canvas;
 // @include foundation-orbit;
 // @include foundation-pagination;
@@ -55,7 +55,6 @@
 @import "submodulos/style_utils/scss/style_utils";
 @import "paleta_color";
 @import "fonts";
-
 //reset
 // *   {outline: 1px solid rgba(100,100,100,1)}
 // vars
@@ -64,6 +63,10 @@ $altura-footer: 100px;
 //
 body {
   @extend .color-negro-bg;
+}
+#main {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 //
 //
