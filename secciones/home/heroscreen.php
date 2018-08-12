@@ -15,7 +15,6 @@
           <!-- fondo slide -->
           <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 
-            <!-- <img src="<?php //echo the_field('imagen_portada');?>" alt="<?php //echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" /> -->
             <img src="<?php echo the_field('imagen_cabecera_release');?>" alt="<?php echo the_field('nombre_artista_release')  . " - " . the_field('titulo_de_release');?>" />
 
           </div>
@@ -46,7 +45,7 @@
             </div>
             <div class="columns small-8 medium-4 large-2 small-centered h-a">
 
-              <a href="<?php echo get_permalink();?>" class="color-primario-0-bg color-primario-1-hover-bg color-blanco-hover color-negro columns p-1-1 font-s font-sm-m font-lg-l text-center shadow">
+              <a href="<?php echo get_permalink();?>" class="color-primario-1-bg color-primario-1-hover-bg color-blanco-hover color-negro columns p-1-1 font-s font-sm-m font-lg-l text-center shadow">
 
                 <?php
 

@@ -28,7 +28,7 @@
         <div class="columns absUpL z-1 imgLiquid imgLiquidFill"><?php
         if (!is_page(array(11,13))):
           ?>
-          <img src="<?php echo the_field('imagen_portada');?>" alt="<?php echo the_field('titulo_de_release');?>"/>
+          <img src="<?php echo the_field('imagen_cabecer_release');?>" alt="<?php echo the_field('nombre_artista_release')  . " - " . the_field('titulo_de_release');?>"/>
             <?php
           else:
             echo get_the_post_thumbnail();

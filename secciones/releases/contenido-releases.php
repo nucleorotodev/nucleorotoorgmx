@@ -47,7 +47,7 @@
             </div>
 
             <!-- Titulo release -->
-            <h3 class="release-titulo columns p-0 h-a">
+            <h3 class="release-titulo columns p-0 h-a text-center p-t-0-2">
 
               <?php echo the_field('titulo_de_release'); ?>
 
