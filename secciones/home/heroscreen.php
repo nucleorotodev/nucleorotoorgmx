@@ -22,30 +22,20 @@
           <div class="textos-slider row align-middle rel p-0 z-1k1 absUpL">
             <div class="textos-slider columns h-a p-0 color-white">
 
-              <h1 class="titulo-slider-home columns text-center color-blanco">
-                <?php
-                echo get_the_title();
-                ?>
-              </h1>
               <h3 class="titulo-slider-home columns text-center color-blanco">
                 <?php
                 echo the_field('nombre_artista_release');
                 ?>
               </h3>
-              <div class="columns small-10 medium-8 large-6 p-1 m-b-0-3 rel bold h-a text-shadow text-justify small-centered font-s font-sm-m font-lg-l color-blanco">
-                <!-- <div class="columns p-0-3 cortina-negro absUpL z-1">
+              <h1 class="titulo-slider-home columns text-center color-blanco">
+                <?php
+                echo get_the_title();
+                ?>
+              </h1>
 
-              </div> -->
-              <?php
-
-              // echo excerpt(19);
-
-              ?>
-
-            </div>
             <div class="columns small-8 medium-4 large-2 small-centered h-a">
 
-              <a href="<?php echo get_permalink();?>" class="color-primario-1-bg color-primario-1-hover-bg color-blanco-hover color-negro columns p-1-1 font-s font-sm-m font-lg-l text-center shadow">
+              <a href="<?php echo get_permalink();?>" class="color-verde-roto-bg color-primario-1-hover-bg color-blanco-hover color-negro columns p-0-3 font-s font-sm-m font-lg-l text-center">
 
                 <?php
 

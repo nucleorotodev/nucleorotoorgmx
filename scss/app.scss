@@ -144,12 +144,12 @@ form input, form textarea, form select, form option {
 .busqueda {
   height: 25px;
   form {
-      input[type="text"] {
+    input[type="text"] {
       // height: 25px;
       width: 65% !important;
       display: inline-block;
     }
-      input[type="submit"] {
+    input[type="submit"] {
       // height: 30px;
       width: 30%;
       display: inline-block;
@@ -225,6 +225,9 @@ form input, form textarea, form select, form option {
 .text-shadow {
   text-shadow: 2px 2px 2px rgba(0,0,0,0.35);
 }
+.rounded {
+  border-radius: 10px;
+}
 // p.top y p-bottom
 // tienen la misma altura que footer y header
 // para contenedor seccion esencialmente
@@ -238,11 +241,12 @@ form input, form textarea, form select, form option {
 .slick-dots {
   height: 10vh;
 }
+
 .slick-dots li button::before {
   color: black;
   content: "•";
   font-family: "slick";
-  @extend .font-s;
+  // @extend .font-s;
   @extend .font-m;
   @extend .color-primario-0;
   @extend .color-primario-1-hover;
@@ -255,6 +259,9 @@ form input, form textarea, form select, form option {
   top: 0;
   width: auto;
 }
+li.slick-active button::before {
+  color: $verde-roto !important;
+}
 .slick-list .draggable {
   height: 100% !important;
   &.slick-track {
@@ -265,6 +272,10 @@ form input, form textarea, form select, form option {
   &.slick-dots {
     height: auto;
   }
+}
+.slick-vertical .slick-slide {
+  border: 2px solid transparent;
+  height: 150px;
 }
 // fin sliders
 .titulo-sidebar {

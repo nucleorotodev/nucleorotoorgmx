@@ -51,25 +51,12 @@ function shuffle(array) {
 
   return array;
 }
- 
+
 function resize_reset() {
 
   jQuery(window).on('resize', function() {
+
     menu_movil()
-
-    // al cambiar tamano cubre la pagina con el menu movil
-    /*revisar, esto causa conflicto con los navegaores
-    moviles, por que al mostrar la barra de url cambia el tamano de la
-    ventana y ejecuta el resize solo haciendo scroll*/
-
-    // jQuery("#menu-movil").css({
-    //   'transition': '0.01s',
-    //   '-webkit-transform': 'translateX(0px)',
-    //   '-moz-transform': 'translateX(0px)',
-    //   '-ms-transform': 'translateX(0px)',
-    //   '-o-transform': 'translateX(0px)',
-    //   'transform': 'translateX(0px)'
-    // })
 
   })
 
@@ -165,7 +152,6 @@ function menu_movil() {
 
       },500)
 
-
     } else {
       // sale menu
       menumovil.css(salemenu)
@@ -196,11 +182,11 @@ function slider_heroscreen() {
 
   jQuery('.slider-portada').slick({
     autoplay: true,
-    autoPlaySpeed: 1000,
+    autoPlaySpeed: 1500,
     dots: true,
     arrows: false,
     infinite: true,
-    speed: 750,
+    speed: 850,
     fade: true,
     cssEase: 'linear'
   })
@@ -238,15 +224,15 @@ function slider_sidebar() {
 
   jQuery('.slider-sidebar').slick({
     autoplay: true,
-    autoPlaySpeed: 2000,
-    dots: false,
+    autoPlaySpeed: 1500,
+    dots: true,
     arrows: false,
-    slidesToShow:7,
+    slidesToShow:6,
     slidesToScroll: 1,
     infinite: true,
     vertical: true,
     verticalSwiping: false,
-    speed: 500,
+    speed: 750,
     cssEase: 'linear'
   })
 }
