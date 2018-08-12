@@ -15,20 +15,24 @@
           <!-- fondo slide -->
           <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidFill">
 
-            <img src="<?php echo the_field('imagen_portada');?>" alt="<?php echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" />
+            <!-- <img src="<?php //echo the_field('imagen_portada');?>" alt="<?php //echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" /> -->
+            <img src="<?php echo the_field('imagen_cabecera_release');?>" alt="<?php echo the_field('nombre_artista_release')  . " - " . the_field('titulo_de_release');?>" />
 
           </div>
 
           <div class="textos-slider row align-middle rel p-0 z-1k1 absUpL">
             <div class="textos-slider columns h-a p-0 color-white">
 
-              <h1 class="titulo-slider-home columns text-center text-shadow color-blanco">
-
+              <h1 class="titulo-slider-home columns text-center color-blanco">
                 <?php
                 echo get_the_title();
                 ?>
-
               </h1>
+              <h3 class="titulo-slider-home columns text-center color-blanco">
+                <?php
+                echo the_field('nombre_artista_release');
+                ?>
+              </h3>
               <div class="columns small-10 medium-8 large-6 p-1 m-b-0-3 rel bold h-a text-shadow text-justify small-centered font-s font-sm-m font-lg-l color-blanco">
                 <!-- <div class="columns p-0-3 cortina-negro absUpL z-1">
 
