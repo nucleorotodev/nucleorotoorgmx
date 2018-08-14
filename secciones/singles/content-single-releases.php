@@ -33,21 +33,21 @@
 
         <div class="columns p-0 h-a">
 
-          <div class="columns h-a">
+          <div class="info-title columns h-a">
             <small>Catálogo:</small>
             <div class="release-descripcion columns h-a numero-catalogo">
               <?php echo the_field('numero_de_catalogo'); ?>
             </div>
           </div>
 
-          <div class="columns h-a">
+          <div class="info-title columns h-a">
             <small>Nombre:</small>
             <div class="release-descripcion columns h-a">
               <?php echo the_field('titulo_de_release'); ?>
             </div>
           </div>
 
-          <div class="columns h-a">
+          <div class="info-title columns h-a">
             <small>Artista:</small>
             <div class="release-descripcion columns h-a">
               <a href="<?php echo the_field('link_a_artista_release');?>" target="_blank">
@@ -56,7 +56,7 @@
             </div>
           </div>
           <!--  -->
-          <div class="columns h-a m-t-1-2 p-1-2">
+          <div class="info-title columns h-a m-t-1-2 p-1-2">
             <a class="boton-release-descarga columns text-center" href="<?php echo the_field('link-descarga-release')?>" target="_blank">
               Descarga / Download / Scaricare
             </a>
@@ -73,7 +73,7 @@
     <!--  -->
 
     <!-- General info -->
-    <div class="columns h-a">
+    <div class="info-title columns h-a">
       <small>Released:</small>
       <ul>
         <li class="release-descripcion columns h-a">
@@ -88,7 +88,7 @@
       </ul>
     </div>
     <!--  -->
-    <div class="info-release columns h-a p-b-1">
+    <div class="info-title info-release columns h-a p-b-1">
       <small>Formatos disponibles:</small>
       <div id="release-formato" class="row align-middle h-100">
         <div class="release-descripcion columns small-12 medium-12 h-a text-left">
@@ -97,16 +97,16 @@
       </div>
     </div>
     <!--  texto + html player-->
-    <div class="info-release columns p-0 h-a">
+    <div class="info-title info-release columns p-0 h-a">
       <!--  -->
-      <div class="info-release columns small-12 large-6 text-justify">
+      <div class="info-title info-release columns small-12 large-6 text-justify">
         <small>
           Información:
         </small>
         <?php echo the_field('informacion_release'); ?>
       </div>
       <!--  -->
-      <div class="info-release columns small-12 large-6 text-left">
+      <div class="info-title info-release columns small-12 large-6 text-left">
         <small>
           Player:
         </small>

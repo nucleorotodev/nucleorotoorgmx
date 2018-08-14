@@ -189,6 +189,10 @@ form input, form textarea, form select, form option {
   @extend .font-especial-1;
   @extend .font-l;
 }
+.info-title {
+  @extend .font-headings-9;
+  @extend .font-l;
+}
 .numero-catalogo {
   font-size: 3em !important;
 }
