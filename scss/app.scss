@@ -163,48 +163,59 @@ form input, form textarea, form select, form option {
   height: $altura-footer;
 }
 #single-artista div small {
-  @extend .font-especial-4;
-  // @extend .bold;
-  @extend .font-md-l;
-  @extend .font-m;
+  // @extend .font-especial-4;
+  @extend .font-especial-1;
+  @extend .color-verde-roto;
+  font-size: 0.8em !important;
+  letter-spacing: 0.1em;
 }
 #artista-labels div {
-  @extend .font-especial-4;
-  // @extend .bold;
-  @extend .font-m;
+  // @extend .font-especial-4;
+  @extend .font-especial-1;
+  @extend .color-verde-roto;
+  font-size: 0.8em !important;
+  letter-spacing: 0.1em;
 }
 #single-release div small {
-  @extend .font-especial-4;
-  // @extend .bold;
-  @extend .font-md-l;
-  @extend .font-m;
+  // @extend .font-especial-4;
+  @extend .font-especial-1;
+  @extend .color-verde-roto;
+  font-size: 0.8em !important;
+  letter-spacing: 0.1em;
 }
 #single-mixtape div small {
-  @extend .font-especial-4;
-  // @extend .bold;
-  @extend .font-md-l;
-  @extend .font-m;
+  // @extend .font-especial-4
+  @extend .font-especial-1;
+  @extend .color-verde-roto;
+  font-size: 0.8em !important;
+  letter-spacing: 0.1em;
 }
-.info-release, .info-mixtape, .info-artista {
+.img-perfil {
+  height: 480px;
+}
+// .info-release, .info-mixtape, .info-artista {
+//   @extend .font-especial-1;
+//   @extend .font-l;
+// }
+.info-title {
   @extend .font-especial-1;
   @extend .font-l;
-}
-.info-title {
-  @extend .font-headings-9;
-  @extend .font-l;
+
 }
 .numero-catalogo {
   font-size: 3em !important;
 }
 .boton-release-descarga {
-  padding: 16px 8px;
-  font-size: 1.5em;
+  padding: 8px;
+  font-size: 1em;
   font-weight: bolder;
   background-color: $verde-roto;
-  color: $color-terciario-0 !important;
+  // color: $color-terciario-0 !important;
+  color: $blanco !important;
   &:hover {
     background-color: $color-terciario-0;
-    color: $verde-roto !important;
+    // color: $verde-roto !important;
+    color: $negro !important;
   }
 }
 //fuentes especiales, especificas para algo
@@ -288,7 +299,11 @@ li.slick-active button::before {
   text-orientation: mixed;
   line-height: 25px;
 }
-
+#sidebar {
+  h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+  }
+}
 .icono-radio {
   font-size: 5em;
 }

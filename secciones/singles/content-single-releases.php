@@ -20,7 +20,7 @@
     // setPostViews(get_the_ID());
     ?>
 
-    <div class="columns medium-6 p-4 h-60-v">
+    <div class="img-perfil columns medium-6 p-4">
       <a href="<?php echo the_field('link-descarga-release')?>" target="_blank">
         <div class="columns p-0 imgLiquid imgLiquidNoFill">
           <img src="<?php echo the_field('imagen_portada');?>"/>
@@ -40,25 +40,33 @@
             </div>
           </div>
 
-          <div class="info-title columns h-a">
-            <small>Nombre:</small>
-            <div class="release-descripcion columns h-a">
-              <?php echo the_field('titulo_de_release'); ?>
+            <div class="info-title columns h-a">
+              <small>Nombre:</small>
+              <div class="release-descripcion columns h-a">
+                <?php echo the_field('titulo_de_release'); ?>
+              </div>
             </div>
-          </div>
 
-          <div class="info-title columns h-a">
-            <small>Artista:</small>
-            <div class="release-descripcion columns h-a">
-              <a href="<?php echo the_field('link_a_artista_release');?>" target="_blank">
-                <?php echo the_field('nombre_artista_release'); ?>
-              </a>
+            <div class="info-title columns h-a">
+              <small>Artista:</small>
+              <div class="release-descripcion columns h-a">
+                <a href="<?php echo the_field('link_a_artista_release');?>" target="_blank">
+                  <?php echo the_field('nombre_artista_release'); ?>
+                </a>
+              </div>
             </div>
-          </div>
+
           <!--  -->
-          <div class="info-title columns h-a m-t-1-2 p-1-2">
+          <div class="info-title columns small-12 h-a p-1-2">
             <a class="boton-release-descarga columns text-center" href="<?php echo the_field('link-descarga-release')?>" target="_blank">
-              Descarga / Download / Scaricare
+              <ul>
+                <li>
+                  Descarga&nbsp;/&nbsp;Download&nbsp;/&nbsp;Scaricare&nbsp;
+                </li>
+                <li>
+                  <i class="fa fa-arrow-down"></i>
+                </li>
+              </ul>
             </a>
           </div>
 
@@ -111,7 +119,9 @@
           Player:
         </small>
         <div class="columns p-t-0-2">
+          <center>
           <?php echo the_field('release-player'); ?>
+        </center>
         </div>
       </div>
     </div>

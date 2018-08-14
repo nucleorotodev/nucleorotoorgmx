@@ -1,4 +1,4 @@
-<div class="columns p-1 small-11 medium-10 large-11 h-95 p-t-0 ovH">
+<div id="sidebar" class="columns p-1 small-11 medium-10 large-11 h-95 p-t-0 ovH">
   <div class="columns text-center h-a p-0 m-b-0-3">
     <!-- <small class="subheader"> << drag >> </small> -->
     <small class="subheader"> << Busca: >> </small>
@@ -37,7 +37,7 @@
       </div>
 
       <div class="columns p-0-1 h-a">
-        <a href="<?php echo get_the_permalink();?>" class="columns rel rounded h-100 p-0-2 color-blanco color-secundario-1-hover cortina-negro">
+        <a href="<?php echo get_the_permalink();?>" class="columns rel h-100 p-0-2 color-blanco color-secundario-1-hover cortina-negro">
           <!-- Titulo release -->
           <h3 class="h-a columns text-justify p-0-1 font-m">
             <?php

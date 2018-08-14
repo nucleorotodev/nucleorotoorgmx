@@ -17,7 +17,7 @@
     // setPostViews(get_the_ID());
     ?>
 
-    <div class="columns medium-6 p-4 h-60-v">
+    <div class="img-perfil columns medium-6 p-4">
       <div class="columns p-0 imgLiquid imgLiquidNoFill">
         <img src="<?php echo the_field('imagen_artista');?>"/>
       </div>

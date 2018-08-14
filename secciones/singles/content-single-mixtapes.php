@@ -20,7 +20,7 @@
     // setPostViews(get_the_ID());
     ?>
 
-    <div class="columns medium-6 p-4 h-60-v">
+    <div class="img-perfilcolumns medium-6 p-4">
       <a href="<?php echo the_field('link-descarga-mixtape')?>" target="_blank">
         <div class="columns p-0 imgLiquid imgLiquidNoFill">
           <img src="<?php echo the_field('imagen_portada_mixtape');?>"/>
@@ -58,7 +58,14 @@
           <!--  -->
           <div class="columns h-a m-t-1-2 p-1-2">
             <a class="boton-release-descarga columns text-center" href="<?php echo the_field('link-descarga-mixtape')?>" target="_blank">
-              Descarga / Download / Scaricare
+              <ul>
+                <li>
+                  Descarga&nbsp;/&nbsp;Download&nbsp;/&nbsp;Scaricare&nbsp;
+                </li>
+                <li>
+                  <i class="fa fa-arrow-down"></i>
+                </li>
+              </ul>
             </a>
           </div>
 
