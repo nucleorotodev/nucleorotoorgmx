@@ -57,7 +57,7 @@
           </div>
           <!--  -->
           <div class="columns h-a m-t-1-2 p-1-2">
-            <a class="boton-release-descarga columns text-center" href="<?php echo the_field('link-descarga-mixtape')?>" target="_blank">
+            <!-- <a class="boton-release-descarga columns text-center" href="<?php //echo the_field('link-descarga-mixtape')?>" target="_blank">
               <ul>
                 <li>
                   Descarga&nbsp;/&nbsp;Download&nbsp;/&nbsp;Scaricare&nbsp;
@@ -66,7 +66,11 @@
                   <i class="fa fa-arrow-down"></i>
                 </li>
               </ul>
-            </a>
+            </a> -->
+            <?php
+            $id = get_field('mixtape_download_manager_shortcode');
+            echo do_shortcode($id);
+            ?>
           </div>
 
         </div>

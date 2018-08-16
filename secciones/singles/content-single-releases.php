@@ -69,7 +69,7 @@
               </ul>
             </a> -->
             <?php
-            $id = get_field('download_manager_shortcode');
+            $id = get_field('release_download_manager_shortcode');
             echo do_shortcode($id);
             ?>
           </div>
