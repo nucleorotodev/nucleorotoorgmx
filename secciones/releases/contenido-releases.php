@@ -37,11 +37,11 @@
 
           <div class="columns absUpL z-1 p-0-3">
             <div class="columns imgLiquid imgLiquidFill">
-              <img src="<?php echo the_field('imagen_portada');?>" alt="<?php echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" />
+              <img src="<?php echo the_field('imagen_cabecera_release');?>" alt="<?php echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" />
             </div>
           </div>
 
-          <a href="<?php echo get_the_permalink();?>" class="small-7 p-0-2 p-md-1 p-lg-2 absUpL z1 h-a text-left">
+          <a href="<?php echo get_the_permalink();?>" class="small-12 p-0-2 p-md-1 p-lg-2 absUpL z1 h-a text-left">
 
             <div class="columns p-0 z-1 cortina-negro absDownR">
             </div>

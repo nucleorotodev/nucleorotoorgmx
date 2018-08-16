@@ -173,14 +173,14 @@ form input, form textarea, form select, form option {
   // @extend .font-especial-4;
   @extend .font-especial-1;
   @extend .color-verde-roto;
-  font-size: 0.8em !important;
+  font-size: 0.8em;
   letter-spacing: 0.1em;
 }
 #single-release div small {
   // @extend .font-especial-4;
   @extend .font-especial-1;
   @extend .color-verde-roto;
-  font-size: 0.8em !important;
+  font-size: 0.8em;
   letter-spacing: 0.1em;
 }
 #single-mixtape div small {
@@ -369,7 +369,7 @@ li.slick-active button::before {
   transform: scale(1.01);
 }
 .release-titulo {
-  word-break: break-all;
+  //word-break: break-all;
 }
 // color de tachitas manual
 .cat-item a {
@@ -442,7 +442,7 @@ form {
 .download-button {
   text-align: center;
   text-decoration: none;
-  padding: 2em 1em;
+  padding: 1.4em 1em;
   color: $white !important;
   display: block;
   font-size: 1.1em;
@@ -464,8 +464,8 @@ form {
     background-image: linear-gradient($white,$white,$white);
   }
 }
-#single-release div small {
-  font-size: 0.65em !important;
+.info-title a.download-button small {
+  font-size: 0.55em !important;
   letter-spacing: 0.1em;
   color: $black !important;
 }

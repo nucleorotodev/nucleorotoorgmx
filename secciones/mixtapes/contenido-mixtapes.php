@@ -37,11 +37,11 @@
 
           <div class="columns absUpL z-1 p-0-3">
             <div class="columns imgLiquid imgLiquidFill">
-              <img src="<?php echo the_field('imagen_portada_mixtape');?>" alt="<?php echo the_field('titulo_del_mixtape')  . " - " . the_field('nombre_proyecto_mixtape');?>" />
+              <img src="<?php echo the_field('imagen_cabecera_mixtape');?>" alt="<?php echo the_field('titulo_del_mixtape')  . " - " . the_field('nombre_proyecto_mixtape');?>" />
             </div>
           </div>
 
-          <a href="<?php echo get_the_permalink();?>" class="small-7 p-0-2 p-md-1 p-lg-2 absUpR z1 h-a text-right">
+          <a href="<?php echo get_the_permalink();?>" class="small-12 p-0-2 p-md-1 p-lg-2 absUpR z1 h-a text-right">
 
             <div class="columns p-0 z-1 cortina-negro absDownR">
             </div>
