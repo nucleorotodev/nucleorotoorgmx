@@ -437,10 +437,39 @@ form {
     color: red;
   }
 }
-
-
 // fin formularios
-
+// Download manager
+.download-button {
+  text-align: center;
+  text-decoration: none;
+  padding: 2em 1em;
+  color: $white !important;
+  display: block;
+  font-size: 1.1em;
+  line-height: 1.25em;
+  background-color: $verde-roto;
+  background-image: -moz-linear-gradient($verde-roto,$verde-roto,$verde-roto);
+  background-image: linear-gradient($verde-roto,$verde-roto,$verde-roto);
+  -moz-border-radius: none;
+  -webkit-border-radius:none;
+  border-radius: none;
+  text-shadow: none;
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
+  &:hover {
+    color: $black !important;
+    background-color: $white;
+    background-image: -moz-linear-gradient($white,$white,$white);
+    background-image: linear-gradient($white,$white,$white);
+  }
+}
+#single-release div small {
+  font-size: 0.65em !important;
+  letter-spacing: 0.1em;
+  color: $black !important;
+}
+//
 
 // Responsivos al final
 @import "responsivos";

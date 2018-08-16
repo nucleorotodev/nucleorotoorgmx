@@ -58,7 +58,7 @@
 
           <!--  -->
           <div class="info-title columns small-12 h-a p-1-2">
-            <a class="boton-release-descarga columns text-center" href="<?php echo the_field('link-descarga-release')?>" target="_blank">
+            <!-- <a class="boton-release-descarga columns text-center" href="<?php //echo the_field('link-descarga-release')?>" target="_blank">
               <ul>
                 <li>
                   Descarga&nbsp;/&nbsp;Download&nbsp;/&nbsp;Scaricare&nbsp;
@@ -67,7 +67,11 @@
                   <i class="fa fa-arrow-down"></i>
                 </li>
               </ul>
-            </a>
+            </a> -->
+            <?php
+            $id = get_field('download_manager_shortcode');
+            echo do_shortcode($id);
+            ?>
           </div>
 
         </div>
