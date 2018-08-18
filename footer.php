@@ -3,11 +3,11 @@
 <!-- sidebar escritorio sticky -->
 <aside class="columns small-12 large-3 show-for-large" data-sticky-container>
 
-  <div class="sticky columns p-0 p-top h-95-v" data-sticky data-btm-anchor="footer">
+  <div class="sticky columns p-0 p-top h-100-v" data-sticky data-btm-anchor="footer">
 
     <div class="columns p-0">
 
-      <div class="columns small-1 medium-2 large-1 p-0 text-center p-b-1">
+      <div class="columns small-1 medium-2 large-1 p-0 text-center">
         <div class="columns p-0 color-verde-roto-bg rel">
           <h3 class="titulo-sidebar h-a color-negro-bg color-verde-roto p-t-0-2 p-b-0-2 absUpL top right">
             <?php if (!is_page( array(11,13) )): ?>

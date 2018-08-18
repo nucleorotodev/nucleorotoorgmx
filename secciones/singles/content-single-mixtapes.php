@@ -28,7 +28,7 @@
       </a>
     </div>
     <!-- side info -->
-    <div class="columns medium-6 p-0 p-md-1 h-a h-md-60-v">
+    <div class="columns medium-6 p-0 p-md-1 h-a">
       <div id="mixtape-descripcion" class="row align-middle h-100 text-left">
 
         <div class="columns p-0 h-a">
