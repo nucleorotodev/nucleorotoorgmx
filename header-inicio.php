@@ -5,6 +5,14 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php bloginfo( 'name' );?></title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124425793-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-124425793-1');
+  </script>
 </head>
 <body>
 
@@ -15,7 +23,7 @@
       <a href="<?php echo home_url(); ?>" class="columns h-100">
 
         <div class="grid-x cell imgLiquid imgLiquidNoFillLeft">
-          <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-small.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-xl.jpg" alt="" />
         </div>
 
       </a>
