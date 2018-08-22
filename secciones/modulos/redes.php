@@ -11,7 +11,7 @@ for ($i=0; $i < $iconos_size; $i++):
 
   <div class="columns small-2 h-a p-0 end">
 
-      <a class="columns p-0 text-center" href="<?php $links[$i]?>">
+      <a class="columns p-0 text-center" href="<?php echo $links[$i]?>">
 
         <i class="fa fa-<?php echo $iconos[$i];?>"></i>
 

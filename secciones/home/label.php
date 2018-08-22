@@ -48,17 +48,15 @@ endwhile;
 endif;
 ?>
 
-<div id="boton-inicio-booking" class="columns p-t-0-2 m-b-2 align-center">
+<div id="boton-inicio-booking" class="columns p-t-0-2 m-b-2 align-center text-center">
 
-  <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2">
-  </div>
+  <div class="columns small-2 medium-4 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2"></div>
 
-  <a href="<?php echo get_the_permalink(71);?>" class="columns small-10 medium-6 large-4 p-0-2 p-l-0-2 p-r-0-2 font-m font-md-lg text-center color-blanco color-blanco-bd color-negro-bg color-negro-hover color-blanco-hover-bg">
+  <a href="<?php echo get_the_permalink(71);?>" class="boton-roto columns small-8 medium-4">
     Bookea algún proyecto
   </a>
 
-  <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2">
-  </div>
+  <!-- <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2"></div> -->
 
 </div>
 

@@ -23,7 +23,7 @@
       <a href="<?php echo home_url(); ?>" class="columns h-100">
 
         <div class="grid-x cell imgLiquid imgLiquidNoFillLeft">
-          <img src="<?php echo get_template_directory_uri();?>/img/nr-logo-header-xl.jpg" alt="" />
+          <img src="<?php echo get_template_directory_uri();?>/img/nr-logonegro.sm.png" alt="Logo Nucleoroto" />
         </div>
 
       </a>

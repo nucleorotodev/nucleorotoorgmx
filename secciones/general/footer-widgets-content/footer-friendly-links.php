@@ -9,11 +9,11 @@
         <?php
         $links_col_1 = array(
           'Radio Nopal' => 'http://radionopal.com' ,
+          'Stirpe999' => 'https://stirpe999.bandcamp.com/',
+          'Presente Perfecto' => 'http://presenteperfecto.xyz/',
           'Cuatro Cuartos' => 'http://facebook.com',
           'Toplap' => 'http://toplap.org',
-          'Fiendly' => '#',
-          'Fiendly L' => '#',
-          'Fiendly Li' => '#',
+          'IMPT' => 'https://impt.bandcamp.com/',
           'Fiendly Lin' => '#',
           'Fiendly Link' => '#'
         );
@@ -41,10 +41,10 @@
           <?php
           $links_col_2 = array(
             'LivecodeLab' => 'http://livecodelab.org' ,
-            'Fiend' => 'http://facebook.com',
-            'Fiendl' => 'http://nucleoroto.org',
-            'Fiendly' => '#',
-            'Fiendly L' => '#',
+            'Praxis Records' => 'https://praxis-records.net/shop/',
+            'Mixfuckedup' => 'http://mixfuckedup.net/',
+            'Dark Matter Soundsystem' => 'http://www.darkmattersoundsystem.com/',
+            'LAAD' => 'http://www.laad.com.mx/',
             'Fiendly Li' => '#',
             'Fiendly Lin' => '#',
             'Fiendly Link' => '#'

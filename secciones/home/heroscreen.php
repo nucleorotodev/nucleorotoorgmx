@@ -35,7 +35,7 @@
 
             <div class="columns small-8 medium-4 large-2 small-centered h-a">
 
-              <a href="<?php echo get_permalink();?>" class="color-verde-roto-bg color-primario-1-hover-bg color-blanco-hover color-negro columns p-0-3 font-s font-sm-m font-lg-l text-center">
+              <a href="<?php echo get_permalink();?>" class="boton-roto columns">
 
                 <?php
 

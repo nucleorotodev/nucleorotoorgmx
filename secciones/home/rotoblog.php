@@ -8,7 +8,7 @@
 
   <div class="row columns small-12 align-middle">
 
-    <div id="inicio-blog-slider" class="slider-blog columns p-0 h-75 ovH">
+    <div id="inicio-blog-slider" class="slider-blog columns p-0 h-85 ovH">
       <?php
 
       $args =  array( 'post_type' => 'post', 'showposts' => 8 );
@@ -20,7 +20,7 @@
         <div class="columns h-30 p-0-2">
 
 
-          <a href="<?php echo get_the_permalink();?>" class="columns rel p-0-3 color-negro color-verde-roto-hover color-negro-bd color-verde-roto-hover-bd">
+          <a href="<?php echo get_the_permalink();?>" class="columns rel p-0-3 color-negro color-verde-roto-hover color-verde-roto-hover-bd">
             <div class="columns absUpL z-1 imgLiquid imgLiquidFill">
               <!-- <img src="http://fakeimg.pl/320x480/?text=Placeholder" alt="" /> -->
               <?php echo get_the_post_thumbnail(); ?>
@@ -28,17 +28,18 @@
             <div class="columns absUpL z0 cortina-negro-bg">
             </div>
 
-            <h5 class="h-a columns p-0">
-              <?php echo get_the_title(); ?></h5>
+            <h3 class="h-a columns p-0 color-blanco">
+              <?php echo get_the_title(); ?>
+            </h3>
 
-              <div class="columns h-a font-s font-md-m">
+              <div class="columns h-a font-m font-md-l color-blanco">
                 <?php echo excerpt(16,"... leer mas >>"); ?>
               </div>
-              <div class="columns p-0 h-a font-xs font-md-s">
-                <div class="columns p-0 small-6 h-a text-left">
+              <div class="columns p-0 h-a font-s font-md-m">
+                <div class="columns p-0 small-6 h-a text-left color-blanco">
                   <?php echo "Escrito por: " . get_the_author_meta( 'display_name' ); ?>
                 </div>
-                <div class="columns p-0 small-6 h-a text-right">
+                <div class="columns p-0 small-6 h-a text-right color-blanco">
                   <?php echo get_the_date(); ?>
                 </div>
               </div>

@@ -18,7 +18,7 @@
 
     <div class="columns p-0 h-a text-center">
       <a href="<?php echo get_the_permalink(75)?>" target="_blank" class="color-secundario-0 color-terciario-0-hover">
-      <h1 class="titulo-inicio-anim w-break p-b-2 text-right columns p-0"><?php echo get_the_title(); ?></h1>
+      <h1 class="titulo-inicio-anim w-break p-b-2 text-center columns p-0"><?php echo get_the_title(); ?></h1>
 
       <!-- <i class="icono-radio small-3 fa fa-step-backward"></i> -->
       <i class="icono-radio small-4 fa fa-stop"></i>

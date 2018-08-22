@@ -1,4 +1,4 @@
-<div id="inicio-releases" class="grid-x cell columns p-0-2 small-12 medium-4 h-35-v h-md-50-v">
+<div id="inicio-releases" class="grid-x cell columns p-0-2 small-12 large-4 h-35-v h-md-50-v">
 
   <?php
   $args = array(
@@ -18,7 +18,7 @@
           <h3 class="columns p-0-2 text-center">
             <?php echo get_the_title();?>
           </h3>
-          <span class="columns p-0-2 text-justify font-s font-sm-m font-lg-l card-section">
+          <span class="columns p-0-2 text-justify font-m font-lg-l card-section">
             <?php echo get_the_content();?>
           </span>
         </div>
