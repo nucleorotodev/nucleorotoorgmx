@@ -68,8 +68,8 @@
               </ul>
             </a> -->
             <?php
-            $id = get_field('mixtape_download_manager_shortcode');
-            echo do_shortcode($id);
+            $id = get_field('mixtape_download_manager_id');
+            echo do_shortcode('[download id=" '. $id .' "]');
             ?>
           </div>
 

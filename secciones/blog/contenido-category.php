@@ -7,7 +7,7 @@
 
   <div class="columns text-center h-a font-s font-sm-m">
     <?php
-    echo the_archive_description();
+    //echo the_archive_description();
     ?>
   </div>
 

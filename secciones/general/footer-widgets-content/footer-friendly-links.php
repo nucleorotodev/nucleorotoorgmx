@@ -14,7 +14,7 @@
           'Cuatro Cuartos' => 'http://facebook.com',
           'Toplap' => 'http://toplap.org',
           'IMPT' => 'https://impt.bandcamp.com/',
-          'Fiendly Lin' => '#',
+          'Reggetron' => 'http://rggtrn.github.io',
           'Fiendly Link' => '#'
         );
         for ($i=0; $i < count($links_col_1); $i++):
@@ -43,9 +43,9 @@
             'LivecodeLab' => 'http://livecodelab.org' ,
             'Praxis Records' => 'https://praxis-records.net/shop/',
             'Mixfuckedup' => 'http://mixfuckedup.net/',
-            'Dark Matter Soundsystem' => 'http://www.darkmattersoundsystem.com/',
+            'Dark Matter' => 'http://www.darkmattersoundsystem.com/',
             'LAAD' => 'http://www.laad.com.mx/',
-            'Fiendly Li' => '#',
+            'Hernani VIllaseñor' => 'http://hernanivillasenor.com',
             'Fiendly Lin' => '#',
             'Fiendly Link' => '#'
           );
