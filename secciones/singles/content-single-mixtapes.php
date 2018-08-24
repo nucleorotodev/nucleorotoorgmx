@@ -20,7 +20,7 @@
     // setPostViews(get_the_ID());
     ?>
 
-    <div class="img-perfilcolumns medium-6 p-4">
+    <div class="img-perfil columns medium-6 p-4">
       <a href="<?php echo the_field('link-descarga-mixtape')?>" target="_blank">
         <div class="columns p-0 imgLiquid imgLiquidNoFill">
           <img src="<?php echo the_field('imagen_portada_mixtape');?>"/>
@@ -98,19 +98,32 @@
     <!--  texto + html player-->
     <div class="info-mixtape columns p-0 h-a">
       <!--  -->
-      <div class="info-mixtape columns small-12 large-6 text-justify">
+      <div class="info-mixtape columns small-12 large-6 text-left">
         <small>
           Información:
         </small>
         <?php echo the_field('informacion_del_mixtape'); ?>
       </div>
       <!--  -->
-      <div class="info-mixtape columns small-12 large-6 text-left">
+      <div id="player" class="info-mixtape columns small-12 large-6 text-left show-for-large" data-sticky-container>
+        <small>
+          Player:
+        </small>
+        <div class="columns p-t-0-2" data-sticky data-top-anchor="player" data-btm-anchor="footer-widgets">
+          <center >
+          <?php echo the_field('mixtape-player'); ?>
+        </center>
+        </div>
+      </div>
+      <!-- small & medium -->
+      <div id="player" class="info-title info-release columns small-12 large-6 text-left hide-for-large">
         <small>
           Player:
         </small>
         <div class="columns p-t-0-2">
+          <center >
           <?php echo the_field('mixtape-player'); ?>
+        </center>
         </div>
       </div>
     </div>

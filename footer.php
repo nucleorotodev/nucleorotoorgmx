@@ -3,7 +3,7 @@
 <!-- sidebar escritorio sticky -->
 <aside class="columns small-12 large-3 show-for-large" data-sticky-container>
 
-  <div class="sticky columns p-0 p-top h-100-v" data-sticky data-btm-anchor="footer">
+  <div class="sticky columns p-0-1 h-100-v" data-sticky data-btm-anchor="footer">
 
     <div class="columns p-0">
 

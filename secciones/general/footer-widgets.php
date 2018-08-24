@@ -14,7 +14,7 @@ else:
 
 endif;
 ?>
-<div id="footer-widgets" class="columns <?php echo $main_col;?> h-a h-md-60-v color-negro-bg ovH">
+<div id="footer-widgets" class="columns <?php echo $main_col;?> h-a h-md-60-v p-t-2 color-negro-bg ovH">
 
 <?php
 for ($i=0; $i < count($arr); $i++):

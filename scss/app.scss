@@ -323,7 +323,7 @@ li.slick-active button::before {
 }
 .slick-vertical .slick-slide {
   border: 2px solid transparent;
-  height: 150px;
+  height: 170px;
   & a {
     height: 100%;
   }
@@ -369,6 +369,12 @@ li.slick-active button::before {
 }
 #inicio-label {
   padding-bottom: $altura-footer/2;
+}
+.sticky {
+  z-index: 10002 !important;
+}
+#player .sticky {
+  z-index: 10 !important;
 }
 //posicion menu movil
 .gira-icono-menu {

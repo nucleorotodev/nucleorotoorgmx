@@ -28,7 +28,7 @@
 
       <?php
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-      $args =  cpt('roto-mixtapes',$paged,6,'ID');
+      $args =  cpt('roto-mixtapes',$paged,10,'ID');
       $q =  new WP_Query($args);
       if($q->have_posts()):
         while ($q->have_posts()): $q -> the_post();
@@ -41,7 +41,7 @@
             </div>
           </div>
 
-          <a href="<?php echo get_the_permalink();?>" class="small-12 p-0-2 p-md-1 p-lg-2 absUpR z1 h-a text-right">
+          <a href="<?php echo get_the_permalink();?>" class="small-12 p-0-2 p-md-1 p-lg-2 absUpR z1 h-100 text-right">
 
             <div class="columns p-0 z-1 cortina-negro absDownR">
             </div>
@@ -52,7 +52,7 @@
               <?php echo the_field('titulo_del_mixtape'); ?>
 
             </h3>
-            <small class="columns p-0-2 text-center">Descarga</small>
+            <strong class="columns p-0-2 text-center">Descarga</strong>
 
           </a>
 

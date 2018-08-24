@@ -41,18 +41,18 @@
             </div>
           </div>
 
-          <a href="<?php echo get_the_permalink();?>" class="small-12 p-0-2 p-md-1 p-lg-2 absUpL z1 h-a text-left">
+          <a href="<?php echo get_the_permalink();?>" class="small-12 p-0-2 p-md-1 p-lg-2 absUpL z1 h-100 text-left">
 
             <div class="columns p-0 z-1 cortina-negro absDownR">
             </div>
 
             <!-- Titulo release -->
-            <h3 class="release-titulo columns p-0 h-a text-center p-t-0-2">
+            <h3 class="release-titulo columns p-0 h-a text-left p-t-0-2">
 
               <?php echo the_field('titulo_de_release'); ?>
 
             </h3>
-            <small class="columns p-0-2 text-center">Descarga</small>
+            <strong class="columns p-0-2 text-center">Descarga</strong>
 
           </a>
 

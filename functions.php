@@ -49,9 +49,12 @@ include_once "cpts/mixtapes-cpt.php";
 add_action('wp_head', 'add_analytics');
 //pegar aqui codigo google analytics
 function add_analytics() { ?>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124425793-1"></script>
   <script>
-
-
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-124425793-1');
   </script>
   <?php
 }

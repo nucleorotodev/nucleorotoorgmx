@@ -58,16 +58,6 @@
 
           <!--  -->
           <div class="info-title columns small-12 h-a p-1-2">
-            <!-- <a class="boton-release-descarga columns text-center" href="<?php //echo the_field('link-descarga-release')?>" target="_blank">
-              <ul>
-                <li>
-                  Descarga&nbsp;/&nbsp;Download&nbsp;/&nbsp;Scaricare&nbsp;
-                </li>
-                <li>
-                  <i class="fa fa-arrow-down"></i>
-                </li>
-              </ul>
-            </a> -->
             <?php
             $id = get_field('release_download_manager_id');
             echo do_shortcode('[download id=" '. $id .' "]');
@@ -78,8 +68,6 @@
         </div>
 
       </div>
-
-
 
     </div>
 
@@ -112,23 +100,36 @@
     <!--  texto + html player-->
     <div class="info-title info-release columns p-0 h-a">
       <!--  -->
-      <div class="info-title info-release columns small-12 large-6 text-justify">
+      <div class="info-title info-release columns small-12 large-6 text-left">
         <small>
           Información:
         </small>
         <?php echo the_field('informacion_release'); ?>
       </div>
       <!--  -->
-      <div class="info-title info-release columns small-12 large-6 text-left">
+      <!-- large sticky-->
+      <div id="player" class="info-title info-release columns small-12 large-6 text-left show-for-large" data-sticky-container>
         <small>
           Player:
         </small>
-        <div class="columns p-t-0-2">
-          <center>
+        <div class="columns p-t-0-2" data-sticky data-top-anchor="player" data-btm-anchor="footer-widgets">
+          <center >
           <?php echo the_field('release-player'); ?>
         </center>
         </div>
       </div>
+      <!-- small & medium -->
+      <div id="player" class="info-title info-release columns small-12 large-6 text-left hide-for-large">
+        <small>
+          Player:
+        </small>
+        <div class="columns p-t-0-2">
+          <center >
+          <?php echo the_field('release-player'); ?>
+        </center>
+        </div>
+      </div>
+
     </div>
 
     <?php
