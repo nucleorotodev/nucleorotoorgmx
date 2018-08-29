@@ -3,9 +3,9 @@
 get_header();
 
 ?>
-<section id="blog-cards" class="columns small-12 large-9 h-a p-1 p-top color-blanco">
+<section id="blog-cards" class="columns small-12 large-9 h-100-v p-1 p-top color-blanco">
 
-<div class="row align-middle">
+<div class="row align-middle p-top">
 
   <?php
 
@@ -16,7 +16,7 @@ get_header();
 
     $content_mix = str_shuffle($content);
     ?>
-      <h1 class="titulo-anim grid-x h-a font-<?php echo $fuente[$i]; ?> text-shadow">
+      <h1 class="titulo-anim grid-x h-a font-<?php echo $fuente[$i]; ?>">
 
         <?php if ($i > 5 ):
 

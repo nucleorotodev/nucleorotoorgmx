@@ -187,28 +187,28 @@ form textarea, .nr-select-artista select {
   // @extend .font-especial-4;
   @extend .font-especial-1;
   @extend .color-verde-roto;
-  font-size: 0.8em !important;
+  font-size: 0.85em !important;
   letter-spacing: 0.1em;
 }
 #artista-labels div {
   // @extend .font-especial-4;
   @extend .font-especial-1;
   @extend .color-verde-roto;
-  font-size: 0.8em;
+  font-size: 0.85em;
   letter-spacing: 0.1em;
 }
 #single-release div small {
   // @extend .font-especial-4;
   @extend .font-especial-1;
   @extend .color-verde-roto;
-  font-size: 0.8em;
+  font-size: 0.85em;
   letter-spacing: 0.1em;
 }
 #single-mixtape div small {
   // @extend .font-especial-4
   @extend .font-especial-1;
   @extend .color-verde-roto;
-  font-size: 0.8em !important;
+  font-size: 0.85em;
   letter-spacing: 0.1em;
 }
 .img-perfil {
@@ -464,13 +464,15 @@ form {
     @extend .bold;
   }
   input.wpcf7-submit {
-    @extend .columns;
+    height:100%;
+    // @extend .columns;
     @extend .color-verde-roto-bg;
     @extend .color-secundario-0-hover-bg;
     @extend .color-negro;
     @extend .color-blanco-hover;
     @extend .pointer;
     @extend .p-1;
+    width: 300px;
   }
   div.wpcf7-validation-errors {
     border: 0px !important;
@@ -484,10 +486,10 @@ form {
 .download-button {
   text-align: center;
   text-decoration: none;
-  padding: 1.4em 1em;
+  padding: 1.3em 1em;
   color: $white !important;
   display: block;
-  font-size: 1.1em;
+  // font-size: 1.1em;
   line-height: 1.25em;
   background-color: $verde-roto;
   background-image: -moz-linear-gradient($verde-roto,$verde-roto,$verde-roto);
@@ -506,11 +508,15 @@ form {
     background-image: linear-gradient($white,$white,$white);
   }
 }
-.info-title a.download-button small {
-  font-size: 0.55em !important;
-  letter-spacing: 0.1em;
-  color: $black !important;
+a.download-button {
+  font-size: 1.5em;
+  small {
+    font-size: 0.43em !important;
+    letter-spacing: 0.1em !important;
+    color: $black !important;
+  }
 }
+
 //
 
 // Responsivos al final
