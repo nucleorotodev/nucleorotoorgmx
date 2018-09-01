@@ -46,11 +46,11 @@ if (have_posts()):
 
         <div class="columns p-0-1 h-a card">
 
-          <div class="columns p-0-2 color-negro text-center card-divider">
+          <div class="columns p-0-2 color-blanco text-center card-divider">
 
-            <h6 class="columns p-0">
+            <h5 class="columns p-0">
               <?php echo get_the_title(); ?>
-            </h6>
+            </h5>
 
             <div class="card-section text-justify">
               <?php echo excerpt($ext[$i]); ?>
