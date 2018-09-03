@@ -12,7 +12,7 @@
       while ($q->have_posts()): $q -> the_post();
       ?>
       <div class="thumb-ultimos columns small-4 p-0-1 rel">
-        <a href="<?php echo get_permalink()?>" class="columns p-0 h-100">
+        <a href="<?php echo get_permalink();?>" class="columns p-0 h-100">
 
           <!-- thumbnail -->
           <div class="thumb-card columns  p-0 z1 imgLiquid imgLiquidNoFill">

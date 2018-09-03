@@ -15,16 +15,19 @@
           'Toplap' => 'http://toplap.org',
           'IMPT' => 'https://impt.bandcamp.com/',
           'Reggetron' => 'http://rggtrn.github.io',
-          'Fiendly Link' => '#'
+          'BreakCore never dies' => 'http://breakcoreneverdies.net',
+          'WAD' => 'http://wadweb.mx'
         );
-        for ($i=0; $i < count($links_col_1); $i++):
-          $friend = key($links_col_1);
+        $links_rand_1 = shuffle_with_keys($links_col_1);
+        $links_1 = array_slice($links_rand_1,0,8);
+        for ($i=0; $i < count($links_1); $i++):
+          $friend = key($links_1);
           ?>
-          <li >
-            <a href="<?php echo $links_col_1[$friend];?>" target="_blank">
+          <li>
+            <a href="<?php echo $links_1[$friend];?>" target="_blank">
               <?php
               echo $friend;
-              next($links_col_1);
+              next($links_1);
               ?>
             </a>
           </li>
@@ -43,7 +46,7 @@
             'LivecodeLab' => 'http://livecodelab.org' ,
             'Praxis Records' => 'https://praxis-records.net/shop/',
             'Mixfuckedup' => 'http://mixfuckedup.net/',
-            'Dark Matter' => 'http://www.darkmattersoundsystem.com/',
+            'Darkmatter SoundSystem' => 'http://www.darkmattersoundsystem.com/',
             'LAAD' => 'http://www.laad.com.mx/',
             'Hernani VIllaseñor' => 'http://hernanivillasenor.com',
             'Fiendly Lin' => '#',

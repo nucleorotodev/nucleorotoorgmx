@@ -51,10 +51,10 @@ add_action('wp_head', 'add_analytics');
 function add_analytics() { ?>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124425793-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-124425793-1');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-124425793-1');
   </script>
   <?php
 }
@@ -67,9 +67,9 @@ function page_id($id) {
 }
 //cpts
 function cpt($cpt_slug,$paginado,$post_num=8,$orderby='ID') {
-// esto  en la pag del wp query pasarlo por parametro $paginado
-// $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-//
+  // esto  en la pag del wp query pasarlo por parametro $paginado
+  // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  //
   return array(
     'post_type' => $cpt_slug,
     'posts_per_page' => $post_num,
@@ -117,21 +117,21 @@ function login_logo() { ?>
   #loginform {
     background-color: black !important;
     color: #B2C652 !important;
-}
+  }
   #loginform p label {
     font-weight: bold;
     color: #B2C652 !important;
-}
+  }
   #loginform p label input,
   #wp-submit, #login p.message {
     background-color: #B2C652 !important;
     color:black;
     border: none !important;
-}
-#wp-submit:hover {
-  background-color: black !important;
-  color:#B2C652;
-}
+  }
+  #wp-submit:hover {
+    background-color: black !important;
+    color:#B2C652;
+  }
   </style>
   <?php
 }
@@ -167,48 +167,63 @@ add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 //
 // backend topbar logo
 function backend_custom_logo() {
-echo '
-<style type="text/css">
-#wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
-background-image: url(' . get_template_directory_uri() . '/img/nr-logo-header-small.jpg) !important;
-background-position: center center;
-background-size: 20px 20px;
-color:rgba(0, 0, 0, 0);
-}
-#wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {
-background-position: 0 0;
-}
-</style>
-';
+  echo '
+  <style type="text/css">
+  #wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
+    background-image: url(' . get_template_directory_uri() . '/img/nr-logo-header-small.jpg) !important;
+    background-position: center center;
+    background-size: 20px 20px;
+    color:rgba(0, 0, 0, 0);
+  }
+  #wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {
+    background-position: 0 0;
+  }
+  </style>
+  ';
 }
 add_action('wp_before_admin_bar_render', 'backend_custom_logo');
 //
 //
 // Post Count
 function getPostViews($postID){
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if($count==''){
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-        return "0";
-    }
-    return $count;
+  $count_key = 'post_views_count';
+  $count = get_post_meta($postID, $count_key, true);
+  if($count==''){
+    delete_post_meta($postID, $count_key);
+    add_post_meta($postID, $count_key, '0');
+    return "0";
+  }
+  return $count;
 }
 
 function setPostViews($postID) {
-    $count_key = 'post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if($count==''){
-        $count = 0;
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-    }else{
-        $count++;
-        update_post_meta($postID, $count_key, $count);
-    }
+  $count_key = 'post_views_count';
+  $count = get_post_meta($postID, $count_key, true);
+  if($count==''){
+    $count = 0;
+    delete_post_meta($postID, $count_key);
+    add_post_meta($postID, $count_key, '0');
+  }else{
+    $count++;
+    update_post_meta($postID, $count_key, $count);
+  }
 }
 
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 //
+// Shuffle con llaves
+function shuffle_with_keys($array) {
+
+  $keys = array_keys($array);
+
+  shuffle($keys);
+
+  foreach($keys as $key) {
+    $new[$key] = $array[$key];
+  }
+
+  $array = $new;
+
+  return $array;
+}
 //
