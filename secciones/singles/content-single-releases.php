@@ -40,28 +40,35 @@
             </div>
           </div>
 
-            <div class="info-title columns h-a">
-              <small>Nombre:</small>
-              <div class="release-descripcion columns h-a">
-                <?php echo the_field('titulo_de_release'); ?>
-              </div>
+          <div class="info-title columns h-a">
+            <small>Nombre:</small>
+            <div class="release-descripcion columns h-a">
+              <?php echo the_field('titulo_de_release'); ?>
             </div>
+          </div>
 
-            <div class="info-title columns h-a">
-              <small>Artista:</small>
-              <div class="release-descripcion columns h-a">
-                <a href="<?php echo the_field('link_a_artista_release');?>" target="_blank">
-                  <?php echo the_field('nombre_artista_release'); ?>
-                </a>
-              </div>
+          <div class="info-title columns h-a">
+            <small>Artista:</small>
+            <div class="release-descripcion columns h-a">
+              <a href="<?php echo the_field('link_a_artista_release');?>" target="_blank">
+                <?php echo the_field('nombre_artista_release'); ?>
+              </a>
             </div>
+          </div>
 
           <!--  -->
-          <div class="info-title columns small-12 h-a p-1-2">
+          <div class="info-title columns small-12 h-a p-0-3">
             <?php
             $id = get_field('release_download_manager_id');
+            $id2 = get_field('release_download_manager_id_version_2');
+            $id3 = get_field('release_download_manager_id_version_3');
             echo do_shortcode('[download id=" '. $id .' "]');
-            // echo do_shortcode("[download id="676"]");
+            if (isset($id2)) {
+              echo do_shortcode('[download id=" '. $id2 .' "]');
+            }
+            if (isset($id3)) {
+              echo do_shortcode('[download id=" '. $id3 .' "]');
+            }
             ?>
           </div>
 
@@ -114,8 +121,8 @@
         </small>
         <div class="columns p-t-0-2" data-sticky data-top-anchor="player" data-btm-anchor="footer-widgets">
           <center >
-          <?php echo the_field('release-player'); ?>
-        </center>
+            <?php echo the_field('release-player'); ?>
+          </center>
         </div>
       </div>
       <!-- small & medium -->
@@ -125,8 +132,8 @@
         </small>
         <div class="columns p-t-0-2">
           <center >
-          <?php echo the_field('release-player'); ?>
-        </center>
+            <?php echo the_field('release-player'); ?>
+          </center>
         </div>
       </div>
 

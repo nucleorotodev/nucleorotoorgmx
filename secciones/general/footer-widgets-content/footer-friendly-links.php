@@ -14,7 +14,7 @@
           'Cuatro Cuartos' => 'http://facebook.com',
           'Toplap' => 'http://toplap.org',
           'IMPT' => 'https://impt.bandcamp.com/',
-          'Reggetron' => 'http://rggtrn.github.io',
+          'Reggaetron' => 'http://rggtrn.github.io',
           'BreakCore never dies' => 'http://breakcoreneverdies.net',
           'WAD' => 'http://wadweb.mx'
         );
@@ -46,21 +46,23 @@
             'LivecodeLab' => 'http://livecodelab.org' ,
             'Praxis Records' => 'https://praxis-records.net/shop/',
             'Mixfuckedup' => 'http://mixfuckedup.net/',
-            'Darkmatter SoundSystem' => 'http://www.darkmattersoundsystem.com/',
+            'Darkmatter' => 'http://www.darkmattersoundsystem.com/',
             'LAAD' => 'http://www.laad.com.mx/',
             'Hernani VIllaseñor' => 'http://hernanivillasenor.com',
-            'Fiendly Lin' => '#',
-            'Fiendly Link' => '#'
+            'Proter' => 'http://prtr.xyz',
+            'josecaos' => 'http://josecaos.xyz'
           );
-          for ($i=0; $i < count($links_col_2); $i++):
-            $friend = key($links_col_2);
+          $links_rand_2 = shuffle_with_keys($links_col_2);
+          $links_2 = array_slice($links_rand_2,0,8);
+          for ($i=0; $i < count($links_2); $i++):
+            $friend = key($links_2);
             ?>
 
             <li class="columns p-0 text-right">
-              <a href="<?php echo $links_col_2[$friend];?>" target="_blank">
+              <a href="<?php echo $links_2[$friend];?>" target="_blank">
                 <?php
                 echo $friend;
-                next($links_col_2);
+                next($links_2);
                 ?>
               </a>
             </li>
