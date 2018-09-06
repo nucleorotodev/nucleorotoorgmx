@@ -87,7 +87,7 @@
     <div class="info-title info-release columns small-12 large-6 p-0 h-a">
 
       <!-- large sticky-->
-      <div id="player" class="info-title info-release columns small-12 large-6 text-left show-for-large" data-sticky-container>
+      <div id="player" class="info-title info-release columns text-left show-for-large" data-sticky-container>
         <small>
           Player:
         </small>
@@ -98,7 +98,7 @@
         </div>
       </div>
       <!-- small & medium -->
-      <div id="player" class="info-title info-release columns small-12 large-6 text-left hide-for-large">
+      <div id="player" class="info-title info-release columns text-left hide-for-large">
         <small>
           Player:
         </small>

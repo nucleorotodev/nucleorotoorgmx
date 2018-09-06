@@ -227,3 +227,9 @@ function shuffle_with_keys($array) {
   return $array;
 }
 //
+// Agregados para SEO pressfunction seopress_theme_slug_setup() {
+function seopress_theme_slug_setup() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'seopress_theme_slug_setup' );
+//

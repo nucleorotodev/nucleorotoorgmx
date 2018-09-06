@@ -77,7 +77,7 @@ div, section, nav, li {
 a {
   @extend .color-verde-roto;
 }
-a:hover {
+a:hover, a:focus {
   @extend .color-terciario-0;
 }
 hr {
