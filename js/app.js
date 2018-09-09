@@ -322,12 +322,12 @@ function blog_random_colors() {
   ]
   var fondo = [
     'color-acento-1-bg',
-    'color-complementario-1-bg',
+    'color-verde-roto-bg',
     'color-acento-1-bg',
     'color-neutral-0-bg',
     'color-acento-0-bg',
-    'color-complementario-1-bg',
-    'color-complementario-1-bg',
+    'color-verde-roto-bg',
+    'color-verde-roto-bg',
     'color-neutral-0-bg',
     'color-complementario-0-bg',
     'color-complementario-0-bg',
@@ -335,7 +335,7 @@ function blog_random_colors() {
     'color-neutral-0-bg',
     'color-neutral-1-bg',
     'color-complementario-0-bg',
-    'color-complementario-1-bg',
+    'color-verde-roto-bg',
     'color-acento-0-bg',
     'color-complementario-0-bg'
   ]

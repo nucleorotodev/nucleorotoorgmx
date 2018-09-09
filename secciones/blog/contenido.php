@@ -1,4 +1,4 @@
-<section id="blog-cards" class="columns small-12 large-9 h-a p-1 p-top color-blanco">
+<section id="blog-cards" class="columns small-12 large-9 h-a p-1 p-top">
 
   <h1 class="titulo-anim columns p-t-1">
     <?php //echo get_the_archive_title(). " RotoBlog" ?>

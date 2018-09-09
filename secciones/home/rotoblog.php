@@ -19,16 +19,16 @@
         ?>
         <article class="columns p-0-1">
 
-          <a href="<?php echo get_the_permalink();?>" class="columns p-0-1 color-blanco color-verde-roto-hover color-verde-roto-hover-bd text-shadow">
+          <a href="<?php echo get_the_permalink();?>" class="columns p-0 color-blanco color-verde-roto-hover color-verde-roto-hover-bd text-shadow">
             <div class="columns small-4 imgLiquid imgLiquidFill">
               <?php echo get_the_post_thumbnail(); ?>
             </div>
 
-            <div class="columns small-8 home-blog-data">
+            <div class="columns small-8 home-blog-data cortina-negro">
 
-              <h4 class="h-a columns p-0 color-blanco">
+              <h3 class="h-a columns p-0 color-blanco">
                 <?php echo get_the_title(); ?>
-              </h4>
+              </h3>
               <!-- <div class="columns h-a color-blanco">
                 <?php // echo excerpt(9,"... leer mas >>"); ?>
               </div> -->
