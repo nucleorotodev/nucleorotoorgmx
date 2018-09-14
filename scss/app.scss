@@ -424,6 +424,10 @@ li.slick-active button::before {
   background: linear-gradient(60deg, #B2C750 0%,#B2C750 50%,#BF5399 50%,#BF5399 50%,#BF5399 100%); /* W3C */
   @extend .color-blanco;
 }
+.card-label {
+  height: 100%;
+  display: block;
+}
 //
 .titulo-slider-home {
   font-size: 6rem;

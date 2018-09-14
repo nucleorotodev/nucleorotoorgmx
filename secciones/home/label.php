@@ -38,7 +38,7 @@ if($query->have_posts()):
 
 
   <div class="columns p-2 p-t-1 color-blanco">
-    <div class="column text-justify font-m font-lg-l">
+    <div class="column text-center font-l font-lg-xl">
       <?php echo get_the_content(); ?>
     </div>
   </div>

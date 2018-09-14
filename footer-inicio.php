@@ -7,7 +7,7 @@
 
   <div class="copyright columns small-5 text-left align-middle">
 
-    <div class="row p-t-0-1 font-xs font-md-s text-shadow color-blanco align-middle">
+    <div class="row p-t-0-1 font-s font-md-l text-shadow color-blanco align-middle">
 
       <div class="column h-a">
 
