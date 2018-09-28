@@ -28,7 +28,42 @@ if (have_posts()):
       <script src="//myradiostream.com/embed/NRGramofono"></script>
 
     </div>
+
+    <div class="x-grid text-center">
+
+  <?php 
+    $radio_links = array(
+      'PLS Link' => 'http://s42.myradiostream.com:32404/listen.pls',
+      'M3U Playlist' => 'http://s42.myradiostream.com:32404/listen.m3u',
+      'MP3 Audio' => ' http://s42.myradiostream.com:32404/listen.mp3',
+      'AAC+ Audio' => 'http://s42.myradiostream.com:32404/listen.m4a'
+    );
+  ?>
+
+<ul>
+<?php 
+for($i=0;$i < count($radio_links); $i++):
+  $link = key($radio_links);
+  ?>
+
+  <li class="x-grid test-center">
+    <a href="<?php echo $radio_links[$link];?>">
+      <?php 
+        echo $link[$radio_links]; 
+        next($radio_links);
+      ?>
+    </a>
+  </li>
+
+<?php
+ endfor;
+ ?>
+</ul>
+    
+    </div>
   </div>
+
+
 
 
   <?php
