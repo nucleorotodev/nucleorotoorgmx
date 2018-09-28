@@ -23,6 +23,11 @@ if (have_posts()):
   </div> -->
 
   <div class="x-grid h-a p-0">
+  <h3 class="text-center">
+  <strong>
+    Press play, and enjoy
+  </strong>
+</h3>
     <div id="radio-widget" class="text-center">
  
       <script src="//myradiostream.com/embed/NRGramofono"></script>
@@ -40,16 +45,21 @@ if (have_posts()):
     );
   ?>
 
+<h3>
+  <strong>
+    Direct Links:
+  </strong>
+</h3>
 <ul>
 <?php 
-for($i=0;$i < count($radio_links); $i++):
+for($i=0; $i < count($radio_links); $i++):
   $link = key($radio_links);
   ?>
 
   <li class="x-grid test-center">
     <a href="<?php echo $radio_links[$link];?>">
       <?php 
-        echo $link[$radio_links]; 
+        echo $link; 
         next($radio_links);
       ?>
     </a>
