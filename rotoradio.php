@@ -16,22 +16,20 @@ if (have_posts()):
   <h1 class="titulo-anim columns text-center p-0-3 color-blanco"><?php echo get_the_title(); ?></h1>
 
 
-  <!-- <div class="columns p-1 text-justify"> -->
-    <?php //echo get_the_content(); ?>
+  <!-- <div class="x-grid p-1 text-center">
 
+    <?php echo get_the_content(); ?>
+  
+  </div> -->
 
-    <!-- mientras -->
-    <div class="row small-10 small-centered h-80 p-1 align-middle card">
-
-      <h1 class="titulo-anim columns h-a text-center font-huge ">
-        Proximamente.
-      </h1>
+  <div class="x-grid h-a p-0">
+    <div id="radio-widget" class="text-center">
+ 
+      <script src="//myradiostream.com/embed/NRGramofono"></script>
 
     </div>
-    <!--  -->
+  </div>
 
-
-  <!-- </div> -->
 
   <?php
 endwhile;

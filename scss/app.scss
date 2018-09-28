@@ -343,7 +343,9 @@ li.slick-active button::before {
 .icono-radio {
   font-size: 5em;
 }
-
+#radio-widget iframe {
+  background: $verde-roto;
+}
 .font-huge {
   font-size: 6em;
   word-break: break-all;
