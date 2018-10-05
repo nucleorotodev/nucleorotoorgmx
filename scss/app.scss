@@ -345,10 +345,11 @@ li.slick-active button::before {
 }
 #radio-widget iframe {
   background: $verde-roto;
-  padding-left: 16px;
+  padding: 16px;
 }
 table.barra-radio {
-  @extend .p-top;
+  padding-left: 16px;
+  padding-right: 16px;
   width: 100%;
   thead {
     th {
@@ -358,6 +359,7 @@ table.barra-radio {
   tr {
     border: 1px solid $verde-roto;
     td {
+      padding: 16px;
       border: 1px solid $verde-roto;
     }
   }

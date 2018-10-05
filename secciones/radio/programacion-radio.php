@@ -3,50 +3,57 @@
   <table class="columns small-12 barra-radio text-center">
     <thead>
 
-      <h3 class="x-grid text-center">Disfruta Nuestra programación</h3>
+      <h3 class="columns text-center">Nuestra programación</h3>
 
     </thead>
 
     <tbody>
 
       <tr>
-        <th>Programa</th>
-        <th>Día</th>
-        <th>Horario</th>
+        <th>Programa:</th>
+        <th>por:</th>
+        <th>Día:</th>
+        <th>Horario:</th>
       </tr>
 
       <tr>
         <td>Programa 1</td>
+        <td>Daesfunka</td>
         <td>Martes</td>
         <td>10pm</td>
       </tr>
 
       <tr>
         <td>Programa 2</td>
+        <td>Daesfunka</td>
         <td>Jueves</td>
         <td>10pm</td>
       </tr>
 
       <tr>
         <td>Programa 3</td>
+        <td>Daesfunka</td>
         <td>Sabado</td>
         <td>10pm</td>
       </tr>
 
       <tr>
         <td>Programa 4</td>
+        <td>Daesfunka</td>
         <td>Miercoles</td>
         <td>10pm</td>
       </tr>
 
       <tr>
         <td>Programa 5</td>
+        <td>Daesfunka</td>
         <td>Jueves</td>
         <td>10pm</td>
       </tr>
 
       <tr>
         <td>Programa 6</td>
+        <td>Daesfunka</td>
         <td>Viernes</td>
         <td>10pm</td>
       </tr>

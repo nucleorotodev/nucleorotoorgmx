@@ -6,7 +6,7 @@ if (have_posts()):
   <h1 class="titulo-anim grid-container text-center p-0-3 color-blanco"><?php echo get_the_title(); ?></h1>
 
 
-  <div class="x-grid p-1 text-center">
+  <div class="columns p-1 text-center">
 
     <?php echo get_the_content(); ?>
 
@@ -17,7 +17,7 @@ endwhile;
 endif;
 ?>
 
-<div class="x-grid h-a">
+<div class="columns h-a p-1">
 
   <div class="columns small-12 medium-6">
 
