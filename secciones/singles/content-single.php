@@ -4,7 +4,7 @@
   if (have_posts()):
 
     while (have_posts()): the_post();
-    setPostViews(get_the_ID());
+    // setPostViews(get_the_ID());
     ?>
 
     <div class="columns small-12 medium-7 p-0-2 p-md-1 h-70-v h-md-60-v">
@@ -50,5 +50,14 @@
 endif;
 
 ?>
-
+<!-- share -->
+<div class="columns p-t-2">
+  <h3 class="small-12 text-center">Comparte este Post</h3>
+  <?php
+  if(function_exists('social_warfare')):
+    social_warfare();
+  endif;
+  ?>
+</div>
+<!--  -->
 </section>

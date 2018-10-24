@@ -107,7 +107,7 @@
 </div>
 
 <!-- share -->
-<div class="grid-x">
+<div class="grid-x p-t-3">
   <?php
   if(function_exists('social_warfare')):
     social_warfare();
@@ -115,5 +115,5 @@
   ?>
 </div>
 <!--  -->
-
+ p-t-3
 </section>
