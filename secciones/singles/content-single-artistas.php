@@ -102,5 +102,15 @@
 endif;
 
 ?>
+<!-- share -->
+<div class="grid-x p-t-2">
+  <h3 class="small-12 text-center">Comparte este Roto-Artista</h3>
+  <?php
+  if(function_exists('social_warfare')):
+    social_warfare();
+  endif;
+  ?>
+</div>
+<!--  -->
 
 </section>

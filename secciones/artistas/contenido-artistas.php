@@ -83,4 +83,14 @@
 
 </div>
 
+<!-- share -->
+<div class="grid-x">
+  <?php
+  if(function_exists('social_warfare')):
+    social_warfare();
+  endif;
+  ?>
+</div>
+<!--  -->
+
 </section>

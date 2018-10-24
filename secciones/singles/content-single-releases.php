@@ -144,10 +144,10 @@
         </small>
         <?php echo the_field('informacion_release'); ?>
       </div>
-      <!--  -->
 
       <!-- share -->
-      <div class="grid-x p-t-0-3">
+      <div class="grid-x p-t-2">
+        <h3 class="small-12 text-center">Comparte este Release</h3>
         <?php
         if(function_exists('social_warfare')):
           social_warfare();

@@ -103,6 +103,18 @@
           Información:
         </small>
         <?php echo the_field('informacion_del_mixtape'); ?>
+
+        <!-- share -->
+        <div class="grid-x p-t-2">
+          <h3 class="small-12 text-center">Comparte este Mixtape</h3>
+          <?php
+          if(function_exists('social_warfare')):
+            social_warfare();
+          endif;
+          ?>
+        </div>
+        <!--  -->
+
       </div>
       <!--  -->
       <div id="player" class="info-mixtape columns small-12 large-6 text-left show-for-large" data-sticky-container>
