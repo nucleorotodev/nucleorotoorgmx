@@ -26,7 +26,7 @@
       <!-- <i class="icono-radio small-3 fa fa-step-forward"></i> -->
 
 
-      <div class="columns h-a p-t-2 font-s font-md-m">
+      <div class="columns h-a p-t-2 font-m font-md-l">
           <?php echo excerpt(22," ... Ir a la radio >>"); ?>
       </div>
     </a>
