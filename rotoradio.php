@@ -12,7 +12,7 @@ get_header();
 
 get_template_part('secciones/radio/contenido-radio');
 
-get_template_part('secciones/radio/programacion-radio');
+// get_template_part('secciones/radio/programacion-radio');
 
 ?>
 
