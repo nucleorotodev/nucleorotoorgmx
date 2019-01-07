@@ -17,8 +17,20 @@ get_template_part('secciones/radio/contenido-radio');
 ?>
 
 
-</div>
+<!-- </div> -->
 
+<!-- share -->
+<div class="columns h-a p-t-1">
+  <h3 class="col text-center">Comparte este Stream</h3>
+<div class="container">
+  <?php
+  if(function_exists('social_warfare')):
+    social_warfare();
+  endif;
+  ?>
+</div>
+</div>
+<!--  -->
 
 </section>
 <?php

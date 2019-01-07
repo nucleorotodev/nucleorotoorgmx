@@ -6,11 +6,11 @@ if (have_posts()):
   <h1 class="titulo-anim grid-container text-center p-0-3 color-blanco"><?php echo get_the_title(); ?></h1>
 
 
-  <div class="columns p-1 text-center">
+  <p class="columns p-2 text-center font-l">
 
     <?php echo get_the_content(); ?>
 
-  </div>
+  </p>
 
   <?php
 endwhile;
