@@ -542,7 +542,14 @@ a.download-button {
 }
 
 //
-
+.grecaptcha-badge {
+  display: none;
+  transition: 1s;
+  &:hover {
+    transition: 1s;
+    display: block;
+  }
+}
 // Responsivos al final
 @import "responsivos";
 //
