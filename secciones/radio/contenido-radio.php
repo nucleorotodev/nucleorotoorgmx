@@ -23,7 +23,7 @@ endif;
 
     <h3 class="text-center">
       <strong>
-        Dale 'Play'
+        RotoPlayer <small>(no flash)</small>
       </strong>
     </h3>
 
@@ -34,8 +34,25 @@ endif;
     </div>
 
   </div>
+  <!--  -->
 
-  <div class="columns small-12 medium-6 text-center">
+  <div class="columns small-12 medium-6">
+    <div id="station_data" class="columns text-left">
+      <script type="text/javascript">
+      setInterval(()=>{
+        radio_data()
+      },10000)
+      </script>
+      <?php
+      get_template_part('secciones/radio/station-radio');
+      ?>
+
+    </div>
+    <a id="load_data" class="columns">Refresh data <small>(if needed)</small> </a>
+  </div>
+
+  <!--  -->
+  <div class="columns small-12 text-center p-t-3">
 
     <?php
     $radio_links = array(
@@ -71,5 +88,6 @@ endif;
     </ul>
 
   </div>
+  <!--  -->
 
 </div>

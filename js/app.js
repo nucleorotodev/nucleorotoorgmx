@@ -5,7 +5,11 @@ jQuery(document).ready(function() {
   //
   setup()
   resize_reset()
-
+  //
+  // radio_data
+  jQuery("#load_data").on('click', ()=>{
+    radio_data()
+  })
   // date picker reset
   jQuery('#ui-datepicker-div').addClass('h-a')
 
@@ -28,8 +32,6 @@ function setup() {
   blog_cats()
   masonry_blog()
   //
-  //
-
 
 }
 
@@ -369,5 +371,10 @@ function masonry_blog() {
     itemSelector: '.blog-card',
     columnWidth: '.blog-sizer',
     percentPosition: true
+  })
+}
+
+function radio_data() {
+  jQuery("#station_data").load('/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php', function(data) {
   })
 }
