@@ -16,8 +16,11 @@
           'IMPT' => 'https://impt.bandcamp.com/',
           'Reggaetron' => 'http://rggtrn.github.io',
           'BreakCore never dies' => 'http://breakcoreneverdies.net',
-          'WAD' => 'http://wadweb.mx'
-        );
+          'WAD' => 'https://wadweb.mx',
+          'TijuanaSynthScene' => 'https://www.facebook.com/TijuanaSynthScene/',
+          'Erreopeo' => 'https://erreopeo.bandcamp.com/album/cmpt3rsntde4d',
+          'Safoh' => 'https://soundcloud.com/safoh',
+         );
         $links_rand_1 = shuffle_with_keys($links_col_1);
         $links_1 = array_slice($links_rand_1,0,8);
         for ($i=0; $i < count($links_1); $i++):
@@ -50,7 +53,9 @@
             'LAAD' => 'http://www.laad.com.mx/',
             'Hernani VIllaseñor' => 'http://hernanivillasenor.com',
             'Proter' => 'http://prtr.xyz',
-            'josecaos' => 'http://josecaos.xyz'
+            'josecaos' => 'http://josecaos.xyz',
+            'Resonancia' => 'http://www.resonanciasoundlab.com/',
+            'Di66er' => 'https://soundcloud.com/d1-66er',
           );
           $links_rand_2 = shuffle_with_keys($links_col_2);
           $links_2 = array_slice($links_rand_2,0,8);

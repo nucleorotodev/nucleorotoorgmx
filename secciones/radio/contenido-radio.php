@@ -41,7 +41,7 @@ endif;
       <script type="text/javascript">
       setInterval(()=>{
         radio_data()
-      },10000)
+      },15000)
       </script>
       <?php
       get_template_part('secciones/radio/station-radio');
