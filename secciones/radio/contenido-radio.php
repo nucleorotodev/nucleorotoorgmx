@@ -42,15 +42,20 @@ endif;
     <div id="station_data" class="columns text-left">
       <script type="text/javascript">
       setInterval(()=>{
-        radio_data()
-      },10000)
+          radio_data()
       </script>
       <?php
       get_template_part('secciones/radio/station-radio');
       ?>
 
     </div>
-    <a id="load_data" class="columns">Refresh data &nbsp;<small id="loading_data"></small> </a>
+    <div class="columns">
+
+      <!-- <a id="load_data" class="columns">Refresh data &nbsp; -->
+      <small id="loading_data"></small>
+      <!-- </a> -->
+
+    </div>
 
   </div>
 

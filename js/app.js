@@ -6,15 +6,7 @@ jQuery(document).ready(function() {
   setup()
   resize_reset()
   //
-  // radio metadata
-  jQuery("#load_data").on('click', ()=>{
-    jQuery('#loading_data').html(" ' Loading Metadata ...' ").fadeIn()
-    setTimeout(()=>{
-      jQuery('#loading_data').html(" ' Metadata OK. ' ")
-      jQuery('#loading_data').fadeOut(2000)
-      radio_data()
-    },2000)
-  })
+  radio_data()
   // date picker reset
   jQuery('#ui-datepicker-div').addClass('h-a')
 
@@ -385,13 +377,13 @@ function radio_data() {
 
   //
   jQuery.ajax({
-    // complete: function () {
-    //   jQuery('#loading_data').html("Loading Metadata ...").fadeIn()
-    //   setTimeout(()=>{
-    //     jQuery('#loading_data').html("Metadata OK.")
-    //     jQuery('#loading_data').fadeOut()
-    //   },2000)
-    // },
+    complete: function () {
+      jQuery('#loading_data').html("Loading Metadata ...").fadeIn()
+      setTimeout(()=>{
+        jQuery('#loading_data').html("Metadata OK.")
+        jQuery('#loading_data').fadeOut(3000)
+      },2000)
+    },
     type : "post",
     url : '/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php',
     data : {
