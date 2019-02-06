@@ -6,9 +6,14 @@ jQuery(document).ready(function() {
   setup()
   resize_reset()
   //
-  // radio_data
+  // radio metadata
   jQuery("#load_data").on('click', ()=>{
-    radio_data()
+    jQuery('#loading_data').html(" ' Loading Metadata ...' ").fadeIn()
+    setTimeout(()=>{
+      jQuery('#loading_data').html(" ' Metadata OK. ' ")
+      jQuery('#loading_data').fadeOut(2000)
+      radio_data()
+    },2000)
   })
   // date picker reset
   jQuery('#ui-datepicker-div').addClass('h-a')
@@ -375,6 +380,31 @@ function masonry_blog() {
 }
 
 function radio_data() {
-  jQuery("#station_data").load('/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php', function(data) {
+
+  // jQuery("#station_data").load('/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php', function(data) {})
+
+  //
+  jQuery.ajax({
+    // complete: function () {
+    //   jQuery('#loading_data').html("Loading Metadata ...").fadeIn()
+    //   setTimeout(()=>{
+    //     jQuery('#loading_data').html("Metadata OK.")
+    //     jQuery('#loading_data').fadeOut()
+    //   },2000)
+    // },
+    type : "post",
+    url : '/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php',
+    data : {
+      action: "roto_radio_metadata",
+      message : "Cargando metadata ..."
+    },
+    error: function(data){
+      console.log(data);
+    },
+    success: function(data) {
+      // console.log("Success loading radio metadata")
+      jQuery("#station_data").html(data)
+    }
   })
+
 }

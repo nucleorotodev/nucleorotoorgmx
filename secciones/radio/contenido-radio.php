@@ -3,7 +3,9 @@ if (have_posts()):
   while (have_posts()): the_post();
   ?>
 
-  <h1 class="titulo-anim grid-container text-center p-0-3 color-blanco"><?php echo get_the_title(); ?></h1>
+  <h1 class="titulo-anim grid-container text-center p-0-3 color-blanco">
+    <?php echo get_the_title(); ?>
+  </h1>
 
 
   <p class="columns p-2 text-center font-l">
@@ -41,14 +43,15 @@ endif;
       <script type="text/javascript">
       setInterval(()=>{
         radio_data()
-      },15000)
+      },10000)
       </script>
       <?php
       get_template_part('secciones/radio/station-radio');
       ?>
 
     </div>
-    <a id="load_data" class="columns">Refresh data <small>(if needed)</small> </a>
+    <a id="load_data" class="columns">Refresh data &nbsp;<small id="loading_data"></small> </a>
+
   </div>
 
   <!--  -->

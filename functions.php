@@ -233,3 +233,11 @@ function seopress_theme_slug_setup() {
 }
 add_action( 'after_setup_theme', 'seopress_theme_slug_setup' );
 //
+// ajax radio
+add_action('wp_ajax_nopriv_roto_radio_metadata', 'roto_radio_metadata');
+function roto_radio_metadata(){
+    // Check parameters
+    $message  = isset( $_POST['message'] ) ? $_POST['message'] : false;
+    if( !$message ) wp_send_json( array('message' => __('Message not received :(', 'wpduf') ) );
+    else wp_send_json( array('message' => __('Message received, greetings from server!', 'wpduf') ) );
+}
