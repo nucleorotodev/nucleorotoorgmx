@@ -79,6 +79,13 @@ function cpt($cpt_slug,$paginado,$post_num=8,$orderby='ID') {
   );
 
 }
+//
+function add_pagination($var) {
+
+  $query = $var;
+  include "secciones/modulos/paginacion-cpt.php";
+
+}
 //menus para paginas
 function menu_paginas($lugar = '', $ul_ID = '', $ul_class = 'menu-page' ) {
 
@@ -86,7 +93,7 @@ function menu_paginas($lugar = '', $ul_ID = '', $ul_class = 'menu-page' ) {
 
 }
 //delimita extracto
-function excerpt($limit, $string = " ... mas") {
+function excerpt($limit, $string = " ... más") {
   $excerpt = explode(' ', get_the_excerpt(), $limit);
   if (count($excerpt)>=$limit) {
     array_pop($excerpt);

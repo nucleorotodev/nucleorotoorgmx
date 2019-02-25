@@ -1,13 +1,14 @@
   <nav class="paginacion columns p-0 p-t-1 p-b-2 color-blanco color-terciario-0-hover">
+<?php
+    $pags = 9999; //
+     echo paginate_links( array(
+        'base' => str_replace( $pags, '%#%', get_pagenum_link( $pags ) ),
+        'format' => '?paged=%#%',
+        'current' => max( 1, get_query_var('paged') ),
+        'total' => $query->max_num_pages
+    ) );
 
-    <div class="nav-previous columns small-6 text-left">
-      <?php //echo previous_posts_link( '< Anterior' ); ?>
-      <?php echo get_previous_posts_link( '< Anteriores' );?>
-    </div>
+    wp_reset_postdata();
 
-    <div class="nav-next columns small-6 text-right">
-      <?php //echo next_posts_link( 'Siguiente >',$q->max_num_pages ); ?>
-      <?php echo get_next_posts_link( 'Siguientes >',$q->max_num_pages  );?>
-    </div>
-
+    ?>
   </nav>

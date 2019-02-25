@@ -27,8 +27,8 @@
     <div class="columns small-12 p-0-3 h-a rel">
 
       <?php
-      $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-      $args =  cpt('roto-mixtapes',$paged,10,'ID');
+      $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+      $args =  cpt('roto-mixtapes',$paged,8,'ID');
       $q =  new WP_Query($args);
       if($q->have_posts()):
         while ($q->have_posts()): $q -> the_post();
@@ -56,8 +56,6 @@
 
           </a>
 
-
-
           <div class="small-5 p-0-2 p-md-1 p-lg-2 absDownL z-1 h-a text-left">
             <div class="columns p-0 z-1 cortina-negro absDownR">
             </div>
@@ -84,7 +82,7 @@
         <?php
       endwhile;
 
-      get_template_part('secciones/modulos/paginacion-cpt');
+      add_pagination($q);
 
     else:
       ?>
@@ -115,5 +113,4 @@
   ?>
 </div>
 <!--  -->
- p-t-3
 </section>

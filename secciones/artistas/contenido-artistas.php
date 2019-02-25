@@ -61,8 +61,8 @@
         <?php
       endwhile;
 
-      get_template_part('secciones/modulos/paginacion-cpt');
-
+      add_pagination($q);
+      
     else:
       ?>
       <div class="row align-midle p-1 p-md-2">

@@ -405,6 +405,14 @@ table.barra-radio {
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
 }
+//paginacion
+.paginacion {
+  text-align: center;
+  span, a {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
 // menu activo
 .current-menu-item  a, .current_page_item a,
 .current_page_parent a {

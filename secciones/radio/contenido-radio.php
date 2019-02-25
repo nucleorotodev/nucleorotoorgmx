@@ -42,7 +42,8 @@ endif;
     <div id="station_data" class="columns text-left">
       <script type="text/javascript">
       setInterval(()=>{
-          radio_data()
+        radio_data()
+      },30000)
       </script>
       <?php
       get_template_part('secciones/radio/station-radio');
