@@ -6,7 +6,9 @@ jQuery(document).ready(function() {
   setup()
   resize_reset()
   //
-  radio_data()
+  setTimeout(()=>{
+    radio_data()
+  },10000)
   // date picker reset
   jQuery('#ui-datepicker-div').addClass('h-a')
 

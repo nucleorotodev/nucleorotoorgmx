@@ -63,7 +63,7 @@
               $id = get_field('release_download_manager_id');
               $id2 = get_field('release_download_manager_id_version_2');
               $id3 = get_field('release_download_manager_id_version_3');
-              $release_drive = get_field('release_download_link');
+              $link_drive = get_field('release_download_link');
               if (!empty($id)) {
               echo do_shortcode('[download id=" '. $id .' "]');
               }
@@ -77,12 +77,13 @@
             </div>
             <!-- boton drive -->
             <?php
-            if (!empty($release_drive)) {
+            if (!empty($link_drive)) {
               ?>
               <div class="info-title columns small-12 h-a p-0-3">
                 <p>
-                  <a class="aligncenter download-button" href="<?php echo $release_drive;?>" rel="nofollow" target="_blank">
-                    Download “<?php echo the_field('numero_de_catalogo');?>”
+                  <a class="aligncenter download-button" href="<?php echo $link_drive;?>" rel="nofollow" target="_blank">
+                    <small><b>¿Problemas para descargar? Utiliza este espejo externo </b></small>
+                    External Download “<?php echo the_field('numero_de_catalogo');?>”
                     <small>Descarga directa desde nuestro Drive, Archivo:
                       <?php echo the_field('numero_de_catalogo');?>.zip</small>
                     </a></p>
