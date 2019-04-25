@@ -5,7 +5,7 @@
 
       <?php
 
-      $args = cpt('roto-releases',true,8);
+      $args = cpt('roto-releases',true,4);
       $q = new WP_Query($args);
 
       if($q->have_posts()):

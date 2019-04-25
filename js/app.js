@@ -274,7 +274,7 @@ function titulo_roto() {
 
 function parallax_home() {
   jQuery('.fondo-label').parallax({
-    imageSrc: '/wp-content/themes/nucleorotoorgmx/img/nr-parallax2.jpg',
+    imageSrc: '/wp-content/uploads/2019/04/nrfondo-main.jpg',
     speed: 0.75,
     bleed: 110,
     androidFix: false
