@@ -73,6 +73,7 @@ body {
 div, section, nav, li {
   display: block;
   @extend .h-100;
+  // color: $verde-roto !important;
 }
 a {
   @extend .color-verde-roto;
@@ -81,7 +82,8 @@ a:hover, a:focus {
   @extend .color-terciario-0;
 }
 hr {
-  border-color: -moz-use-text-color -moz-use-text-color #cacaca;
+  border-color: $color-primario-1;
+  border-bottom: $color-primario-1;
   border-style: none none solid;
   border-width: 0 0 1px;
   clear: both;
@@ -99,6 +101,7 @@ h1,h2,h3,h4,h5,h6 {
   // @extend .font-headings-7;
   // @extend .font-headings-8;
   @extend .font-headings-9;
+  // color: $verde-roto !important;
   //
 }
 p, li, div, span, small, strong {
@@ -557,6 +560,16 @@ a.download-button {
     transition: 1s;
     display: block;
   }
+}
+// facebook RotoFeed
+.cff-wrapper {
+  height: 95% !important;
+}
+.cff-item {
+  height: auto !important;
+}
+#cff .cff-item.cff-box, #cff .cff-item.cff-box:first-child {
+  background-color: $color-primario-0 !important;
 }
 // Responsivos al final
 @import "responsivos";
