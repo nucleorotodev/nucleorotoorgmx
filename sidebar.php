@@ -37,7 +37,7 @@
       </div>
 
       <div class="columns p-0-1 h-a">
-        <a href="<?php echo get_the_permalink();?>" class="columns rel h-100 p-0-2 color-blanco color-verde-roto-hover-bg color-negro-hover cortina-negro">
+        <a href="<?php echo get_the_permalink();?>" class="columns rel h-100 p-0-2 color-blanco color-nucleo-roto-hover-bg color-negro-hover cortina-negro">
           <!-- Titulo release -->
           <h3 class="h-a columns text-justify p-0-1 font-m">
             <?php

@@ -12,7 +12,7 @@
     <?php echo do_shortcode('[custom-facebook-feed]'); ?>    
     <!--  -->
     <div class="columns text-center h-5 p-0">
-      <small class="color-verde-roto"> <a href="https://facebook.com/nucleorotomusica" target="_blank">Visita nuestro facebook</a> </small>
+      <small class="color-nucleo-roto"> <a href="https://facebook.com/nucleorotomusica" target="_blank">Visita nuestro facebook</a> </small>
     </div>
     <!--  -->
   </div>

@@ -8,8 +8,8 @@
     <div class="columns p-0">
 
       <div class="columns small-1 medium-2 large-1 p-0 text-center">
-        <div class="columns p-0 color-verde-roto-bg rel">
-          <h3 class="titulo-sidebar h-a color-negro-bg color-verde-roto p-t-0-2 p-b-0-2 absUpL top right">
+        <div class="columns p-0 color-nucleo-roto-bg rel">
+          <h3 class="titulo-sidebar h-a color-negro-bg color-nucleo-roto p-t-0-2 p-b-0-2 absUpL top right">
             <?php if (!is_page( array(11,13) )): ?>
               Random Releases
               <?php else: ?>
@@ -36,8 +36,8 @@
     <div class="columns small-11 medium-10 small-centered p-0">
 
       <div class="columns small-1  p-0 text-center p-b-1">
-        <div class="columns color-verde-roto-bg rel">
-          <h5 class="titulo-sidebar h-a color-negro-bg color-verde-roto p-t-0-2 p-b-0-2 absUpL top right">
+        <div class="columns color-nucleo-roto-bg rel">
+          <h5 class="titulo-sidebar h-a color-negro-bg color-nucleo-roto p-t-0-2 p-b-0-2 absUpL top right">
             Random Releases
           </h5>
         </div>
