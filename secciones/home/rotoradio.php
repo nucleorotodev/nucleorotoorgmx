@@ -1,4 +1,4 @@
-<section id="inicio-radio" class="grid-x cell columns small-12 large-6 h-100-v p-top rel color-nucleo-roto-bg end">
+<section id="inicio-radio" class="grid-x cell columns small-12 large-6 h-100-v p-top rel color-verde-roto-bg end">
 
 
 

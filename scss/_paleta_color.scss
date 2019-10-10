@@ -1,19 +1,21 @@
 // Paleta de color con SASS
- 
+
 // $blanco: #FFF;
 $blanco: whitesmoke;
 $negro: #000;
-// Theme color general
-$nucleo-roto: #b9c442;//theme NR18
-// $nucleo-roto: #363535;//theme blackVSblack
-// $nucleo-roto: #B2C750;//theme original
-// $nucleo-roto: #32CAB9;//theme Azul bb
+// Color RotoThemes
+$verde-roto: #B67200;//theme Aguila
+// $verde-roto: #03e0c4;//theme redn'blue
+// $verde-roto: #363535;//theme blackVSblack
+// $verde-roto: #B2C750;//theme original
+// $verde-roto: #32CAB9;//theme Azul bb
 // theme color Acento
-$color-terciario-0: #A84C00;// theme NR18 !!?
+$color-terciario-0: #110c3e;// theme Aguila
+// $color-terciario-0: #ea040f;// theme redn'blue
 // $color-terciario-0: #A84C00;// theme blackVSblack - naranja chido
 // $color-terciario-0: #cf9f2a;// theme original - ocre chido
 // $color-terciario-0: #CD7F63;//theme Azul bb - rosa chido
-//
+// /////////////
 
 //colores generales
 $color-primario-0: #393F4B;
@@ -40,7 +42,7 @@ $lista-colores: (
 
 blanco   $blanco,
 negro   $negro,
-nucleo-roto $nucleo-roto,
+verde-roto $verde-roto,
 
 primario-0 $color-primario-0,
 primario-1 $color-primario-1,

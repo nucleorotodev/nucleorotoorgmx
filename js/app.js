@@ -308,27 +308,27 @@ function blog_random_colors() {
     'color-terciario-0-bg',
     'color-terciario-0-bg',
     'color-negro-bg',
-    'color-nucleo-roto-bg',
+    'color-verde-roto-bg',
     'color-terciario-0-bg',
     'color-terciario-0-bg',
     'color-negro-bg',
     'color-terciario-0-bg',
     'color-negro-bg',
-    'color-nucleo-roto-bg',
-    'color-nucleo-roto-bg',
+    'color-verde-roto-bg',
+    'color-verde-roto-bg',
     'color-terciario-0-bg',
-    'color-nucleo-roto-bg',
+    'color-verde-roto-bg',
     'color-terciario-0-bg',
     'color-terciario-0-bg'
   ]
   var fondo = [
     'color-acento-1-bg',
-    'color-nucleo-roto-bg',
+    'color-verde-roto-bg',
     'color-acento-1-bg',
     'color-neutral-0-bg',
     'color-acento-0-bg',
-    'color-nucleo-roto-bg',
-    'color-nucleo-roto-bg',
+    'color-verde-roto-bg',
+    'color-verde-roto-bg',
     'color-neutral-0-bg',
     'color-complementario-0-bg',
     'color-complementario-0-bg',
@@ -336,7 +336,7 @@ function blog_random_colors() {
     'color-neutral-0-bg',
     'color-neutral-1-bg',
     'color-complementario-0-bg',
-    'color-nucleo-roto-bg',
+    'color-verde-roto-bg',
     'color-acento-0-bg',
     'color-complementario-0-bg'
   ]
@@ -362,7 +362,7 @@ function blog_random_colors() {
 
 function blog_cats() {
   jQuery('.cat-item').addClass('columns small-4 medium-3 large-2 p-0-2 end')
-  jQuery('.cat-item a').addClass('columns text-center p-0-1 color-nucleo-roto-bg color-negro')
+  jQuery('.cat-item a').addClass('columns text-center p-0-1 color-verde-roto-bg color-negro')
 }
 
 function masonry_blog() {

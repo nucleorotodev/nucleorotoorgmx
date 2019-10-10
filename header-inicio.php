@@ -12,7 +12,7 @@
   <header id="header" class="columns p-0 fixed top left color-negro-bg shadow z1k1">
 
 
-    <div id="header-logo" class="columns small-6 large-2 p-0-1 color-nucleo-roto-bg">
+    <div id="header-logo" class="columns small-6 large-2 p-0-1 color-verde-roto-bg">
       <a href="<?php echo home_url(); ?>" class="columns h-100">
 
         <div class="grid-x cell imgLiquid imgLiquidNoFillLeft">

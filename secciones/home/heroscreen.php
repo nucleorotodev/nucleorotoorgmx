@@ -63,7 +63,7 @@
 </div>
 </div>
 
-<div class="heroscreen-redes columns h-15 color-nucleo-roto-bg">
+<div class="heroscreen-redes columns h-15 color-verde-roto-bg">
 
   <div class="row small-10 medium-8 large-6 small-centered align-middle">
 

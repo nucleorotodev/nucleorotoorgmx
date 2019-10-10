@@ -19,7 +19,7 @@
         ?>
         <article class="columns p-0-1">
 
-          <a href="<?php echo get_the_permalink();?>" class="columns p-0 color-blanco color-nucleo-roto-hover color-nucleo-roto-hover-bd text-shadow">
+          <a href="<?php echo get_the_permalink();?>" class="columns p-0 color-blanco color-verde-roto-hover color-verde-roto-hover-bd text-shadow">
             <div class="columns small-4 imgLiquid imgLiquidFill">
               <?php echo get_the_post_thumbnail(); ?>
             </div>
@@ -55,7 +55,7 @@
 
   <!--  -->
   <div class="columns text-center h-5 p-0">
-    <small class="color-nucleo-roto"> << drag >> </small>
+    <small class="color-verde-roto"> << drag >> </small>
   </div>
   <!--  -->
 </div>

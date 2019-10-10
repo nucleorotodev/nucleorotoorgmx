@@ -73,10 +73,10 @@ body {
 div, section, nav, li {
   display: block;
   @extend .h-100;
-  // color: $nucleo-roto !important;
+  // color: $verde-roto !important;
 }
 a {
-  @extend .color-nucleo-roto;
+  @extend .color-verde-roto;
 }
 a:hover, a:focus {
   @extend .color-terciario-0;
@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6 {
   // @extend .font-headings-7;
   // @extend .font-headings-8;
   @extend .font-headings-9;
-  // color: $nucleo-roto !important;
+  // color: $verde-roto !important;
   //
 }
 p, li, div, span, small, strong {
@@ -158,6 +158,7 @@ form textarea, .nr-select-artista select {
         width: 25px;
         display: inline-block;
         input[type="image"] {
+          padding: 0px 0px;
           height: 100%;
           width: 100%;
         }
@@ -189,28 +190,28 @@ form textarea, .nr-select-artista select {
 #single-artista div small {
   // @extend .font-especial-4;
   @extend .font-especial-1;
-  @extend .color-nucleo-roto;
+  @extend .color-verde-roto;
   font-size: 0.85em !important;
   letter-spacing: 0.1em;
 }
 #artista-labels div {
   // @extend .font-especial-4;
   @extend .font-especial-1;
-  @extend .color-nucleo-roto;
+  @extend .color-verde-roto;
   font-size: 0.85em;
   letter-spacing: 0.1em;
 }
 #single-release div small {
   // @extend .font-especial-4;
   @extend .font-especial-1;
-  @extend .color-nucleo-roto;
+  @extend .color-verde-roto;
   font-size: 0.85em;
   letter-spacing: 0.1em;
 }
 #single-mixtape div small {
   // @extend .font-especial-4
   @extend .font-especial-1;
-  @extend .color-nucleo-roto;
+  @extend .color-verde-roto;
   font-size: 0.85em;
   letter-spacing: 0.1em;
 }
@@ -233,12 +234,12 @@ form textarea, .nr-select-artista select {
   padding: 8px;
   font-size: 1em;
   font-weight: bolder;
-  background-color: $nucleo-roto;
+  background-color: $verde-roto;
   // color: $color-terciario-0 !important;
   color: $blanco !important;
   &:hover {
     background-color: $color-terciario-0;
-    // color: $nucleo-roto !important;
+    // color: $verde-roto !important;
     color: $negro !important;
   }
 }
@@ -257,7 +258,7 @@ form textarea, .nr-select-artista select {
 // generales
 .boton-roto {
   float: left !important;
-  @extend .color-nucleo-roto-bg;
+  @extend .color-verde-roto-bg;
   @extend .color-primario-1-hover-bg;
   @extend .color-negro-hover;
   @extend .color-blanco;
@@ -311,7 +312,7 @@ form textarea, .nr-select-artista select {
   width: auto;
 }
 li.slick-active button::before {
-  color: $nucleo-roto !important;
+  color: $verde-roto !important;
 }
 .slick-list .draggable {
   height: 100% !important;
@@ -347,7 +348,7 @@ li.slick-active button::before {
   font-size: 5em;
 }
 #radio-widget iframe {
-  background: $nucleo-roto;
+  background: $verde-roto;
   padding: 16px;
 }
 table.barra-radio {
@@ -356,14 +357,14 @@ table.barra-radio {
   width: 100%;
   thead {
     th {
-      border: 1px solid $nucleo-roto;
+      border: 1px solid $verde-roto;
     }
   }
   tr {
-    border: 1px solid $nucleo-roto;
+    border: 1px solid $verde-roto;
     td {
       padding: 16px;
-      border: 1px solid $nucleo-roto;
+      border: 1px solid $verde-roto;
     }
   }
 }
@@ -491,7 +492,7 @@ form {
   }
 
   input, textarea, select, option {
-    @extend .color-nucleo-roto-bg;
+    @extend .color-verde-roto-bg;
     @extend .color-blanco;
     border: 0 !important;
   }
@@ -501,7 +502,7 @@ form {
   input.wpcf7-submit {
     height:100%;
     // @extend .columns;
-    @extend .color-nucleo-roto-bg;
+    @extend .color-verde-roto-bg;
     @extend .color-secundario-0-hover-bg;
     @extend .color-negro;
     @extend .color-blanco-hover;
@@ -526,9 +527,9 @@ form {
   display: block;
   // font-size: 1.1em;
   line-height: 1.25em;
-  background-color: $nucleo-roto;
-  background-image: -moz-linear-gradient($nucleo-roto,$nucleo-roto,$nucleo-roto);
-  background-image: linear-gradient($nucleo-roto,$nucleo-roto,$nucleo-roto);
+  background-color: $verde-roto;
+  background-image: -moz-linear-gradient($verde-roto,$verde-roto,$verde-roto);
+  background-image: linear-gradient($verde-roto,$verde-roto,$verde-roto);
   -moz-border-radius: none;
   -webkit-border-radius:none;
   border-radius: none;

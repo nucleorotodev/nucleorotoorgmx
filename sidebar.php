@@ -8,11 +8,11 @@
   </div>
   <div class="slider-sidebar columns p-0">
     <?php
-    if (!is_page(array(11,13))):
-      $args =  cpt('roto-releases',true,14,'rand');
+    if (!is_page(array(11,13,71))):
+      $args =  cpt('roto-releases',true,17,'rand');
     else:
       $args =  array(
-        'post_type' => 'post',
+        'post_type' => 'roto-artistas',//'post'
         'posts_per_page' => 12,
         'orderby' => 'rand',
         // 'order'   => 'ASC',
@@ -26,32 +26,36 @@
       ?>
       <div class="columns p-0-2 rel">
         <div class="columns absUpL z-1 imgLiquid imgLiquidFill"><?php
-        if (!is_page(array(11,13))):
+        if (!is_page(array(11,13,71))):
           ?>
           <img src="<?php echo the_field('imagen_cabecera_release');?>" alt="<?php echo the_field('nombre_artista_release')  . " - " . the_field('titulo_de_release');?>"/>
           <?php
         else:
-          echo get_the_post_thumbnail();
+          // echo get_the_post_thumbnail();
+          ?>
+          <img src="<?php echo the_field('imagen_artista');?>" alt="<?php echo the_field('nombre_artista');?>"/>
+          <?php
         endif;
         ?>
       </div>
 
       <div class="columns p-0-1 h-a">
-        <a href="<?php echo get_the_permalink();?>" class="columns rel h-100 p-0-2 color-blanco color-nucleo-roto-hover-bg color-negro-hover cortina-negro">
+        <a href="<?php echo get_the_permalink();?>" class="columns rel h-100 p-0-2 color-blanco color-verde-roto-hover-bg color-negro-hover cortina-negro">
           <!-- Titulo release -->
           <h3 class="h-a columns text-justify p-0-1 font-m">
             <?php
-            if (!is_page(array(11,13))):
+            if (!is_page(array(11,13,71))):
               echo the_field('titulo_de_release');
             else:
-              echo get_the_title();
+              // echo get_the_title();
+              echo the_field('nombre_artista');
             endif;
             ?>
           </h3>
 
           <div class="columns h-a font-l">
             <?php
-            if (!is_page(array(11,13))):
+            if (!is_page(array(11,13,71))):
               echo the_field('nombre_artista_release');;
             else:
               //echo get_the_author();
@@ -61,10 +65,10 @@
 
           <div class="columns p-0 h-a text-right font-m">
             <?php
-            if (!is_page(array(11,13))):
+            if (!is_page(array(11,13,71))):
               echo the_field('dia_release') . the_field('mes_release') . the_field('ano_release');
             else:
-              echo get_the_date();
+              // echo get_the_date();
             endif;
             ?>
           </div>
