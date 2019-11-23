@@ -37,13 +37,8 @@ add_action( 'init', 'registro_menu' );
 include_once "cpts/artistas-cpt.php";
 include_once "cpts/banners-cpt.php";
 include_once "cpts/releases-cpt.php";
+include_once "cpts/lives-cpt.php";
 include_once "cpts/mixtapes-cpt.php";
-//
-// registro de 3 sidebars
-// add_action('get_sidebar','rotosidebars');
-// function rotosidebars() {
-//   register_sidebars( 3, array( 'name' => 'RotoSidebar %d' ) );
-// }
 //
 // analytics
 add_action('wp_head', 'add_analytics');
