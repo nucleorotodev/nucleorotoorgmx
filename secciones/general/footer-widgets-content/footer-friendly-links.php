@@ -56,6 +56,7 @@
             'josecaos' => 'http://josecaos.xyz',
             'Resonancia' => 'http://www.resonanciasoundlab.com/',
             'Di66er' => 'https://soundcloud.com/d1-66er',
+            'Patrones y Secuencias' => 'https://www.facebook.com/patronesysecuencias/',
           );
           $links_rand_2 = shuffle_with_keys($links_col_2);
           $links_2 = array_slice($links_rand_2,0,8);

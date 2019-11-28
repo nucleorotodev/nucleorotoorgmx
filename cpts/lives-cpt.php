@@ -1,12 +1,12 @@
 <?php
-function lives() {
+function live() {
   // etiquetas backend
   $labels = array(
-    'name'                => _x( 'Lives', 'Post Type General Name', 'nucleoroto-theme' ),
+    'name'                => _x( 'Live', 'Post Type General Name', 'nucleoroto-theme' ),
     'singular_name'       => _x( 'Live', 'Post Type Singular Name', 'nucleoroto-theme' ),
-    'menu_name'           => __( 'Roto-Lives', 'nucleoroto-theme' ),
+    'menu_name'           => __( 'Roto-Live', 'nucleoroto-theme' ),
     'parent_item_colon'   => __( 'Live padre', 'nucleoroto-theme' ),
-    'all_items'           => __( 'Todos los RotoLives', 'nucleoroto-theme' ),
+    'all_items'           => __( 'Todos los RotoLive', 'nucleoroto-theme' ),
     'view_item'           => __( 'Ver Live', 'nucleoroto-theme' ),
     'add_new_item'        => __( 'Agrega RotoLive', 'nucleoroto-theme' ),
     'add_new'             => __( 'Nuevo RotoLive', 'nucleoroto-theme' ),
@@ -20,7 +20,7 @@ function lives() {
   // Set other options for Custom Post Type
 
   $args = array(
-    'label'               => __( 'Lives', 'nucleoroto-theme' ),
+    'label'               => __( 'Live', 'nucleoroto-theme' ),
     'description'         => __( 'Nucleoroto Live gigs', 'nucleoroto-theme' ),
     'labels'              => $labels,
     'supports'            => array( 'title', 'thumbnail' ),
@@ -41,8 +41,8 @@ function lives() {
   );
 
   // Registra
-  register_post_type( 'roto-lives', $args );
+  register_post_type( 'roto-live', $args );
 
 }
 
-add_action( 'init', 'lives', 0 );
+add_action( 'init', 'live', 0 );
