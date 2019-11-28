@@ -132,16 +132,16 @@
         <div class="info-title info-release columns small-12 large-6 p-0 h-a">
           <!-- Bloque 1 -->
           <div class="info-title columns h-a">
-            <small>Released:</small>
+            <small>Grabación en vivo:</small>
             <ul>
               <li class="release-descripcion columns h-a">
-                País:   <?php echo the_field('pais_release'); ?>
+                Lugar:  <?php echo the_field('lugar_concierto'); ?>
               </li>
               <li class="release-descripcion columns h-a">
-                Fecha:  <?php echo the_field('dia_release'); ?> / <?php echo the_field('mes_release'); ?> / <?php echo the_field('ano_release'); ?>
+                País:   <?php echo the_field('pais_concierto'); ?>
               </li>
               <li class="release-descripcion columns h-a">
-                Tipo:  <?php echo the_field('tipo_de_release'); ?>
+                Fecha:  <?php echo the_field('dia_grabacion'); ?> / <?php echo the_field('mes_grabacion'); ?> / <?php echo the_field('ano_grabacion_concierto'); ?>
               </li>
             </ul>
           </div>
