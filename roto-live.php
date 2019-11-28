@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: RotoLives
+Template Name: RotoLive
 */
 
 get_header();
