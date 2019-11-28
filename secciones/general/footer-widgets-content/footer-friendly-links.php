@@ -16,7 +16,7 @@
           'IMPT' => 'https://impt.bandcamp.com/',
           'Reggaetron' => 'http://rggtrn.github.io',
           'BreakCore never dies' => 'http://breakcoreneverdies.net',
-          'WAD' => 'https://wadweb.mx',
+          'WAD' => 'https://wad.com.mx/',
           'TijuanaSynthScene' => 'https://www.facebook.com/TijuanaSynthScene/',
           'Erreopeo' => 'https://erreopeo.bandcamp.com/album/cmpt3rsntde4d',
           'Safoh' => 'https://soundcloud.com/safoh',

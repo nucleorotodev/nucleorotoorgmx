@@ -85,7 +85,7 @@
       endwhile;
 
       add_pagination($q);
-      
+
     else:
       ?>
       <div class="row align-midle p-1 p-md-2">

@@ -1,7 +1,7 @@
 //
 jQuery(document).ready(function() {
-
   jQuery(document).foundation()
+
   //
   setup()
   resize_reset()
@@ -27,9 +27,9 @@ function setup() {
   slider_sidebar()
   titulo_roto()
   //blog
-  blog_random_colors()
-  blog_cats()
-  masonry_blog()
+  // blog_random_colors()
+  // blog_cats()
+  // masonry_blog()
   //
 
 }
@@ -37,14 +37,11 @@ function setup() {
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
-  // While there remain elements to shuffle...
   while (0 !== currentIndex) {
 
-    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
-    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
@@ -192,6 +189,7 @@ function slider_heroscreen() {
     cssEase: 'linear'
   })
 }
+
 function slider_footer() {
 
   jQuery('.slider-footer').slick({
@@ -393,7 +391,7 @@ function radio_data() {
       message : "Cargando metadata ..."
     },
     error: function(data){
-      console.log(data);
+      // console.log(data);
     },
     success: function(data) {
       // console.log("Success loading radio metadata")
