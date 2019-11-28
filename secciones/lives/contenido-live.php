@@ -91,7 +91,7 @@
       <div class="row align-midle p-1 p-md-2">
         <h1 class="columns h-a text-center color-blanco">
 
-          <?php echo 'NR00 este colectívo aún no tiene Releases' ?>
+          <?php echo 'NRL00: este colectívo aún no tiene Live Releases' ?>
 
         </h1>
       </div>

@@ -8,10 +8,15 @@ jQuery(document).ready(function() {
   //
   setTimeout(()=>{
     radio_data()
-  },10000)
+  },15000)
   // date picker reset
   jQuery('#ui-datepicker-div').addClass('h-a')
 
+//suaviza baile de palabras solo en h1
+  let titulos = document.querySelectorAll('h1')
+  titulos.forEach((index) => {
+      index.style.transition = '2s'
+  })
 })
 //fin ready
 // funciones
@@ -238,10 +243,15 @@ function slider_sidebar() {
 
 function titulo_roto() {
 
-  var classes = ['text-left','text-center','text-right','text-left','text-center','text-right', 'text-justify']
-  var espaciado = ['0vw','0.25vw','0.5vw','0.75vw','1vw']
-  var desorden, espacios
-  var iter = 0
+  let classes = ['text-left','text-center','text-right','text-right','text-center','text-left', 'text-justify']
+  let espaciado = ['0vw','0.25vw','0.5vw','0.75vw','1vw']
+  let tiempos = [125, 250, 500, 750, 1000, 1500, 2000]
+  let desorden, espacios, tiempo
+  let iter = 0
+  // calcula tempo
+  tiempo = tiempos[Math.floor(Math.random() * tiempos.length)]
+  // console.log("XXX:::", tiempo);
+
   setInterval(function() {
 
     desorden = shuffle(classes)
@@ -266,7 +276,7 @@ function titulo_roto() {
       iter = 0
     }
 
-  },500)
+  },tiempo)
 
 }
 

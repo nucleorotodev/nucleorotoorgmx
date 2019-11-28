@@ -10,3 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: Music, Graph, Image, Artists, Releases, Mixtapes.
 Text Domain: nucleoroto-theme
 */
+/* Overrides */
+h1,h2,h3,h4,h5,h6 {
+  text-shadow: none !important;
+}
