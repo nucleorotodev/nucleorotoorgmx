@@ -5,7 +5,7 @@
 
       <?php
 
-      $args = cpt('roto-releases',true,4);
+      $args = cpt(array('roto-releases','roto-live','roto-mixtapes'),true,6);
       $q = new WP_Query($args);
 
       if($q->have_posts()):
