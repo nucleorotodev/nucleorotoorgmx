@@ -282,13 +282,14 @@ function titulo_roto() {
 
 function parallax_home() {
   jQuery('.fondo-label').parallax({
-    imageSrc: '/wp-content/uploads/2019/04/nrfondo-main.jpg',
+    // imageSrc: '/wp-content/uploads/2019/04/nrfondo-main.jpg',
+    imageSrc: '/wp-content/themes/nucleorotoorgmx/img/nrlogo-backgroundweb.png',
     speed: 0.75,
     bleed: 110,
     androidFix: false
   });
   jQuery('.fondo-logo').parallax({
-    imageSrc: '/wp-content/themes/nucleorotoorgmx/img/nr-logo-header-medium.jpg',
+    imageSrc: '/wp-content/themes/nucleorotoorgmx/img/nrlogo-backgroundweb.png',
     speed: 0.75,
     bleed: 100,
     androidFix: false

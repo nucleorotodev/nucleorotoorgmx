@@ -66,11 +66,11 @@
 
   <div class="copyright columns small-5 text-left v-center">
 
-    <div class="row p-t-0-1 font-xs font-md-s text-shadow color-blanco align-middle">
+    <div class="row p-t-0-1 font-s text-shadow color-blanco align-middle">
 
       <div class="column h-a">
 
-        <i class="fa fa-copyright"></i> <? echo bloginfo(); ?> &nbsp; <?php echo date("Y"); ?>
+        <i class="fa fa-copyright"></i> <?php echo bloginfo(); ?>&nbsp;|&nbsp;<?php echo date("Y"); ?>
 
       </div>
 

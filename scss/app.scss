@@ -61,9 +61,21 @@
 $altura-header: 60px;
 $altura-footer: 100px;
 //
+// custom theme
 body {
-  @extend .color-negro-bg;
+  color: whitesmoke;
+ }
+.heroscreen-redes a i {
+  color: whitesmoke;
 }
+footer a i {
+  color: whitesmoke;
+}
+//fin custom themes
+body {
+  background-color: $negro;
+ }
+//generales
 #main {
   padding-left: 0 !important;
   padding-right: 0 !important;
