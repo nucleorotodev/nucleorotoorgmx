@@ -397,6 +397,7 @@ function radio_data() {
     },
     type : "post",
     url : '/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php',
+    // url : '/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio-js.php',
     data : {
       action: "roto_radio_metadata",
       message : "Cargando metadata ..."
