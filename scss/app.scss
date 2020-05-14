@@ -64,7 +64,7 @@ $altura-footer: 100px;
 // custom theme
 body {
   color: whitesmoke;
- }
+}
 .heroscreen-redes a i {
   color: whitesmoke;
 }
@@ -74,7 +74,7 @@ footer a i {
 //fin custom themes
 body {
   background-color: $negro;
- }
+}
 //generales
 #main {
   padding-left: 0 !important;
@@ -398,6 +398,42 @@ table.barra-radio {
 }
 #social div a i {
   font-size: 1em;
+}
+// RotoTV
+#roto-tv {
+  // background-color: red;
+  #roto-tv-header {
+    position: relative;
+    .roto-tv-image{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      z-index: 0;
+      img {
+        object-fit: contain;
+        height: 70%;
+        width: 100%;
+      }
+    }
+  }
+  #live-video-player {
+    margin-bottom: 3rem;
+    padding: 0;
+    #live-container {
+      padding: 0;
+      height: 80vh !important;
+      height: 100%;
+      margin-bottom: 2rem;
+      iframe {
+        border: none;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
 }
 // mercado
 #mercado-inicio, #inicio-label {
