@@ -11,7 +11,7 @@
     ?>
     <div class="columns p-0-2 p-lg-1">
 
-      <a href="<?php echo get_the_permalink(13)?>" class="card-label row align-middle rel p-b-0-3  color-terciario-0-bg color-terciario-1-hover-bg color-blanco shadow-up">
+      <a href="<?php echo get_the_permalink(13)?>" class="card-label row align-middle rel p-b-0-3  color-acento-0-bg color-terciario-1-hover-bg color-blanco shadow-up">
 
         <div class="columns h-a">
           <h2 class="columns p-0-2 text-right">

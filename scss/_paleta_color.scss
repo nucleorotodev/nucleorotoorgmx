@@ -1,10 +1,10 @@
 // Paleta de color con SASS
-
 // $blanco: #FFF;
 $blanco: whitesmoke;
 $negro: #000;
 // Color RotoThemes
-$verde-roto: #8eada8;// theme Hyena
+$verde-roto: #569c3a; // theme N_A_I_L_
+// $verde-roto: #8eada8;// theme Hyena
 // $verde-roto: #004175;// theme 14 Aniversario
 // $verde-roto: #e3c697;// theme VON Krup nr22
 // $verde-roto: #658f8b;// theme Ropero
@@ -16,7 +16,8 @@ $verde-roto: #8eada8;// theme Hyena
 // $verde-roto: #B2C750;//theme original
 // $verde-roto: #32CAB9;//theme Azul bb
 // theme color Acento
-$color-terciario-0: #c44975;// theme 14 Aniversario
+$color-terciario-0: #FFF; // theme N_A_I_L_
+// $color-terciario-0: #c44975;// theme Hyena
 // $color-terciario-0: #26d132;// theme 14 Aniversario
 // $color-terciario-0: #af5dde;// theme VON Krup nr22
 // $color-terciario-0: #b2316a;// theme Ropero
@@ -28,96 +29,59 @@ $color-terciario-0: #c44975;// theme 14 Aniversario
 // $color-terciario-0: #cf9f2a;// theme original - ocre chido
 // $color-terciario-0: #CD7F63;//theme Azul bb - rosa chido
 // /////////////
-
 //colores generales
 $color-primario-0: #393F4B;
-$color-primario-1: #717785;// artistas card :hover - grismorado
-
+$color-primario-1: #717785; // artistas card :hover - grismorado
 $color-secundario-0: #95AB00;
 $color-secundario-1: #DFF069;
-
-
 // $color-terciario-0: #BF5399;
 $color-terciario-1: #Aa3143;
-
 $color-complementario-0: #FFCA00;
 $color-complementario-1: #FFEEAC;
-
 $color-acento-0: #870058;
 $color-acento-1: #BF5399;
-
 $color-neutral-0: #393F4B;
 $color-neutral-1: #6D7481;
-
 // array de colores
-$lista-colores: (
-
-blanco   $blanco,
-negro   $negro,
-verde-roto $verde-roto,
-
-primario-0 $color-primario-0,
-primario-1 $color-primario-1,
-
-secundario-0 $color-secundario-0,
-secundario-1 $color-secundario-1,
-
-terciario-0 $color-terciario-0,
-terciario-1 $color-terciario-1,
-
-complementario-0 $color-complementario-0,
-complementario-1 $color-complementario-1,
-
-neutral-0 $color-neutral-0,
-neutral-1 $color-neutral-1,
-
-acento-0 $color-acento-0,
-acento-1 $color-acento-1
-
-);
+$lista-colores: ( blanco $blanco, negro $negro, verde-roto $verde-roto, primario-0 $color-primario-0, primario-1 $color-primario-1, secundario-0 $color-secundario-0, secundario-1 $color-secundario-1, terciario-0 $color-terciario-0, terciario-1 $color-terciario-1, complementario-0 $color-complementario-0, complementario-1 $color-complementario-1, neutral-0 $color-neutral-0, neutral-1 $color-neutral-1, acento-0 $color-acento-0, acento-1 $color-acento-1);
 // Crea las clases
 @each $value in $lista-colores {
-
-  .color-#{nth($value, 1)} {
-    & {
-      color: nth($value, 2);
+    .color-#{nth($value, 1)} {
+        & {
+            color: nth($value, 2);
+        }
     }
-  }
-  .color-#{nth($value, 1)}-bg {
-    & {
-      background-color: nth($value, 2);
+    .color-#{nth($value, 1)}-bg {
+        & {
+            background-color: nth($value, 2);
+        }
     }
-  }
-  .color-#{nth($value, 1)}-bd {
-    & {
-      border: 1px solid white;
-      border-color: nth($value, 2);
+    .color-#{nth($value, 1)}-bd {
+        & {
+            border: 1px solid white;
+            border-color: nth($value, 2);
+        }
     }
-  }
-
-  .color-#{nth($value, 1)}-hover:hover {
-    & {
-      color: nth($value, 2);
+    .color-#{nth($value, 1)}-hover:hover {
+        & {
+            color: nth($value, 2);
+        }
     }
-  }
-  .color-#{nth($value, 1)}-hover-bg:hover {
-    & {
-      background-color: nth($value, 2);
+    .color-#{nth($value, 1)}-hover-bg:hover {
+        & {
+            background-color: nth($value, 2);
+        }
     }
-  }
-  .color-#{nth($value, 1)}-hover-bd:hover {
-    & {
-      border: 1px solid white;
-      border-color: nth($value, 2);
+    .color-#{nth($value, 1)}-hover-bd:hover {
+        & {
+            border: 1px solid white;
+            border-color: nth($value, 2);
+        }
     }
-  }
-  .cortina-#{nth($value, 1)} {
-    & {
-      background-color: nth($value, 2);
-      opacity: 0.5;
-
+    .cortina-#{nth($value, 1)} {
+        & {
+            background-color: nth($value, 2);
+            opacity: 0.5;
+        }
     }
-  }
-
-
 }
