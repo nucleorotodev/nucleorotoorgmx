@@ -13,7 +13,11 @@
     "motion-ui": "~1.2.2",
     "imgLiquid": "^0.9.944",
     "font-awesome": "^4.7.0",
-    "masonry": "^4.2.0"
+    "masonry": "^4.2.0",
+    "slick-carousel": "^1.8.1",
+    "jquery": "^3.6.0",
+    "what-input": "^5.2.10",
+    "parallax.js": "^1.5.0"
   },
   "ignore": [
     "**/.*",
