@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-load-plugins": "^2.0.1",
     "gulp-sass": "^2.1.0"
   },
@@ -29,7 +29,7 @@
     "bower": "^1.8.12",
     "browser-sync": "^2.26.7",
     "foundation-sites": "^6.6.3",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-postcss": "^8.0.0",
     "motion-ui": "^2.0.3",
     "slick-carousel": "^1.8.1",
