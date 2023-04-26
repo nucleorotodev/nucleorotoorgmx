@@ -6,7 +6,7 @@
   $offline['server'] = "Inactivo!"; // Displays when server is offline
   $offline['source'] = "Activo, En espera ..."; // Displays when server is online with no source
   $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, "s48.myradiostream.com:8486/7.html");
+  curl_setopt($ch, CURLOPT_URL, "s47.myradiostream.com:16231/7.html");
   curl_setopt($ch,CURLOPT_USERAGENT,'Mozilla');
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
   curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
@@ -32,7 +32,7 @@
 
   <?php
   $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, "s48.myradiostream.com:8486/7.html");
+  curl_setopt($ch, CURLOPT_URL, "s47.myradiostream.com:16231/7.html");
   curl_setopt($ch,CURLOPT_USERAGENT,'Mozilla');
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
   curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
@@ -63,7 +63,7 @@
 <h4 class="small-12"><small>Souls: </small>
 <?php
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "s48.myradiostream.com:8486/7.html");
+curl_setopt($ch, CURLOPT_URL, "s47.myradiostream.com:16231/7.html");
 curl_setopt($ch,CURLOPT_USERAGENT,'Mozilla');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
