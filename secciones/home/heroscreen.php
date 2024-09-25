@@ -24,7 +24,7 @@
               ?>
 
               <img src="<?php echo  $tipo === 'roto-releases' ? $release : (  $tipo === 'roto-mixtapes' ? $mixtape : 
-              $live); ?>" alt="<?php echo the_field('nombre_artista_release')  . " | " . the_field('titulo_de_release'); ?>" />
+              $live); ?>" alt="<?php echo get_field('nombre_artista_release')  . " | " . get_field('titulo_de_release'); ?>" />
 
             </div>
 
@@ -33,7 +33,7 @@
 
                 <h3 class="titulo-slider-home columns text-center color-blanco">
                   <?php
-                  echo the_field('nombre_artista_release');
+                  echo get_field('nombre_artista_release');
                   ?>
                 </h3>
                 <h1 class="titulo-slider-home columns text-center color-blanco">

@@ -3,14 +3,14 @@
   <?php
   if (have_posts()):
     ?>
-    <section class="grid-x cell h-70-v" data-parallax="scroll" data-speed="0.15" data-image-src="<?php echo the_field('imagen_cabecera_mixtape');?>">
+    <section class="grid-x cell h-70-v" data-parallax="scroll" data-speed="0.15" data-image-src="<?php echo get_field('imagen_cabecera_mixtape');?>">
 
       <div class="row align-middle">
         <h2 class="word-break titulo-header-mixtapes titulo-anim columns h-a color-blanco text-shadow">
-          <?php echo the_field('nombre_proyecto_mixtape'); ?>
+          <?php echo get_field('nombre_proyecto_mixtape'); ?>
         </h2>
         <h3 class="word-break subtitulo-header-mixtapes titulo-anim columns h-a color-blanco text-shadow">
-          <?php echo the_field('titulo_del_mixtape'); ?>
+          <?php echo get_field('titulo_del_mixtape'); ?>
         </h3>
       </div>
     </section>
@@ -21,9 +21,9 @@
     ?>
 
     <div class="img-perfil columns medium-6 p-4">
-      <a href="<?php echo the_field('link-descarga-mixtape')?>" target="_blank">
+      <a href="<?php echo get_field('link-descarga-mixtape')?>" target="_blank">
         <div class="columns p-0 imgLiquid imgLiquidNoFill">
-          <img src="<?php echo the_field('imagen_portada_mixtape');?>"/>
+          <img src="<?php echo get_field('imagen_portada_mixtape');?>"/>
         </div>
       </a>
     </div>
@@ -36,28 +36,28 @@
           <div class="columns h-a">
             <small>Catálogo:</small>
             <div class="mixtape-descripcion columns h-a numero-catalogo">
-              <?php echo the_field('numero_de_catalogo'); ?>
+              <?php echo get_field('numero_de_catalogo'); ?>
             </div>
           </div>
 
           <div class="columns h-a">
             <small>Nombre:</small>
             <div class="mixtape-descripcion columns h-a">
-              <?php echo the_field('titulo_del_mixtape'); ?>
+              <?php echo get_field('titulo_del_mixtape'); ?>
             </div>
           </div>
 
           <div class="columns h-a">
             <small>Artista:</small>
             <div class="mixtape-descripcion columns h-a">
-              <a href="<?php echo the_field('link_proyecto_mixtape');?>" target="_blank">
-                <?php echo the_field('nombre_proyecto_mixtape'); ?>
+              <a href="<?php echo get_field('link_proyecto_mixtape');?>" target="_blank">
+                <?php echo get_field('nombre_proyecto_mixtape'); ?>
               </a>
             </div>
           </div>
           <!--  -->
           <div class="columns h-a m-t-1-2 p-1-2">
-            <!-- <a class="boton-release-descarga columns text-center" href="<?php //echo the_field('link-descarga-mixtape')?>" target="_blank">
+            <!-- <a class="boton-release-descarga columns text-center" href="<?php //echo get_field('link-descarga-mixtape')?>" target="_blank">
             <ul>
             <li>
             Descarga&nbsp;/&nbsp;Download&nbsp;/&nbsp;Scaricare&nbsp;
@@ -87,9 +87,9 @@
         <p>
           <a class="aligncenter download-button" href="<?php echo $link_drive;?>" rel="nofollow" target="_blank">
             <small><b>¿problemas para descargar? Utiliza este espejo</b> </small>
-            External Download “<?php echo the_field('numero_de_catalogo');?>”
+            External Download “<?php echo get_field('numero_de_catalogo');?>”
             <small>Descarga directa desde GDrive, Archivo:
-              <?php echo the_field('numero_de_catalogo');?>.zip</small>
+              <?php echo get_field('numero_de_catalogo');?>.zip</small>
             </a></p>
           </div>
         <?php endif; ?>
@@ -111,10 +111,10 @@
   <small>Released:</small>
   <ul>
     <li class="mixtape-descripcion columns h-a">
-      Pais:   <?php echo the_field('pais_mixtape'); ?>
+      Pais:   <?php echo get_field('pais_mixtape'); ?>
     </li>
     <li class="mixtape-descripcion columns h-a">
-      Fecha:  <?php echo the_field('dia_mixtape'); ?> / <?php echo the_field('mes_mixtape'); ?> / <?php echo the_field('ano_mixtape'); ?>
+      Fecha:  <?php echo get_field('dia_mixtape'); ?> / <?php echo get_field('mes_mixtape'); ?> / <?php echo get_field('ano_mixtape'); ?>
     </li>
   </ul>
 </div>
@@ -125,7 +125,7 @@
     <small>
       Información:
     </small>
-    <?php echo the_field('informacion_del_mixtape'); ?>
+    <?php echo get_field('informacion_del_mixtape'); ?>
 
     <!-- share -->
     <div class="grid-x p-t-2">
@@ -146,7 +146,7 @@
     </small>
     <div class="columns p-t-0-2" data-sticky data-top-anchor="player" data-btm-anchor="footer-widgets">
       <center >
-        <?php echo the_field('mixtape-player'); ?>
+        <?php echo get_field('mixtape-player'); ?>
       </center>
     </div>
   </div>
@@ -157,7 +157,7 @@
     </small>
     <div class="columns p-t-0-2">
       <center >
-        <?php echo the_field('mixtape-player'); ?>
+        <?php echo get_field('mixtape-player'); ?>
       </center>
     </div>
   </div>

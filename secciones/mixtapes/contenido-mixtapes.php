@@ -37,7 +37,7 @@
 
           <div class="columns absUpL z-1 p-0-3">
             <div class="columns imgLiquid imgLiquidFill">
-              <img src="<?php echo the_field('imagen_cabecera_mixtape');?>" alt="<?php echo the_field('titulo_del_mixtape')  . " - " . the_field('nombre_proyecto_mixtape');?>" />
+              <img src="<?php echo get_field('imagen_cabecera_mixtape');?>" alt="<?php echo get_field('titulo_del_mixtape')  . " - " . get_field('nombre_proyecto_mixtape');?>" />
             </div>
           </div>
 
@@ -49,7 +49,7 @@
             <!-- Titulo release -->
             <h3 class="release-titulo columns p-0 h-a">
 
-              <?php echo the_field('titulo_del_mixtape'); ?>
+              <?php echo get_field('titulo_del_mixtape'); ?>
 
             </h3>
             <strong class="columns p-0-2 text-center">Descarga</strong>
@@ -61,16 +61,16 @@
             </div>
             <!-- artista -->
             <div class="columns p-0 h-a font-m font-sm-l">
-              <?php echo the_field('nombre_proyecto_mixtape'); ?>
+              <?php echo get_field('nombre_proyecto_mixtape'); ?>
             </div>
 
             <!-- fecha release -->
             <div class="columns p-0 p-b-1 h-a text-left font-s font-sm-m">
               <span>
-                <?php echo the_field('mes_mixtape') ?>
+                <?php echo get_field('mes_mixtape') ?>
               </span>  /
               <span>
-                <?php echo the_field('ano_mixtape') ?>
+                <?php echo get_field('ano_mixtape') ?>
               </span>
 
             </div>

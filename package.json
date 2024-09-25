@@ -1,38 +1,39 @@
 {
-  "name": "foundation-sites-template",
-  "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-load-plugins": "^2.0.1",
-    "gulp-sass": "^2.1.0"
-  },
+  "name": "Nucleoroto",
+  "version": "2.0.1",
+  "description": "WP theme for Nucleoroto Label",
+  "main": "index.php",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp sass"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
-  },
-  "author": "ZURB <foundation@zurb.com>",
-  "license": "MIT",
-  "private": true,
+  "keywords": [
+    "Music",
+    "Label",
+    "theme"
+  ],
+  "author": "Caos",
+  "license": "Apache-2.0",
+  "devDependencies": {},
   "dependencies": {
-    "autoprefixer": "^9.7.2",
-    "bower": "^1.8.12",
+    "aframe": "^1.0.4",
+    "autoprefixer": "^9.7.6",
+    "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
-    "foundation-sites": "^6.6.3",
-    "gulp-autoprefixer": "^3.1.0",
+    "child_process": "^1.0.2",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "motion-ui": "^2.0.3",
-    "slick-carousel": "^1.8.1",
-    "what-input": "^5.2.6"
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "webpack": "^4.42.1",
+    "webpack-stream": "^5.2.1"
   }
 }

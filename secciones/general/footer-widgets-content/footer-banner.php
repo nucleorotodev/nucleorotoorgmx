@@ -13,12 +13,12 @@
 // for ($i=0; $i < 4; $i++):
 ?>
     <div class="columns p-0 rel text-shadow">
-      <a href="<?php echo the_field('link_banner');?>" target="_blank">
+      <a href="<?php echo get_field('link_banner');?>" target="_blank">
 
       <!-- fondo slide -->
       <div class="columns p-0 z-1 absUpL imgLiquid imgLiquidNoFill">
 
-        <img src="<?php echo the_field('banner');?>" alt="" />
+        <img src="<?php echo get_field('banner');?>" alt="" />
 
 
       </div>

@@ -37,7 +37,7 @@
 
           <div class="columns absUpL z-1 p-0-3">
             <div class="columns imgLiquid imgLiquidNoFill">
-              <img src="<?php echo the_field('imagen_artista');?>" alt="<?php echo the_field('nombre_artista');?>">
+              <img src="<?php echo get_field('imagen_artista');?>" alt="<?php echo get_field('nombre_artista');?>">
             </div>
           </div>
 
@@ -49,7 +49,7 @@
 
               <h3 class="release-titulo columns p-0 h-a">
 
-                <?php echo the_field('nombre_artista'); ?>
+                <?php echo get_field('nombre_artista'); ?>
 
               </h3>
 

@@ -17,7 +17,7 @@
           <!-- thumbnail -->
           <div class="thumb-card columns  p-0 z1 imgLiquid imgLiquidNoFill">
 
-            <img src="<?php echo the_field('imagen_portada');?>" alt="<?php echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" />
+            <img src="<?php echo get_field('imagen_portada');?>" alt="<?php echo get_field('link_a_artista_release')  . " - " . get_field('titulo_de_release');?>" />
 
           </div>
         </a>

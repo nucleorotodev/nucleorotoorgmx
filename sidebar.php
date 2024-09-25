@@ -28,12 +28,12 @@
         <div class="columns absUpL z-1 imgLiquid imgLiquidFill"><?php
         if (!is_page(array(11,13,71))):
           ?>
-          <img src="<?php echo the_field('imagen_cabecera_release');?>" alt="<?php echo the_field('nombre_artista_release')  . " - " . the_field('titulo_de_release');?>"/>
+          <img src="<?php echo get_field('imagen_cabecera_release');?>" alt="<?php echo get_field('nombre_artista_release')  . " - " . get_field('titulo_de_release');?>"/>
           <?php
         else:
           // echo get_the_post_thumbnail();
           ?>
-          <img src="<?php echo the_field('imagen_artista');?>" alt="<?php echo the_field('nombre_artista');?>"/>
+          <img src="<?php echo get_field('imagen_artista');?>" alt="<?php echo get_field('nombre_artista');?>"/>
           <?php
         endif;
         ?>
@@ -45,10 +45,10 @@
           <h3 class="h-a columns text-justify p-0-1 font-m">
             <?php
             if (!is_page(array(11,13,71))):
-              echo the_field('titulo_de_release');
+              echo get_field('titulo_de_release');
             else:
               // echo get_the_title();
-              echo the_field('nombre_artista');
+              echo get_field('nombre_artista');
             endif;
             ?>
           </h3>
@@ -56,7 +56,7 @@
           <div class="columns h-a font-l">
             <?php
             if (!is_page(array(11,13,71))):
-              echo the_field('nombre_artista_release');;
+              echo get_field('nombre_artista_release');;
             else:
               //echo get_the_author();
             endif;
@@ -66,7 +66,7 @@
           <div class="columns p-0 h-a text-right font-m">
             <?php
             if (!is_page(array(11,13,71))):
-              echo the_field('dia_release') . the_field('mes_release') . the_field('ano_release');
+              echo get_field('dia_release') . get_field('mes_release') . get_field('ano_release');
             else:
               // echo get_the_date();
             endif;

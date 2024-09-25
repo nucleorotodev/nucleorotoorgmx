@@ -37,7 +37,7 @@
 
           <div class="columns absUpL z-1 p-0-3">
             <div class="columns imgLiquid imgLiquidFill">
-              <img src="<?php echo the_field('imagen_cabecera_release');?>" alt="<?php echo the_field('link_a_artista_release')  . " - " . the_field('titulo_de_release');?>" />
+              <img src="<?php echo get_field('imagen_cabecera_release');?>" alt="<?php echo get_field('link_a_artista_release')  . " - " . get_field('titulo_de_release');?>" />
             </div>
           </div>
 
@@ -49,7 +49,7 @@
             <!-- Titulo release -->
             <h3 class="release-titulo columns p-0 h-a text-left p-t-0-2">
 
-              <?php echo the_field('titulo_de_release'); ?>
+              <?php echo get_field('titulo_de_release'); ?>
 
             </h3>
             <strong class="columns p-0-2 text-center">Descarga</strong>
@@ -63,16 +63,16 @@
             </div>
             <!-- artista -->
             <div class="columns p-0 h-a font-m font-sm-l">
-              <?php echo the_field('nombre_artista_release'); ?>
+              <?php echo get_field('nombre_artista_release'); ?>
             </div>
 
             <!-- fecha release -->
             <div class="columns p-0 p-b-1 h-a text-right font-s font-sm-m">
               <span>
-                <?php echo the_field('mes_release') ?>
+                <?php echo get_field('mes_release') ?>
               </span>  /
               <span>
-                <?php echo the_field('ano_release') ?>
+                <?php echo get_field('ano_release') ?>
               </span>
 
             </div>

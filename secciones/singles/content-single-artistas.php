@@ -3,11 +3,11 @@
   <?php
   if (have_posts()):
     ?>
-    <section class="grid-x cell h-60-v" data-parallax="scroll" data-speed="0.15" data-image-src="<?php echo the_field('imagen_header_artista');?>">
+    <section class="grid-x cell h-60-v" data-parallax="scroll" data-speed="0.15" data-image-src="<?php echo get_field('imagen_header_artista');?>">
 
       <div class="row align-middle">
         <h1 class="word-break titulo-header-artistas titulo-anim columns h-a color-blanco text-shadow">
-          <?php echo the_field('nombre_artista'); ?>
+          <?php echo get_field('nombre_artista'); ?>
         </h1>
       </div>
     </section>
@@ -20,7 +20,7 @@
 
     <div class="img-perfil columns medium-6 p-4">
       <div class="columns p-0 imgLiquid imgLiquidNoFill">
-        <img src="<?php echo the_field('imagen_artista');?>"/>
+        <img src="<?php echo get_field('imagen_artista');?>"/>
       </div>
     </div>
     <!-- side info -->
@@ -32,21 +32,21 @@
           <div class="columns h-a">
             <small>País :</small>
             <div class="artista-descripcion columns h-a">
-              <?php echo the_field('pais_artista'); ?>
+              <?php echo get_field('pais_artista'); ?>
             </div>
           </div>
 
           <div class="columns h-a">
             <small>Redes:</small>
             <div class="artista-descripcion columns h-a">
-              <?php echo the_field('redes_artista'); ?>
+              <?php echo get_field('redes_artista'); ?>
             </div>
           </div>
 
           <div class="columns h-a">
             <small>Proyectos alternos:</small>
             <div class="artista-descripcion columns h-a">
-              <?php echo the_field('proyectos_alternos'); ?>
+              <?php echo get_field('proyectos_alternos'); ?>
             </div>
           </div>
 
@@ -63,7 +63,7 @@
         <small>Bio :</small>
         <div id="artista-bio" class="row align-middle h-100 text-left">
           <div class="columns small-12 h-a text-left text-md-m">
-            <?php echo the_field('bio'); ?>
+            <?php echo get_field('bio'); ?>
           </div>
         </div>
       </div>
@@ -75,8 +75,8 @@
           for ($i=1; $i < 5; $i++):
             ?>
             <div class="columns small-12 medium-3 h-a text-left">
-              <a href="<?php echo the_field('link_colectivo_' . $i); ?>" target="_blank">
-                <?php echo the_field('label_o_colectivo_' . $i); ?>
+              <a href="<?php echo get_field('link_colectivo_' . $i); ?>" target="_blank">
+                <?php echo get_field('label_o_colectivo_' . $i); ?>
               </a>
             </div>
           <?php endfor; ?>
@@ -88,13 +88,13 @@
           <small>
             Releases:
           </small>
-          <?php echo the_field('releases'); ?>
+          <?php echo get_field('releases'); ?>
         </div>
         <div class="info-releases columns small-12 medium-6 p-0 text-left">
           <small>
             Compilaciones:
           </small>
-          <?php echo the_field('compilaciones'); ?>
+          <?php echo get_field('compilaciones'); ?>
         </div>
       </div>
 

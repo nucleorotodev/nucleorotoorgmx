@@ -3,14 +3,14 @@
   <?php
   if (have_posts()):
     ?>
-    <section class="grid-x cell h-70-v" data-parallax="scroll" data-speed="0.15" data-image-src="<?php echo the_field('imagen_cabecera_release');?>">
+    <section class="grid-x cell h-70-v" data-parallax="scroll" data-speed="0.15" data-image-src="<?php echo get_field('imagen_cabecera_release');?>">
 
       <div class="row align-middle">
         <h2 class="word-break titulo-header-releases titulo-anim columns h-a color-blanco text-shadow">
-          <?php echo the_field('nombre_artista_release'); ?>
+          <?php echo get_field('nombre_artista_release'); ?>
         </h2>
         <h3 class="word-break subtitulo-header-releases titulo-anim columns h-a color-blanco text-shadow">
-          <?php echo the_field('titulo_de_release'); ?>
+          <?php echo get_field('titulo_de_release'); ?>
         </h3>
       </div>
     </section>
@@ -22,9 +22,9 @@
 
     <div class="info-title info-release columns p-0 h-a">
       <div class="img-perfil columns medium-6 p-4">
-        <a href="<?php echo the_field('link-descarga-release')?>" target="_blank">
+        <a href="<?php echo get_field('link-descarga-release')?>" target="_blank">
           <div class="columns p-0 imgLiquid imgLiquidNoFill">
-            <img src="<?php echo the_field('imagen_portada');?>"/>
+            <img src="<?php echo get_field('imagen_portada');?>"/>
           </div>
         </a>
       </div>
@@ -37,22 +37,22 @@
             <div class="info-title columns h-a">
               <small>Catálogo:</small>
               <div class="release-descripcion columns h-a numero-catalogo">
-                <?php echo the_field('numero_de_catalogo'); ?>
+                <?php echo get_field('numero_de_catalogo'); ?>
               </div>
             </div>
 
             <div class="info-title columns h-a">
               <small>Nombre:</small>
               <div class="release-descripcion columns h-a">
-                <?php echo the_field('titulo_de_release'); ?>
+                <?php echo get_field('titulo_de_release'); ?>
               </div>
             </div>
 
             <div class="info-title columns h-a">
               <small>Artista:</small>
               <div class="release-descripcion columns h-a">
-                <a href="<?php echo the_field('link_a_artista_release');?>" target="_blank">
-                  <?php echo the_field('nombre_artista_release'); ?>
+                <a href="<?php echo get_field('link_a_artista_release');?>" target="_blank">
+                  <?php echo get_field('nombre_artista_release'); ?>
                 </a>
               </div>
             </div>
@@ -83,9 +83,9 @@
                 <p>
                   <a class="aligncenter download-button" href="<?php echo $link_drive;?>" rel="nofollow" target="_blank">
                     <small><b>¿Problemas para descargar? Utiliza este espejo externo </b></small>
-                    External Download “<?php echo the_field('numero_de_catalogo');?>”
+                    External Download “<?php echo get_field('numero_de_catalogo');?>”
                     <small>Descarga directa desde nuestro Drive, Archivo:
-                      <?php echo the_field('numero_de_catalogo');?>.zip</small>
+                      <?php echo get_field('numero_de_catalogo');?>.zip</small>
                     </a></p>
                   </div>
                 <?php } ?>
@@ -110,7 +110,7 @@
             </small>
             <div class="columns p-t-0-2" data-sticky data-top-anchor="player" data-btm-anchor="footer-widgets">
               <center >
-                <?php echo the_field('release-player'); ?>
+                <?php echo get_field('release-player'); ?>
               </center>
             </div>
           </div>
@@ -121,7 +121,7 @@
             </small>
             <div class="columns p-t-0-2">
               <center >
-                <?php echo the_field('release-player'); ?>
+                <?php echo get_field('release-player'); ?>
               </center>
             </div>
           </div>
@@ -135,13 +135,13 @@
             <small>Grabación en vivo:</small>
             <ul>
               <li class="release-descripcion columns h-a">
-                Lugar:  <?php echo the_field('lugar_concierto'); ?>
+                Lugar:  <?php echo get_field('lugar_concierto'); ?>
               </li>
               <li class="release-descripcion columns h-a">
-                País:   <?php echo the_field('pais_concierto'); ?>
+                País:   <?php echo get_field('pais_concierto'); ?>
               </li>
               <li class="release-descripcion columns h-a">
-                Fecha:  <?php echo the_field('dia_grabacion'); ?> / <?php echo the_field('mes_grabacion'); ?> / <?php echo the_field('ano_grabacion_concierto'); ?>
+                Fecha:  <?php echo get_field('dia_grabacion'); ?> / <?php echo get_field('mes_grabacion'); ?> / <?php echo get_field('ano_grabacion_concierto'); ?>
               </li>
             </ul>
           </div>
@@ -150,7 +150,7 @@
             <small>Formatos disponibles:</small>
             <div id="release-formato" class="row align-middle h-100">
               <div class="release-descripcion columns small-12 medium-12 h-a text-left">
-                <?php echo the_field('formatos'); ?>
+                <?php echo get_field('formatos'); ?>
               </div>
             </div>
           </div>
@@ -159,7 +159,7 @@
             <small>
               Información:
             </small>
-            <?php echo the_field('informacion_release'); ?>
+            <?php echo get_field('informacion_release'); ?>
           </div>
 
           <!-- share -->

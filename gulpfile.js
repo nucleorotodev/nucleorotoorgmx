@@ -1,37 +1,96 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var $ = require('gulp-load-plugins')();
-var autoprefixer = require('autoprefixer');
+"use strict"
 
-var sassPaths = [
-    'node_modules/foundation-sites/scss',
-    'node_modules/motion-ui/src'
-];
+// Load plugins
+const autoprefixer = require("autoprefixer")
+const browsersync = require("browser-sync").create()
+const cp = require("child_process")
+const cssnano = require("cssnano")
+const del = require("del")
+const eslint = require("gulp-eslint")
+const gulp = require("gulp")
+const newer = require("gulp-newer")
+const plumber = require("gulp-plumber")
+const postcss = require("gulp-postcss")
+const rename = require("gulp-rename")
+const sass = require("gulp-sass")
+const webpack = require("webpack")
+const webpackconfig = require("./webpack.config.js")
+const webpackstream = require("webpack-stream")
 
-function sass() {
-    return gulp.src('scss/app.scss')
-        .pipe($.sass({
-                includePaths: sassPaths,
-                outputStyle: 'compressed' // if css compressed **file size**
-            })
-            .on('error', $.sass.logError))
-        .pipe($.postcss([
-            autoprefixer()
-        ]))
-        .pipe(gulp.dest('css'))
-        .pipe(browserSync.stream());
-};
-
-function serve() {
-    browserSync.init({
-        // server: "./"
-        proxy: "http://localhost/nucleoroto.org"
-    });
-
-    gulp.watch("scss/*.scss", sass);
-    gulp.watch("*.html").on('change', browserSync.reload);
+// BrowserSync
+function browserSync(done) {
+    browsersync.init({
+        proxy: "localhost/nucleoroto.org",
+        options: {
+            reloadDelay: 10
+        },
+        port: 3000
+    })
+    done()
 }
 
-gulp.task('sass', sass);
-gulp.task('serve', gulp.series('sass', serve));
-gulp.task('default', gulp.series('sass', serve));
+// BrowserSync Reload
+function browserSyncReload(done) {
+    browsersync.reload()
+    done()
+}
+
+// Clean assets
+function clean() {
+    return del(["./public/"])
+}
+
+// CSS task
+function css() {
+    return gulp
+        .src("./scss/**/*.scss")
+        .pipe(plumber())
+        .pipe(sass({ outputStyle: "expanded" }))
+        .pipe(gulp.dest("./public/css/"))
+        .pipe(rename({ suffix: ".min" }))
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(gulp.dest("./public/css/"))
+        .pipe(browsersync.stream())
+}
+
+// Lint scripts
+function scriptsLint() {
+    return gulp
+        .src(["./js/**/*", "./gulpfile.js"])
+        .pipe(plumber())
+        .pipe(eslint())
+        .pipe(eslint.format())
+        .pipe(eslint.failAfterError())
+}
+
+// Transpile, concatenate and minify scripts
+function scripts() {
+    return (
+        gulp
+        .src(["./js/**/*"])
+        .pipe(plumber())
+        .pipe(webpackstream(webpackconfig, webpack))
+        // folder only, filename is specified in webpack config
+        .pipe(gulp.dest("./public/js/"))
+        .pipe(browsersync.stream())
+    )
+}
+
+// Watch files
+function watchFiles() {
+    gulp.watch("./scss/**/*", css)
+    gulp.watch("./js/**/*", gulp.series(scriptsLint, scripts))
+}
+
+// define complex tasks
+const js = gulp.series(scriptsLint, scripts)
+const build = gulp.series(clean, gulp.parallel(css, js))
+const watch = gulp.parallel(watchFiles, build, browserSync)
+
+// export tasks
+exports.css = css
+exports.js = js
+exports.clean = clean
+exports.build = build
+exports.watch = watch
+exports.default = build
