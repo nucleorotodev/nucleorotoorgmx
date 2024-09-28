@@ -1,7 +1,7 @@
 @charset 'utf-8';
 @import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+@import '../node_modules/foundation-sites/scss/foundation.scss';
+@import '../node_modules/motion-ui/src/motion-ui.scss';
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-flex-grid;
@@ -47,10 +47,10 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 // agregados
-@import "bower_components/font-awesome/scss/font-awesome";
 @import "submodulos/style_utils/scss/style_utils";
 @import "paleta_color";
 @import "fonts";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 //reset
 // *   {outline: 1px solid rgba(100,100,100,1)}
 // vars
