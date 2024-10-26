@@ -2,7 +2,7 @@
   <!-- Textura fondo -->
   <div class="fondo-label columns p-0 absUpL top left h-100-v z-1k">
   </div>
-
+<div class="container">
   <?php
   $args = array(
     'page_id' => 43,
@@ -38,7 +38,7 @@ if($query->have_posts()):
 
 
   <div class="columns p-2 p-t-1 color-blanco">
-    <div class="column text-center font-l font-lg-xl">
+    <div class="column text-center font-l font-md-xl">
       <?php echo get_the_content(); ?>
     </div>
   </div>
@@ -53,11 +53,12 @@ endif;
   <div class="columns small-2 medium-4 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2"></div>
 
   <a href="<?php echo get_the_permalink(71);?>" class="boton-roto columns small-8 medium-4">
-    Bookea algún proyecto
+    Bookea algún Artista
   </a>
 
   <!-- <div class="columns small-1 medium-3 large-4 p-0-2 p-l-0-2 p-r-0-2"></div> -->
 
+</div>
 </div>
 
 </section>

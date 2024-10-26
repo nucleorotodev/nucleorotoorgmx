@@ -64,6 +64,15 @@
   #social div a i {
     font-size: 1.25em;
   }
+  // instagram feed
+  #inicio-feed {
+    height: 100dvh
+  }
+  #inicio-artistas,
+  #inicio-releases,
+  #inicio-mixtapes {
+    height: 24rem;
+  }
 }
 @media screen and (max-width:1024px) {
 // @media screen and (max-width:nth($breakpoints,2)) {
