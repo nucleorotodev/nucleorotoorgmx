@@ -8,4 +8,4 @@
 - npm	install
 - bower	install
 - git	submodule	update	--init	--recursive
-- foundation watch
+- gulp watch

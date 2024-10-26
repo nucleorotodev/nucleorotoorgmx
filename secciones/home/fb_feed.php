@@ -6,10 +6,10 @@
     </h1>
   </a>
 
-  <div class="row columns small-12 align-middle p-0">
+  <div class="contenedor-inicio-feed row columns small-12 align-middle p-0">
     <!--  -->
 
-    <?php echo do_shortcode('[custom-facebook-feed]'); ?>    
+    <?php echo do_shortcode('[simple-photo-feed view="18" size="small"]'); ?>    
     <!--  -->
     <div class="columns text-center h-5 p-0">
       <small class="color-verde-roto"> <a href="https://facebook.com/nucleorotomusica" target="_blank">Visita nuestro facebook</a> </small>

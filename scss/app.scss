@@ -710,6 +710,12 @@ a.download-button {
 }
 
 // facebook RotoFeed
+#inicio-feed {
+    overflow: hidden;
+    .contenedor-inicio-feed {
+        overflow-y: auto !important;
+    }
+}
 .cff-wrapper {
     height: 95% !important;
 }
