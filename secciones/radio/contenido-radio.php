@@ -1,21 +1,22 @@
 <?php
 if (have_posts()):
-  while (have_posts()): the_post();
-  ?>
+  while (have_posts()):
+    the_post();
+    ?>
 
-  <h1 class="titulo-anim grid-container text-center p-0-3 color-blanco">
-    <?php echo get_the_title(); ?>
-  </h1>
+    <h1 class="titulo-anim grid-container text-center p-0-3 color-blanco">
+      <?php echo get_the_title(); ?>
+    </h1>
 
 
-  <p class="columns p-2 text-center font-l">
+    <p class="columns p-2 text-center font-l">
 
-    <?php echo get_the_content(); ?>
+      <?php echo get_the_content(); ?>
 
-  </p>
+    </p>
 
-  <?php
-endwhile;
+    <?php
+  endwhile;
 endif;
 ?>
 
@@ -41,9 +42,17 @@ endif;
   <div class="columns small-12 medium-6">
     <div id="station_data" class="columns text-left">
       <script type="text/javascript">
-      setInterval(()=>{
-        radio_data()
-      },20000)
+
+        jQuery(document).ready(function ($) {
+          console.log("window.radio_data:", typeof window.radio_data);
+          console.log("radio_data:", typeof radio_data);
+          if (typeof radio_data === "function") {
+            setInterval(() => radio_data(), 20000);
+          } else {
+            console.error("La función radio_data no existe.");
+          }
+        });
+
       </script>
       <?php
       get_template_part('secciones/radio/station-radio');
@@ -80,12 +89,12 @@ endif;
     </h3>
     <ul>
       <?php
-      for($i=0; $i < count($radio_links); $i++):
+      for ($i = 0; $i < count($radio_links); $i++):
         $link = key($radio_links);
         ?>
 
         <li class="x-grid test-center">
-          <a href="<?php echo $radio_links[$link];?>">
+          <a href="<?php echo $radio_links[$link]; ?>">
             <?php
             echo $link;
             next($radio_links);

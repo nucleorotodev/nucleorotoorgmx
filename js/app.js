@@ -1,25 +1,25 @@
 jq2 = jQuery.noConflict();
-jq2(function() {
-        jQuery(document).foundation()
+jq2(function () {
+    jQuery(document).foundation()
 
-        //
-        setup()
-        resize_reset()
-            //
-        setTimeout(() => {
-                radio_data()
-            }, 15000)
-            // date picker reset
-        jQuery('#ui-datepicker-div').addClass('h-a')
+    //
+    setup()
+    resize_reset()
+    //
+    setTimeout(() => {
+        radio_data()
+    }, 15000)
+    // date picker reset
+    jQuery('#ui-datepicker-div').addClass('h-a')
 
-        //suaviza baile de palabras solo en h1
-        let titulos = document.querySelectorAll('h1')
-        titulos.forEach((index) => {
-            index.style.transition = '2s'
-        })
+    //suaviza baile de palabras solo en h1
+    let titulos = document.querySelectorAll('h1')
+    titulos.forEach((index) => {
+        index.style.transition = '2s'
     })
-    //fin ready
-    // funciones
+})
+//fin ready
+// funciones
 function setup() {
 
     img_liquid()
@@ -31,11 +31,11 @@ function setup() {
     slider_blog()
     slider_sidebar()
     titulo_roto()
-        //blog
-        // blog_random_colors()
-        // blog_cats()
-        // masonry_blog()
-        //
+    //blog
+    // blog_random_colors()
+    // blog_cats()
+    // masonry_blog()
+    //
 
 }
 
@@ -58,7 +58,7 @@ function shuffle(array) {
 
 function resize_reset() {
 
-    jQuery(window).on('resize', function() {
+    jQuery(window).on('resize', function () {
 
         menu_movil()
 
@@ -91,20 +91,20 @@ function menu_movil() {
     // registra su posicion actual, fuera de la pantalla
     var anchomenumovil = menumovil.width() + 40
     var menuicono = jQuery('#boton-menu-movil i')
-        // activa menu movil despues de 2 segundos
-    setTimeout(function() {
-            // jQuery('.menu-movil').removeClass('hidden')
-            var posicioninicial = menumovil.css({
-                'transition': '0.75s',
-                '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
-                '-moz-transform': 'translateX(' + anchomenumovil + 'px)',
-                '-ms-transform': 'translateX(' + anchomenumovil + 'px)',
-                '-o-transform': 'translateX(' + anchomenumovil + 'px)',
-                'transform': 'translateX(' + anchomenumovil + 'px)'
-            })
-        }, 2500)
-        // activa menu movil despues de 3.5 segundos
-    setTimeout(function() {
+    // activa menu movil despues de 2 segundos
+    setTimeout(function () {
+        // jQuery('.menu-movil').removeClass('hidden')
+        var posicioninicial = menumovil.css({
+            'transition': '0.75s',
+            '-webkit-transform': 'translateX(' + anchomenumovil + 'px)',
+            '-moz-transform': 'translateX(' + anchomenumovil + 'px)',
+            '-ms-transform': 'translateX(' + anchomenumovil + 'px)',
+            '-o-transform': 'translateX(' + anchomenumovil + 'px)',
+            'transform': 'translateX(' + anchomenumovil + 'px)'
+        })
+    }, 2500)
+    // activa menu movil despues de 3.5 segundos
+    setTimeout(function () {
         jQuery('.menu-movil').removeClass('hidden')
         jQuery('#menu-logo').addClass('hidden')
     }, 3500)
@@ -125,7 +125,7 @@ function menu_movil() {
         'transform': 'translateX(' + anchomenumovil + 'px)'
     }
 
-    jQuery('#boton-menu-movil').on('click', function() {
+    jQuery('#boton-menu-movil').on('click', function () {
 
         var posicion = menumovil.position();
 
@@ -145,14 +145,14 @@ function menu_movil() {
             menuicono.toggleClass('gira-icono-menu');
 
             //cambia icono
-            setTimeout(function() {
+            setTimeout(function () {
 
                 menuicono.removeClass('fa-bars black').addClass('fa-close');
 
             }, 125);
 
             // reset gira-icono-menu
-            setTimeout(function() {
+            setTimeout(function () {
 
                 menuicono.toggleClass('gira-icono-menu');
 
@@ -161,17 +161,17 @@ function menu_movil() {
         } else {
             // sale menu
             menumovil.css(salemenu)
-                // gira
+            // gira
             menuicono.toggleClass('gira-icono-menu')
-                //cambia el icono
-            setTimeout(function() {
+            //cambia el icono
+            setTimeout(function () {
 
                 menuicono.removeClass('fa-close black').addClass('fa-bars');
 
             }, 125);
 
             //reset giro
-            setTimeout(function() {
+            setTimeout(function () {
 
                 menuicono.toggleClass('gira-icono-menu');
 
@@ -253,21 +253,21 @@ function titulo_roto() {
     let tiempos = [125, 250, 500, 750, 1000, 1500, 2000]
     let desorden, espacios, tiempo
     let iter = 0
-        // calcula tempo
+    // calcula tempo
     tiempo = tiempos[Math.floor(Math.random() * tiempos.length)]
-        // console.log("XXX:::", tiempo);
+    // console.log("XXX:::", tiempo);
 
-    setInterval(function() {
+    setInterval(function () {
 
         desorden = shuffle(classes)
         espacios = shuffle(espaciado)
 
-        jQuery("#iteracion-titulo li").each(function(i) {
+        jQuery("#iteracion-titulo li").each(function (i) {
 
             jQuery(this).toggleClass(desorden[i])
 
         })
-        jQuery(".titulo-anim").each(function(i) {
+        jQuery(".titulo-anim").each(function (i) {
 
             jQuery(this).toggleClass(desorden[i])
 
@@ -309,7 +309,7 @@ function parallax_home() {
 
 function classes_menu_movil() {
 
-    jQuery('.menu-movil-ul li').each(function() {
+    jQuery('.menu-movil-ul li').each(function () {
         jQuery(this).addClass('columns small-4 p-b-0-1 end')
     })
 
@@ -358,16 +358,16 @@ function blog_random_colors() {
     mixed = shuffle(colores)
     mixedfondo = shuffle(fondo)
 
-    setInterval(function() {
-        jQuery(".card").each(function(i) {
+    setInterval(function () {
+        jQuery(".card").each(function (i) {
 
             jQuery(this).toggleClass(mixed[i])
-                // jQuery(this).toggleClass('color-negro-bg')
+            // jQuery(this).toggleClass('color-negro-bg')
 
         })
     }, 250)
 
-    jQuery(".card .card-divider").each(function(i) {
+    jQuery(".card .card-divider").each(function (i) {
         jQuery(this).addClass(mixedfondo[i])
 
     })
@@ -391,29 +391,37 @@ function radio_data() {
 
     // jQuery("#station_data").load('/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php', function(data) {})
 
+    const station_data = document.querySelector('#station_data')
     //
-    jQuery.ajax({
-        complete: function() {
-            jQuery('#loading_data').html("Loading Metadata ...").fadeIn()
-            setTimeout(() => {
-                jQuery('#loading_data').html("Metadata OK.")
-                jQuery('#loading_data').fadeOut(3000)
-            }, 2000)
-        },
-        type: "post",
-        url: '/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php',
-        // url : '/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio-js.php',
-        data: {
-            action: "roto_radio_metadata",
-            message: "Cargando metadata ..."
-        },
-        error: function(data) {
-            // console.log(data);
-        },
-        success: function(data) {
-            // console.log("Success loading radio metadata")
-            jQuery("#station_data").html(data)
-        }
-    })
+    if (station_data) {
+        jQuery.ajax({
+            complete: function () {
+                jQuery('#loading_data').html("Loading Metadata ...").fadeIn()
+                setTimeout(() => {
+                    jQuery('#loading_data').html("Metadata OK.")
+                    jQuery('#loading_data').fadeOut(3000)
+                }, 2000)
+            },
+            type: "post",
+            url: '/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php',
+            // url : '/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio-js.php',
+            data: {
+                action: "roto_radio_metadata",
+                message: "Cargando metadata ..."
+            },
+            error: function (data) {
+                // console.log(data);
+            },
+            success: function (data) {
+                // console.log("Success loading radio metadata")
+                jQuery("#station_data").html(data)
+            }
+        })
+    }
+}
 
+window.radio_data = radio_data;
+
+if (typeof jQuery !== 'undefined') {
+  jQuery(document).trigger('radio_data_ready');
 }
