@@ -41,19 +41,7 @@ endif;
 
   <div class="columns small-12 medium-6">
     <div id="station_data" class="columns text-left">
-      <script type="text/javascript">
-
-        jQuery(document).ready(function ($) {
-          console.log("window.radio_data:", typeof window.radio_data);
-          console.log("radio_data:", typeof radio_data);
-          if (typeof radio_data === "function") {
-            setInterval(() => radio_data(), 20000);
-          } else {
-            console.error("La función radio_data no existe.");
-          }
-        });
-
-      </script>
+      
       <?php
       get_template_part('secciones/radio/station-radio');
       // get_template_part('secciones/radio/station-radio-js');

@@ -6,7 +6,7 @@ jq2(function () {
     setup()
     resize_reset()
     //
-    setTimeout(() => {
+    setInterval(() => {
         radio_data()
     }, 15000)
     // date picker reset
@@ -417,6 +417,9 @@ function radio_data() {
                 jQuery("#station_data").html(data)
             }
         })
+    } else {
+        console.log("Ya no se cargo");
+        
     }
 }
 
