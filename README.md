@@ -12,10 +12,14 @@
 
 ## Changelog
 
-### v3.0.2
+### v3.1.0
 - Bugfix:
   - Single Releases: Dato de Formato de disco muestra la palabra 'Array'
   - La función radio_data() no se ejecuta cada 20 segundos como se esperaba, lo que hace que la sección de radio no se actualice con la información más reciente.
+  - Los metadatos de la radio se cargan unicamente una vez
+- Actualiza links alternativos para estaciones de radio
+  - Agrega target blank a links
+  
 
 ### v3.0.1
 - Configuración de gulpfile.js

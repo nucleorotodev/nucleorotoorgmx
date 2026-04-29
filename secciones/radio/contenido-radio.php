@@ -63,10 +63,10 @@ endif;
 
     <?php
     $radio_links = array(
-      'PLS Link' => 'http://s42.myradiostream.com:32404/listen.pls',
-      'M3U Playlist' => 'http://s42.myradiostream.com:32404/listen.m3u',
-      'MP3 Audio' => ' http://s42.myradiostream.com:32404/listen.mp3',
-      'AAC+ Audio' => 'http://s42.myradiostream.com:32404/listen.m4a'
+      'PLS Link' => 'http://s47.myradiostream.com:16230/listen.pls',
+      'M3U Playlist' => 'http://s47.myradiostream.com:16230/listen.m3u',
+      'MP3 Audio' => ' http://s47.myradiostream.com:16230/listen.mp3',
+      'AAC+ Audio' => 'http://s47.myradiostream.com:16230/listen.m4a'
     );
     ?>
 
@@ -82,7 +82,7 @@ endif;
         ?>
 
         <li class="x-grid test-center">
-          <a href="<?php echo $radio_links[$link]; ?>">
+          <a href="<?php echo $radio_links[$link]; ?>" target="_blank">
             <?php
             echo $link;
             next($radio_links);
