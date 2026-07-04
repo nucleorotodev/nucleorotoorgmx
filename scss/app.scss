@@ -58,12 +58,19 @@ $altura-header: 60px;
 $altura-footer: 100px;
 //
 // custom theme
+* {
+    box-sizing: border-box;
+    transition: 0.33s;
+}
 body {
     color: whitesmoke;
 }
 
 .heroscreen-redes a i {
     color: whitesmoke;
+    &:hover {
+        color: $color-terciario-0;
+    }
 }
 
 footer a i {
@@ -319,14 +326,15 @@ form textarea,
 .boton-roto {
     float: left !important;
     @extend .color-verde-roto-bg;
-    @extend .color-primario-1-hover-bg;
-    @extend .color-negro-hover;
     @extend .color-blanco;
     @extend .p-0-3;
     @extend .font-s;
     @extend .font-sm-m;
     @extend .font-lg-l;
     @extend .text-center;
+}
+.boton-roto:hover {
+    background-color: $color-terciario-0; 
 }
 
 .shadow {
@@ -618,7 +626,7 @@ table.barra-radio {
     min-height: 100dvh;
 }
 #inicio-radio a {
-    transition: 1s;
+    // transition: 1s;
 }
 
 .titulo-header-artistas,

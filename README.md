@@ -12,6 +12,10 @@
 
 ## Changelog
 
+### v3.0.2
+- Release Degstort Live
+  - Ajuste de pantones
+
 ### v3.0.1
 - Configuración de gulpfile.js
 - Actualización de rutas para dependencias
