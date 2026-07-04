@@ -9,9 +9,9 @@ for ($i=0; $i < $iconos_size; $i++):
 
   ?>
 
-  <div class="columns small-2 h-a p-0 end">
+  <div class="social-item">
 
-      <a class="columns p-0 text-center" href="<?php echo $links[$i]?>" target="_blank">
+      <a class="columns" href="<?php echo $links[$i]?>" target="_blank">
 
         <i class="fa fa-<?php echo $iconos[$i];?>"></i>
 

@@ -12,9 +12,15 @@
 
 ## Changelog
 
-### v3.0.2
+### v3.1.0
 - Release Degstort Live
   - Ajuste de pantones
+- Bugfixes:
+  - Resuelve la carga de Scripts para evitar carga en blanco
+    - Moverlos al footer
+  - Resuelve la carga del header mientras el sitio se ve blanco
+    - Mueve la carga de wp_head a la ubicacion correcta
+- Estilos a footer
 
 ### v3.0.1
 - Configuración de gulpfile.js

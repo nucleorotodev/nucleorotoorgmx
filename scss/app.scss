@@ -242,7 +242,25 @@ form textarea,
 }
 
 #footer {
-    height: $altura-footer;
+    display: flex;
+    flex-direction: column;
+    // height: $altura-footer;
+
+    .copyright {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+        order: 2;
+        p {
+            width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+    }
+    #social {
+        width: 100%;
+    }
 }
 
 #single-artista div small {
@@ -479,6 +497,29 @@ table.barra-radio {
 
 #social div a i {
     font-size: 1em;
+    &:hover {
+        @extend .color-terciario-0;
+    }
+}
+
+#social {
+    .social-container {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 0 ;
+
+        .social-item {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            padding: 0 1rem;
+            
+            a {
+                width: fit-content;
+                padding: 0;
+            }
+        }
+    }
 }
 
 // RotoTV
