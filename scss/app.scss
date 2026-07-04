@@ -69,9 +69,14 @@ body {
 #heroscreen {
     display: flex;
     flex-direction: column;
-    
+
     .hero-slider {
         width: 100%;
+    }
+    .heroscreen-redes {
+        a {
+            
+        }
     }
 }
 .heroscreen-redes a i {
