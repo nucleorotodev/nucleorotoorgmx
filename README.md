@@ -21,6 +21,7 @@
   - Resuelve la carga del header mientras el sitio se ve blanco
     - Mueve la carga de wp_head a la ubicacion correcta
 - Estilos a footer
+- Estilos a slider flyers
 
 ### v3.0.1
 - Configuración de gulpfile.js

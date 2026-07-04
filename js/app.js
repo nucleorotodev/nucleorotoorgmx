@@ -203,7 +203,7 @@ function slider_footer() {
     jQuery('.slider-footer').slick({
         autoplay: true,
         autoPlaySpeed: 1000,
-        dots: true,
+        dots: false,
         arrows: false,
         infinite: true,
         speed: 1000,
