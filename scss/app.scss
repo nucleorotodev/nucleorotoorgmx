@@ -66,6 +66,14 @@ body {
     color: whitesmoke;
 }
 
+#heroscreen {
+    display: flex;
+    flex-direction: column;
+    
+    .hero-slider {
+        width: 100%;
+    }
+}
 .heroscreen-redes a i {
     color: whitesmoke;
     &:hover {
@@ -490,6 +498,21 @@ table.barra-radio {
 }
 
 //font redes heroscren
+.heroscreen-redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    .contenedor-redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+        height: 100%;
+        width: 100%;
+    }
+}
 .heroscreen-redes div a {
     font-size: 1em;
     @extend .color-negro;

@@ -1,6 +1,6 @@
 <section id="heroscreen" class="grid-x cell h-100-v p-top">
 
-  <div class="columns p-0 h-85">
+  <div class="hero-slider">
     <div id="hero-slider" class="slider-portada columns ovH p-0">
 
       <?php
@@ -23,8 +23,8 @@
               $live = get_field('imagen_portada');
               ?>
 
-              <img src="<?php echo  $tipo === 'roto-releases' ? $release : (  $tipo === 'roto-mixtapes' ? $mixtape : 
-              $live); ?>" alt="<?php echo get_field('nombre_artista_release')  . " | " . get_field('titulo_de_release'); ?>" />
+              <img src="<?php echo  $tipo === 'roto-releases' ? $release : ($tipo === 'roto-mixtapes' ? $mixtape :
+                          $live); ?>" alt="<?php echo get_field('nombre_artista_release')  . " | " . get_field('titulo_de_release'); ?>" />
 
             </div>
 
@@ -70,21 +70,18 @@
       ?>
 
     </div>
+
   </div>
 
-  <div class="heroscreen-redes columns h-15 color-verde-roto-bg">
+  <section class="heroscreen-redes color-verde-roto-bg">
 
-    <div class="row small-10 medium-8 large-6 small-centered align-middle">
+    <div class="contenedor-redes">
 
-      <div class="columns p-0 h-a">
-
-        <?php echo get_template_part('secciones/modulos/redes') ?>
-
-      </div>
+      <?php echo get_template_part('secciones/modulos/redes') ?>
 
     </div>
 
-  </div>
+  </section>
 
 
 </section>
