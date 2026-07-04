@@ -389,7 +389,6 @@ function masonry_blog() {
 
 function radio_data() {
 
-    // jQuery("#station_data").load('/wp-content/themes/nucleorotoorgmx/secciones/radio/station-radio.php', function(data) {})
 
     const station_data = document.querySelector('#station_data')
     //
@@ -418,7 +417,7 @@ function radio_data() {
             }
         })
     } else {
-        console.log("Ya no se cargo");
+        // console.log("Ya no se cargo");
         
     }
 }
