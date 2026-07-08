@@ -12,6 +12,11 @@
 
 ## Changelog
 
+### v3.1.1
+- Bugfix:
+  - Slider de heroscreen carga la portada y se encima el texto
+    - Heroscreen debe cargar la imagen de banner del Relase tipo Live
+
 ### v3.1.0
 - Release Degstort Live
   - Ajuste de pantones

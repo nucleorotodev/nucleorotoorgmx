@@ -10,6 +10,7 @@
 
       if ($q->have_posts()) :
         while ($q->have_posts()) : $q->the_post();
+        $id = get_the_ID();
       ?>
           <div class="columns p-0 rel text-shadow">
             <!-- fondo slide -->
@@ -17,10 +18,10 @@
 
               <?php
               $tipo = get_post_type();
-              $release = get_field('imagen_cabecera_release');
+              $release = get_field('imagen_cabecera_release', $id);
               // var_dump($release);
-              $mixtape = get_field('imagen_cabecera_mixtape');
-              $live = get_field('imagen_portada');
+              $mixtape = get_field('imagen_cabecera_mixtape', $id);
+              $live = get_field('imagen_cabecera_release', $id);
               ?>
 
               <img src="<?php echo  $tipo === 'roto-releases' ? $release : ($tipo === 'roto-mixtapes' ? $mixtape :
